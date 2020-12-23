@@ -31,9 +31,9 @@ provided by the National Cancer Institute’s
 Overview
 --------
 
-.. image:: images/OpenCRAVAT_Overview3.png
+.. image:: figures/OpenCRAVAT_Overview3.png
   :width: 400
-  :alt: OpenCRAVAT Overview
+  :alt: OpenCRAVAT overview
 
 OpenCRAVAT is a modular python package that is available in the pip
 `PyPI repository <https://pypi.org/project/open-cravat/>`__. It takes a
@@ -49,6 +49,10 @@ spreadsheets, and a SQLite database of results used by cravat_view.
 
 OpenCRAVAT Processing
 ---------------------
+
+.. image:: figures/OC_schematic.png
+  :width: 400
+  :alt: OpenCRAVAT schematic
 
 When the pipeline program is run, it will execute a series of modules
 required for variant analysis. First, the appropriate converter will be
