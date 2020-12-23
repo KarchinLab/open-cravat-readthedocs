@@ -31,6 +31,10 @@ provided by the National Cancer Institute’s
 Overview
 --------
 
+.. image:: images/OpenCRAVAT_Overview3.png
+  :width: 400
+  :alt: OpenCRAVAT Overview
+
 OpenCRAVAT is a modular python package that is available in the pip
 `PyPI repository <https://pypi.org/project/open-cravat/>`__. It takes a
 file of genomic variants as input. The most common input format is a VCF
