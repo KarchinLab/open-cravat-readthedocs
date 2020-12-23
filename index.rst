@@ -10,7 +10,8 @@ Welcome to open-cravat's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-Test!
+Test Section
+============
 
 Indices and tables
 ==================
