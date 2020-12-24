@@ -1,0 +1,312 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Intro to OpenCRAVAT &mdash; open-cravat  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to open-cravat’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> open-cravat
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Intro to OpenCRAVAT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#opencravat-processing">OpenCRAVAT Processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#available-modules">Available Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#system-capabilities">System Capabilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-cite">How to cite</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">open-cravat</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Intro to OpenCRAVAT</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Home.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="intro-to-opencravat">
+<h1>Intro to OpenCRAVAT<a class="headerlink" href="#intro-to-opencravat" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://opencravat.org/">OpenCRAVAT</a> is a python package that
+performs genomic variant interpretation including variant impact,
+annotation, and scoring. There is a web-based version of OpenCRAVAT
+(<a class="reference external" href="https://run.opencravat.org">https://run.opencravat.org</a>) but it can also be installed locally and is
+easy to integrate into bioinformatics pipelines. OpenCRAVAT has a
+modular architecture with a wide variety of analysis modules that can be
+selected and installed/run based on the needs of a given study. The
+modules are made available via the CRAVAT Store and are developed both
+by the CRAVAT team and the broader variant analysis community.
+OpenCRAVAT is a product of the <a class="reference external" href="http://karchinlab.org/">Karchin Lab</a>
+at <a class="reference external" href="https://www.jhu.edu/">Johns Hopkins University</a> in collaboration
+with <a class="reference external" href="http://insilico.us.com">In Silico Solutions</a> with funding
+provided by the National Cancer Institute’s
+<a class="reference external" href="https://itcr.cancer.gov/">ITCR</a> program.</p>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>OpenCRAVAT is a modular python package that is available in the pip
+<a class="reference external" href="https://pypi.org/project/open-cravat/">PyPI repository</a>. It takes a
+file of genomic variants as input. The most common input format is a VCF
+file but other formats are supported including dbSNP identifiers, 23&amp;Me
+and Ancestry.com file formats.</p>
+<p>The analysis performed by OpenCRAVAT depends upon user-selected
+annotation and visualization options, available for download from the
+free OpenCRAVAT Store. In addition to the interactive user interface,
+OpenCRAVAT provides several output formats including text reports, Excel
+spreadsheets, and a SQLite database of results used by cravat_view.</p>
+</div>
+<div class="section" id="opencravat-processing">
+<h2>OpenCRAVAT Processing<a class="headerlink" href="#opencravat-processing" title="Permalink to this headline">¶</a></h2>
+<p>When the pipeline program is run, it will execute a series of modules
+required for variant analysis. First, the appropriate converter will be
+run to parse the input variant file. Next, a mapper module will
+determine the transcripts and associated genes affected by each variant
+including protein impact. Then OpenCRAVAT runs all of the
+requested/installed annotation modules and after all annotation is
+complete, an aggregator program collects and collates the results into a
+SQLite database. Finally, reporter modules are run to produce the
+requested format of results.</p>
+</div>
+<div class="section" id="available-modules">
+<h2>Available Modules<a class="headerlink" href="#available-modules" title="Permalink to this headline">¶</a></h2>
+<p>As of 8/7/2020, openCRAVAT has the following annotators available, with
+more on the way.</p>
+<ul class="simple">
+<li><p><em>Gene-level annotators:</em> BioGRID, Cancer Gene Census, Cancer Gene
+Landscape, CIViC Gene, ClinGen Gene, COSMIC Gene, Essential Genes,
+ExAC Gene and CNV, gnomAD, GTEx, HaploReg, HGVS Format, InterPro,
+LINSIGHT, MuPIT, gnomAD Gene, Gene Ontology, HGDP, IntAct, LoFtool,
+MuPIT, NCBI Gene, NDEx, P(rec), p(HI), PubMed, RVIS, TARGET, UniProt,
+VEST</p></li>
+<li><p><em>Variant-level annotators:</em> ABraOM, Arrhythmia Channelopathy
+Variants, BRCA1 Multiplex Assay, CADD Exome, CardioBoost,
+Cardiovascular Disease Knowledge Portal CHASMplus, CHASMplus
+MSK-IMPACT, CIViC, ClinVar, ClinVar ACMG, COSMIC, CVDKP, DANN Coding,
+dbscSNV, dbSNP, denovo-DB, ENCODE TFBS, Ensembl Regulatory Build,
+ESP6500, FATHMM, FATHMM-MKL, FATHMM-XF Coding, FitCons, Flanking
+Sequence, GeneHancer, GERP++, Geuvadis eQTLs, GHIS, gnomAD, gnomAD
+v3, GRASP, GWAS Catalog, Likelihood Ratio Test, LitVar, MaveDB,
+MetaSVM, MetaLR, Mutation Assessor, Mutpanning, MutPred, ncRNA,
+PharmGKB, Phast Cons, PhD-SNPg, PhyloP, PolyPhen2, Promoter IR,
+Pseudogene, Repeat Sequences, REVEL, SCREEN, Segway, Sift, SiPhy,
+SwissProt PTMs, 1000 Genomes, 1000 Genomes-Ad Mixed American, 1000
+Genomes-African, 1000 Genomes-East Asian, 1000 Genomes-European, 1000
+Genomes-South Asian, Trinity CTAT, UK10k Cohorts, VEST, VISTA
+Enhancer Browser</p></li>
+<li><p><em>Converters (input formats):</em> TSV, VCF, Ancestry.com, 23andMe,
+FamilyTreeDNA</p></li>
+<li><p><em>Reporters (output formats):</em> Text format, Excel, TSV, CSV, Annotated
+VCF</p></li>
+</ul>
+</div>
+<div class="section" id="system-capabilities">
+<h2>System Capabilities<a class="headerlink" href="#system-capabilities" title="Permalink to this headline">¶</a></h2>
+<p>In most cases, OpenCRAVAT can process approximately <strong>1 million variants
+per hour</strong>. This estimate assumes that 2/3 of the input variants are in
+coding regions, approximately ten annotation modules, and the system is
+running on an at least 4 year old laptop with a solid state drive.
+Runtimes depend heavily on disk speed. A mechanical hard drive will
+perform about 1/3 to 1/4 as well as an SSD. Most modern processors are
+equivalent since the disk will bottleneck annotation speed before the
+processor. However, processors with fewer than four cores may see
+reduced runtimes. Memory size is not typically a limitation.</p>
+</div>
+<div class="section" id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>For a simple introduction to running OpenCRAVAT, please consult the
+<a class="reference external" href="./quickstart">Quickstart guide</a>.</p>
+</div>
+<div class="section" id="how-to-cite">
+<h2>How to cite<a class="headerlink" href="#how-to-cite" title="Permalink to this headline">¶</a></h2>
+<p>Pagel KA et al. Integrated Informatics Analysis of Cancer-Related
+Variants. JCO Clinical Cancer Informatics 2020 4, 310-317.</p>
+<p>OpenCRAVAT users are encouraged to cite individual annotations used in
+their study analysis.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to open-cravat’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Rick Kim, Kyle Moad, Kym Pagel, Madison Larsen, Michael Ryan, Rachel Karchin
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
