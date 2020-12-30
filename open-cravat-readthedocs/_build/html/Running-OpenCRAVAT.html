@@ -1,0 +1,423 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Running OpenCRAVAT &mdash; open-cravat  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> open-cravat
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Running OpenCRAVAT</a><ul>
+<li><a class="reference internal" href="#input-of-multiple-files">Input of multiple files</a></li>
+<li><a class="reference internal" href="#vcf-input-format">VCF Input Format</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#cravat-input-format">CRAVAT Input Format</a><ul>
+<li><a class="reference internal" href="#columns">Columns</a></li>
+<li><a class="reference internal" href="#id7">Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">open-cravat</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Running OpenCRAVAT</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Running-OpenCRAVAT.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="running-opencravat">
+<h1>Running OpenCRAVAT<a class="headerlink" href="#running-opencravat" title="Permalink to this headline">¶</a></h1>
+<p>OpenCRAVAT can be run via the <a class="reference external" href="./5.-Web-Interface">Web Interface</a> or
+<a class="reference external" href="./2.-Running-cravat">Command line</a>. Upon completion of an annotation
+run, results be viewed in the <a class="reference external" href="./3.-Viewing-Results">Interactive
+Viewer</a> or by viewing the outputted files.</p>
+<div class="section" id="input-of-multiple-files">
+<h2>Input of multiple files<a class="headerlink" href="#input-of-multiple-files" title="Permalink to this headline">¶</a></h2>
+<p>Submitting multiple input files is supported by OpenCRAVAT. The system
+will automatically merge and deduplicate your input files, and will only
+process each unique variant once. As a result, expected runtime for
+multiple input files depends on the uniqueness of the variants in each
+file. Runtimes will be the same as if each unique variant was submitted
+in a single file. OpenCRAVAT can process arbitrarily large numbers of
+input files. However, it may be hard to navigate the web viewer when
+more than 10 input files are used.</p>
+<p>There are two input file formats currently supported by default: VCF and
+CRAVAT.</p>
+</div>
+<div class="section" id="vcf-input-format">
+<h2>VCF Input Format<a class="headerlink" href="#vcf-input-format" title="Permalink to this headline">¶</a></h2>
+<p>Variant Call Format (VCF) is a standard variant file format that is
+produced by sequencing centers and by variant calling software packages.
+A specification of the format is available
+<a class="reference external" href="https://samtools.github.io/hts-specs/VCFv4.2.pdf">here</a>.</p>
+<p>VCF files sometimes contain multiple variants on a single line
+(separated by commas in the ALT column). These variants can have
+different scores and annotations so the converter will split these into
+individual variants (e.g Reference base C Alternate base T and Reference
+base C Alternate base G).</p>
+<div class="section" id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>##fileformat=VCFv4.1
+##fileDate=20090805
+##source=myImputationProgramV3.1
+##reference=file:///seq/references/1000GenomesPilot-NCBI36.fasta
+##contig=&lt;ID=20,length=62435964,assembly=B36,md5=f126cdf8a6e0c7f379d618ff66beb2da,species=&quot;Homo sapiens&quot;,taxonomy=x&gt;
+##phasing=partial
+##INFO=&lt;ID=NS,Number=1,Type=Integer,Description=&quot;Number of Samples With Data&quot;&gt;
+##INFO=&lt;ID=DP,Number=1,Type=Integer,Description=&quot;Total Depth&quot;&gt;
+##INFO=&lt;ID=AF,Number=A,Type=Float,Description=&quot;Allele Frequency&quot;&gt;
+##INFO=&lt;ID=AA,Number=1,Type=String,Description=&quot;Ancestral Allele&quot;&gt;
+##INFO=&lt;ID=DB,Number=0,Type=Flag,Description=&quot;dbSNP membership, build 129&quot;&gt;
+##INFO=&lt;ID=H2,Number=0,Type=Flag,Description=&quot;HapMap2 membership&quot;&gt;
+##FILTER=&lt;ID=q10,Description=&quot;Quality below 10&quot;&gt;
+##FILTER=&lt;ID=s50,Description=&quot;Less than 50% of samples have data&quot;&gt;
+##FORMAT=&lt;ID=GT,Number=1,Type=String,Description=&quot;Genotype&quot;&gt;
+##FORMAT=&lt;ID=GQ,Number=1,Type=Integer,Description=&quot;Genotype Quality&quot;&gt;
+##FORMAT=&lt;ID=DP,Number=1,Type=Integer,Description=&quot;Read Depth&quot;&gt;
+##FORMAT=&lt;ID=HQ,Number=2,Type=Integer,Description=&quot;Haplotype Quality&quot;&gt;
+#CHROM  POS ID  REF ALT QUAL    FILTER  INFO    FORMAT  NA00001 NA00002 NA00003
+20  85729   rs6054257   G   A   29  PASS    NS=3;DP=14;AF=0.5;DB;H2 GT:GQ:DP:HQ:AD  0|0:48:1:51,51:0,1  1|0:48:8:51,51:4,4  1/1:43:5:.,.:1,4
+20  1130053 rs6040355   A   G,T 67  PASS    NS=2;DP=10;AF=0.333,0.667;AA=T;DB   GT:GQ:DP:HQ 1|2:21:6:23,27  2|1:2:0:18,2    2/2:35:4
+20  1249593 .   T   .   47  PASS    NS=3;DP=13;AA=T GT:GQ:DP:HQ 0|0:54:7:56,60  0|0:48:4:51,51  0/0:61:2
+20  1253923 microsat1   GTC G,GTCT  50  PASS    NS=3;DP=9;AA=G  GT:GQ:DP:AD 0/1:35:4:2,2    0/2:17:5:2,3    1/1:40:3:2,1
+22  30025797    TR1 A   T   29  PASS    NS=3;DP=14;AF=0.5;DB;H2 GT:GQ:DP:HQ:AF  0|0:48:1:51,51:0    1|0:48:8:51,51:0.7  1/1:43:5:.,.:0.5
+22  29050091    .   A   G   67  PASS    NS=2;DP=10;AF=0.333,0.667;AA=T;DB   GT:GQ:DP:HQ 1|0:21:6:23,27  0|0:2:0:18,2    1/1:35:4
+22  40418496    TR3 T   C   3   q10 NS=3;DP=11;AF=0.017 GT:GQ:DP:HQ 0|0:49:3:58,50  0|1:3:5:65,3    0/0:41:3
+22  40419252    .   C   T   47  PASS    NS=3;DP=13;AA=T GT:GQ:DP:HQ 1|0:54:7:56,60  0|1:48:4:51,51  0/0:61:2
+12  122981745   TRI GGAAGAAGAA  G,GGAA,GGAAGAA  50  PASS    NS=3;DP=13;AA=T GT:GQ:HQ:AD 0|1:48:51,51:3,1    1|2:21:23,27:2,4    3|1:48:51,51:3,5
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="cravat-input-format">
+<h2>CRAVAT Input Format<a class="headerlink" href="#cravat-input-format" title="Permalink to this headline">¶</a></h2>
+<p>OpenCRAVAT currently supports two input formats: CRAVAT format and VCF.
+The current version of OpenCRAVAT provides mappings and annotations
+based on the human genome reference sequence GRCh38. There is a feature
+in the OpenCRAVAT program to automatically convert hg18 or hg19 input
+files into GRCh38 coordinates.</p>
+<p>The basic CRAVAT variant input file is a tab separated text file. Each
+row in a describes a genomic variant by the following sequential
+columns: Chromosome, Position, Strand, Reference-Base, Alternate-Base,
+[Sample], [Tags]. The table below describes each field:</p>
+<div class="section" id="columns">
+<h3>Columns<a class="headerlink" href="#columns" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 42%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Column</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Chromos
+ome</p></td>
+<td><p>The
+chromosome,
+prefixed
+with
+<code class="docutils literal notranslate"><span class="pre">'chr'</span></code>.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">'chr22</span>
+<span class="pre">'</span></code>,
+<a href="#id1"><span class="problematic" id="id2">``</span></a>’chrX’
+``</p></td>
+</tr>
+<tr class="row-odd"><td><p>Positio
+n</p></td>
+<td><p>The
+numerical
+position of
+the
+nucleotide
+along the
+chromosome
+transcript.</p></td>
+<td><p>11250130
+7,
+1804372</p></td>
+</tr>
+<tr class="row-even"><td><p>Strand</p></td>
+<td><p>The strand
+the variant
+is on.
+Either
+<code class="docutils literal notranslate"><span class="pre">'+'</span></code> or
+<code class="docutils literal notranslate"><span class="pre">'-'</span></code>.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">'+'</span></code>,
+<code class="docutils literal notranslate"><span class="pre">'-'</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Referen
+ce-Base</p></td>
+<td><p>The
+reference
+nucleotide,
+or a <code class="docutils literal notranslate"><span class="pre">'-'</span></code>
+for an
+insertion.
+Can be left
+empty for
+substitution
+if reference
+is unknown</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">'G'</span></code>,
+<code class="docutils literal notranslate"><span class="pre">'AG'</span></code>
+,
+<code class="docutils literal notranslate"><span class="pre">'TTCC'</span>
+<span class="pre">``,\</span> <span class="pre">``'</span>
+<span class="pre">-'</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Alterna
+te-Base</p></td>
+<td><p>The
+alternate
+nucleotide,
+or <code class="docutils literal notranslate"><span class="pre">'-'</span></code>
+for a
+deletion.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">'A'</span></code>,
+<code class="docutils literal notranslate"><span class="pre">'TTC'`</span>
+<span class="pre">`,</span>
+<span class="pre">``'-'</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Sample</p></td>
+<td><p>Optional:
+Sample
+identifier
+for cohort
+studies.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">'s1'</span></code>
+,
+<a href="#id3"><span class="problematic" id="id4">``</span></a>’s25’`
+`</p></td>
+</tr>
+<tr class="row-even"><td><p>Tags</p></td>
+<td><p>Optional:
+Arbitrary
+identifiers
+or category
+tags
+associated
+with the
+variant -
+delimited by
+semi-colon.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">'var00</span>
+<span class="pre">1'</span></code>,
+<a href="#id5"><span class="problematic" id="id6">``</span></a>’TR93;
+cancer’`
+`</p></td>
+</tr>
+</tbody>
+</table>
+<p>Note if you wish to include tags but not sample ids, an extra tab
+character is needed between the alternate base and tag.</p>
+<p>OpenCRAVAT processes a list of unique variants extracted from the input
+file. If the same variant is present in multiple samples, the variant
+will be presented as a single line in the results but the sample and
+mapping information can be used to identify all of the samples and
+original input lines associated with a line in the output.</p>
+</div>
+<div class="section" id="id7">
+<h3>Example<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>The following is a basic example of a CRAVAT input file:</p>
+<div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>chr2    112501307   +   C   A  var001
+chr14   104770363   +   T   A  s1 var002
+chrX    71127984    +   A   G  s2 var003;control
+chr14   91974629    +   T   G  s1 var004;test
+chr12   57094662    +   G   T  s1 var005
+</pre></div>
+</div>
+<p>The fields in the above sample must be tab delimited and may not get
+tabs if you copy / paste it.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Rick Kim, Kyle Moad, Kym Pagel, Madison Larsen, Michael Ryan, Rachel Karchin
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

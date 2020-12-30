@@ -1,0 +1,333 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Variant Report &mdash; open-cravat  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> open-cravat
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Variant Report</a><ul>
+<li><a class="reference internal" href="#variant-annotations">Variant Annotations</a></li>
+<li><a class="reference internal" href="#cancer">Cancer</a></li>
+<li><a class="reference internal" href="#population-allele-frequencies">Population Allele Frequencies</a></li>
+<li><a class="reference internal" href="#clinical-relevance">Clinical Relevance</a></li>
+<li><a class="reference internal" href="#gene">Gene</a></li>
+<li><a class="reference internal" href="#pathogenicity-prediction">Pathogenicity Prediction</a></li>
+<li><a class="reference internal" href="#evolutionary-constraint">Evolutionary Constraint</a></li>
+<li><a class="reference internal" href="#noncoding-and-genomic-elements">Noncoding and Genomic Elements</a></li>
+<li><a class="reference internal" href="#visualization">Visualization</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">open-cravat</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Variant Report</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OpenCRAVAT-Variant-Report.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="variant-report">
+<h1>Variant Report<a class="headerlink" href="#variant-report" title="Permalink to this headline">¶</a></h1>
+<p>OpenCRAVAT provides a whole-page variant report that describes an
+individual variant. Try these examples below, which will open an
+OpenCRAVAT Variant Report page from the OpenCRAVAT public server.</p>
+<p><a class="reference external" href="https://run.opencravat.org/result/nocache/variant.html?chrom=chr17&amp;pos=39724004&amp;ref_base=C&amp;alt_base=G">OpenCRAVAT Variant Page example
+1</a></p>
+<p><a class="reference external" href="https://run.opencravat.org/result/nocache/variant.html?chrom=chr10&amp;pos=87864470&amp;ref_base=A&amp;alt_base=T">OpenCRAVAT Variant Page example
+2</a></p>
+<p><a class="reference external" href="https://run.opencravat.org/result/nocache/variant.html?chrom=chr22&amp;pos=19965038&amp;ref_base=G&amp;alt_base=A">OpenCRAVAT Variant Page example
+3</a></p>
+<p><a class="reference external" href="https://run.opencravat.org/result/nocache/variant.html?chrom=chr1&amp;pos=1719358&amp;ref_base=A&amp;alt_base=G">OpenCRAVAT Variant Page example
+4</a></p>
+<p>To enable OpenCRAVAT Variant Report pages in your own installation of
+OpenCRAVAT, there are necessary annotation modules. Run the command
+below to install the required modules.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">oc</span> <span class="n">module</span> <span class="n">install</span> <span class="n">lollipop</span> <span class="n">hgvs</span> <span class="n">chasmplus</span> <span class="n">civic</span> <span class="n">cosmic</span> <span class="n">cgc</span> <span class="n">cgl</span> <span class="n">target</span> <span class="n">gnomad</span> <span class="n">thousandgenomes</span> <span class="n">hgdp</span> <span class="n">esp6500</span> <span class="n">abraom</span> <span class="n">uk10k_cohort</span> <span class="n">pharmgkb</span> <span class="n">clinvar</span> <span class="n">clingen</span> <span class="n">denovo</span> <span class="n">gwas_catalog</span> <span class="n">ess_gene</span> <span class="n">gnomad_gene</span> <span class="n">prec</span> <span class="n">phi</span> <span class="n">ghis</span> <span class="n">loftool</span> <span class="n">interpro</span> <span class="n">gtex</span> <span class="n">rvis</span> <span class="n">ncbigene</span> <span class="n">vest</span> <span class="n">mutpred1</span> <span class="n">mutation_assessor</span> <span class="n">fathmm</span> <span class="n">phdsnpg</span> <span class="n">phastcons</span> <span class="n">phylop</span> <span class="n">linsight</span> <span class="n">ncrna</span> <span class="n">pseudogene</span> <span class="n">biogrid</span> <span class="n">intact</span> <span class="n">ndex</span> <span class="n">mupit</span>
+</pre></div>
+</div>
+<p>The OpenCRAVAT Variant Report page can be launched with the following
+URL scheme:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>http(s)://&lt;OpenCRAVAT GUI domain&gt;/result/nocache/variant.html?chrom=&lt;chromosome&gt;&amp;pos=&lt;genomic position&gt;&amp;ref_base=&lt;reference base(s)&gt;&amp;alt_base=&lt;alternate base(s)&gt;
+</pre></div>
+</div>
+<p>For example,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>http://localhost:8060/result/nocache/variant.html?chrom=chr1&amp;pos=12777320&amp;ref_base=C&amp;alt_base=T
+</pre></div>
+</div>
+<p>If you open this URL the first time after starting <code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">gui</span></code>, the page
+will take some time to load since the gene mapper and several required
+annotators need to be loaded.</p>
+<p>The Variant Report page has the following sections.</p>
+<div class="section" id="variant-annotations">
+<h2>Variant Annotations<a class="headerlink" href="#variant-annotations" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id1">
+<img alt="single variant report variant annotations" src="_images/single-variant-report-variant-annotations.png" />
+<p class="caption"><span class="caption-text">single variant report variant annotations</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>This section includes basic information on the input variant, the
+mapping of the variant onto genes with variant consequences, mappings to
+UniProt, HGVS notation of variant consequences, and a protein diagram
+showing the location of the variant as well as Pfam and UniProt domain
+annotations.</p>
+</div>
+<div class="section" id="cancer">
+<h2>Cancer<a class="headerlink" href="#cancer" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id2">
+<img alt="single variant report cancer" src="_images/single-variant-report-cancer.png" />
+<p class="caption"><span class="caption-text">single variant report cancer</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Several cancer-related annotations are included in this section:
+CHASMplus, CiVIC, COSMIC, Cancer Gene Census, Cancer Genome Landscape,
+and TARGET.</p>
+</div>
+<div class="section" id="population-allele-frequencies">
+<h2>Population Allele Frequencies<a class="headerlink" href="#population-allele-frequencies" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id3">
+<img alt="single variant report population allele frequencies" src="_images/single-variant-report-population-allele-frequencies.png" />
+<p class="caption"><span class="caption-text">single variant report population allele frequencies</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>gnomAD, 1000 Genomes, HGDP, ESP6500, ABRaOM, and UK10K Cohorts allele
+frequency annotations are shown in this section.</p>
+</div>
+<div class="section" id="clinical-relevance">
+<h2>Clinical Relevance<a class="headerlink" href="#clinical-relevance" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id4">
+<img alt="single variant report clinical relevance" src="_images/single-variant-report-clinical-relevance.png" />
+<p class="caption"><span class="caption-text">single variant report clinical relevance</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<p>PharmGKB, ClinVar, ClinGen, denovo-db, and GWAS Catalog annotations are
+shown in this section.</p>
+</div>
+<div class="section" id="gene">
+<h2>Gene<a class="headerlink" href="#gene" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id5">
+<img alt="single variant report gene" src="_images/single-variant-report-gene.png" />
+<p class="caption"><span class="caption-text">single variant report gene</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<p>Gene-level annotations are shown in this section: gnomAD Gene, P(rec),
+P(HI), GHIS, LoFtool, RVIS, and NCBI Gene.</p>
+</div>
+<div class="section" id="pathogenicity-prediction">
+<h2>Pathogenicity Prediction<a class="headerlink" href="#pathogenicity-prediction" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id6">
+<img alt="single variant report pathogenicity prediction" src="_images/single-variant-report-pathogenicity-prediction.png" />
+<p class="caption"><span class="caption-text">single variant report pathogenicity prediction</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+<p>Several variant effect prediction annotations are included in this
+section: VEST, PhDSNPg, MutPred, Mutation Assessor, and FATHMM.</p>
+</div>
+<div class="section" id="evolutionary-constraint">
+<h2>Evolutionary Constraint<a class="headerlink" href="#evolutionary-constraint" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id7">
+<img alt="single variant report evolutionary constraint" src="_images/single-variant-report-evolutionary-constraint.png" />
+<p class="caption"><span class="caption-text">single variant report evolutionary constraint</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<p>PhastCons and PhyloP annotations are shown in this section.</p>
+</div>
+<div class="section" id="noncoding-and-genomic-elements">
+<h2>Noncoding and Genomic Elements<a class="headerlink" href="#noncoding-and-genomic-elements" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id8">
+<img alt="single variant report noncoding and genomic elements" src="_images/single-variant-report-noncoding-and-genomic-elements.png" />
+<p class="caption"><span class="caption-text">single variant report noncoding and genomic elements</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+<p>This section includes annotations from LINSIGHT, ncRNA, Pseudogene,
+BioGRID, and IntAct.</p>
+</div>
+<div class="section" id="visualization">
+<h2>Visualization<a class="headerlink" href="#visualization" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id9">
+<img alt="single variant report visualization" src="_images/single-variant-report-visualization.png" />
+<p class="caption"><span class="caption-text">single variant report visualization</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</div>
+<p>NDEx and MuPIT visualizations are shown in this section. In the NDEx
+visualization, use the dropdown menu to select different networks which
+include the gene impacted by the variant. The variant’s gene is shown in
+red. In MuPIT visualization, click the triangle at the left bottom and
+then click “Result” button to select different 3D protein structures to
+which the variant was mapped. Also, click the triangle at the top right
+to highlight TCGA mutations and UniProt-derived protein domains on the
+shown 3D structure.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Rick Kim, Kyle Moad, Kym Pagel, Madison Larsen, Michael Ryan, Rachel Karchin
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

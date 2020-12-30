@@ -1,0 +1,197 @@
+==================
+Command line usage
+==================
+
+To analyze a file of variants, just type:
+
+``oc run input.vcf -l hg38``
+
+See the `input format specifications <Running-OpenCRAVAT>`__ for
+supported input file formats.
+
+The above command will run all installed annotators on the provided
+input file and produce Excel and sqlite output in same directory as the
+input file. The terminal output will look something like this:
+
+.. code:: txt
+
+    Running converter...
+        Converter (converter)           finished in 0.441s
+    Running gene mapper...
+        UCSC hg38 Gene Mapper (hg38)    finished in 0.188s
+    Running annotators...
+            biogrid: started at Thu Jun  6 18:30:03 2019
+            biogrid: finished at Thu Jun  6 18:30:03 2019
+            biogrid: runtime 0.013s
+        annotator(s) finished in 0.128s
+    Running aggregator...
+        Variants                        finished in 0.013s
+        Genes                           finished in 0.010s
+        Samples                         finished in 0.008s
+        Tags                            finished in 0.018s
+    Running post-aggregators...
+        Tag Sampler (tagsampler)        finished in 0.005s
+        VCF Info (vcfinfo)              finished in 0.006s
+    Finished normally. Runtime: 1.239s
+
+To run a subset of the annotators that are installed, use the -a option:
+
+``oc run ./input.vcf -l hg38 -a cosmic ndex``
+
+This command would run just the 2 specified annotators (they be
+installed)
+
+If you would like tab delimited output use ``-t text`` or
+``-t text excel`` for both.
+
+``oc run ./input.vcf -l hg38 -t text``
+
+The following optional parameters can be included on the OpenCRAVAT
+command line AFTER the input file.
+``oc run ./input.vcf [command line options]``
+
++-----------+------------------------------------+
+| Option    | Description                        |
++===========+====================================+
+| -h        | Shows help message.                |
++-----------+------------------------------------+
+| -a        | Annotators to run. List of         |
+| <annotato | annotator names separated by       |
+| rs>       | spaces.                            |
++-----------+------------------------------------+
+| -e        | Run all installed annotators       |
+| <annotato | except those listed. List of       |
+| rs>       | annotator names separated by       |
+|           | spaces.                            |
++-----------+------------------------------------+
+| -n        | Output filename prefix. Default is |
+| <prefix>  | the input file name.               |
++-----------+------------------------------------+
+| -d        | Directory for output files.        |
+| <director | Default is the directory of the    |
+| y>        | input file.                        |
++-----------+------------------------------------+
+| -c        | Path to custom config file, to     |
+| <config>  | override cravat.yml settings.      |
++-----------+------------------------------------+
+| -v        | Returns verbose output.            |
++-----------+------------------------------------+
+| -t        | excel,text - Reporters to run.     |
+| <format>  |                                    |
++-----------+------------------------------------+
+| -l        | hg38,hg19,hg18 - Reference genome  |
+| <genome>  | of input. Default is hg38.         |
++-----------+------------------------------------+
+| -x        | Force rebuild of the existing      |
+|           | result database.                   |
++-----------+------------------------------------+
+
+To see all supported command line options type:
+
+``oc run -h``
+
+Submitting Multiple Files
+-------------------------
+
+As of version 1.4.2, openCRAVAT supports the submission of multiple
+input files in one job. In the command line, this can be done by
+including multiple paths in the positional arguments as so
+``cravat a.vcf b.vcf c.vcf ...``. OpenCRAVAT will merge the variants
+found in the input files and process each unique variant once. All input
+formats accepted by openCRAVAT can be submitted in multiple files.
+However, all files must be the in the same format.
+
+Sample IDs are altered when multiple files are submitted to track which
+file(s) variants occurred in. The format will be
+``inputFileName_originalSampleID``. For example, assume two files are
+submitted, ``jane.vcf`` and ``john.vcf``. Each file contains two
+identically named samples, ``normal`` and ``tumor``. In the results,
+there will be four sample IDs: ``jane_normal``, ``jane_tumor``,
+``john_normal``, and ``john_tumor``.
+
+Working with modules
+====================
+
+The ``oc module`` command tree is used to find modules, and change which
+are installed on your local system.
+
++----------------+-----------------------------+-------------------+
+| Option         | Description                 | Type              |
++================+=============================+===================+
+| -h, --help     | Shows help message.         | Information       |
++----------------+-----------------------------+-------------------+
+| ls             | lists modules.              | Information       |
++----------------+-----------------------------+-------------------+
+| install        | installs modules.           | System settings   |
++----------------+-----------------------------+-------------------+
+| update         | updates modules.            | System settings   |
++----------------+-----------------------------+-------------------+
+| uninstall      | uninstalls modules.         | System settings   |
++----------------+-----------------------------+-------------------+
+| info           | shows module information.   | Information       |
++----------------+-----------------------------+-------------------+
+| install-base   | installs base modules.      | System settings   |
++----------------+-----------------------------+-------------------+
+
+For additional help on a specific command, add -h to the command:
+``oc module [command] -h``
+
+See available annotators with: ``oc module ls -a -t annotator``
+
+Get a more detailed description for a module of interest, type:
+``oc module info [annotator]``
+
+Install an annotator: ``oc module install [annotator]``
+
+See where modules are currently stored: ``oc config md``
+
+Change the modules directory: ``oc config md [dirPath]``
+
+Working with completed jobs
+===========================
+
+Creating a report
+-----------------
+
+Create a new report with the ``oc report`` command. The report will
+overwrite an existing report of the same type.
+
+::
+
+    oc report job.sqlite -t tsv vcf
+
+The ``-t`` flag is required to select the reporter(s) to run. Find more
+reporters with ``oc module ls -a -t reporter``.
+
+Adding annotators
+-----------------
+
+It is possible to add annotators to a completed job. Simply pass the
+job's sqlite db as the input file to ``oc run``, and include a list of
+annotators to add.
+
+::
+
+    oc run job.sqlite -a chasmplus vest
+
+The selected annotators will be added to the job. Note that a new report
+will not be generated. That must be done manually if desired.
+
+Upgrading a database
+--------------------
+
+In rare cases, an older database will not be able to use features in
+newer versions of OpenCRAVAT. If you are getting errors when using newer
+features, use ``oc util update-result`` to modify the database to work
+with the latest installed version of OpenCRAVAT
+
+Send command line job to the graphical interface
+------------------------------------------------
+
+Jobs that are run on the command line will not automatically appear in
+the graphical interface. Add an existing OpenCRAVAT job to the jobs
+table in the interactive interface with the following command:
+
+::
+
+    oc send-gui test.sqlite
