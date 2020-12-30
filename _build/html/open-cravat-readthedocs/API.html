@@ -1,0 +1,386 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API &mdash; open-cravat  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> open-cravat
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Home.html">Intro to OpenCRAVAT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart-command-line.html">Command line quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1.-Installation-Instructions.html">Installation Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2.-Command-line-usage.html">Command line usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3.-Viewing-Results.html">Viewing results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5.-GUI-usage.html">GUI usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Uninstallation.html">Uninstallation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Update-Instructions.html">Update instructions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Filter-Tutorial.html">Filter tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Case-Control.html">Case-Control Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cloud.html">Cloud</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../API.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Multiuser-support.html">Multiuser support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OpenCRAVAT-Variant-Report.html">Variant Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Release-Notes.html">Release notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">For contributors</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../File-Formats.html">File Formats</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Annotator-Reference.html">Annotator reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Annotator-Tutorial.html">Annotator tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Widget-Tutorial.html">Widget tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Reporter.html">Reporter tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Publish-an-Annotator.html">Publish</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">open-cravat</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/open-cravat-readthedocs/API.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api">
+<h1>API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h1>
+<p>(OpenCRAVAT 1.6.0 feature)</p>
+<p>OpenCRAVAT GUI supports web API for submitting a job, checking the
+status of a job, creating a job report, and downloading a job report.
+Examples below are in Python, using <code class="docutils literal notranslate"><span class="pre">requests</span></code> module. If you want to
+try the examples, first open Python console and run the below and then
+follow examples.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python</span>
+<span class="o">&gt;&gt;&gt;</span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;test_input.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span><span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;chr10 8055656 + A T s3 var001</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span><span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span><span class="kn">import</span> <span class="nn">requests</span>
+</pre></div>
+</div>
+<div class="section" id="submitting-a-job">
+<h2>Submitting a job<a class="headerlink" href="#submitting-a-job" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Method: POST</p></li>
+<li><p>Location: /submit/submit</p></li>
+<li><p>Consumes: Multipart/form-data</p></li>
+<li><p>Produces: a JSON object, notable fields of which are as follows.</p>
+<ul>
+<li><p>status[‘status’]: ‘Submitted’ for successful job submission</p></li>
+<li><p>id: job ID of the submitted job</p></li>
+</ul>
+</li>
+<li><p>Form data parameters:</p>
+<ul>
+<li><p>annotators: list. Annotation modules</p></li>
+<li><p>reports: list. Report types</p></li>
+<li><p>assembly: string. Genome assembly of input</p></li>
+<li><p>forcedinputformat: string. Input format</p></li>
+<li><p>note: string</p></li>
+</ul>
+</li>
+<li><p>File data: “file_x” where x is a number from 0 should be used to
+enumerate input files. Multiple files can be submitted as one job.</p></li>
+</ul>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;r = requests.post(&#39;https://run.opencravat.org/submit/submit&#39;, files={&#39;file_0&#39;:open(&#39;test_input.txt&#39;)}, data={&#39;options&#39;: &#39;{&quot;annotators&quot;: [&quot;clinvar&quot;], &quot;reports&quot;: [&quot;text&quot;], &quot;assembly&quot;: &quot;hg38&quot;, &quot;note&quot;: &quot;test run&quot;}&#39;})</span>
+<span class="go">&gt;&gt;&gt;r.json()</span>
+<span class="go">{&#39;orig_input_fname&#39;: [&#39;test_input.txt&#39;], &#39;assembly&#39;: &#39;hg38&#39;, &#39;note&#39;: &#39;test run&#39;, &#39;db_path&#39;: &#39;&#39;, &#39;viewable&#39;: False, &#39;reports&#39;: [&#39;text&#39;], &#39;annotators&#39;: [&#39;clinvar&#39;], &#39;annotator_version&#39;: &#39;&#39;, &#39;open_cravat_version&#39;: &#39;&#39;, &#39;num_input_var&#39;: &#39;&#39;, &#39;submission_time&#39;: &#39;2019-11-19T14:57:21.502575&#39;, &#39;id&#39;: &#39;191119-145721&#39;, &#39;run_name&#39;: &#39;test_input.txt&#39;, &#39;status&#39;: {&#39;status&#39;: &#39;Submitted&#39;}}</span>
+<span class="go">&gt;&gt;&gt;job_id = r.json()[&#39;id&#39;]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="checking-job-status">
+<h2>Checking job status<a class="headerlink" href="#checking-job-status" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Method: GET</p></li>
+<li><p>Location: /submit/jobs/JOBID/status (replace JOBID with the “id”
+value obtained from the response of the submission POST request.)</p></li>
+<li><p>Produces: a JSON object, notable fields of which are as follows.</p>
+<ul>
+<li><p>status: string. Latest status update of the job. When the job
+finishes, it will be “Finished”.</p></li>
+</ul>
+</li>
+</ul>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;r = requests.get(&#39;https://run.opencravat.org/submit/jobs/&#39; + job_id + &#39;/status&#39;)</span>
+<span class="go">&gt;&gt;&gt;r.json()[&#39;status&#39;]</span>
+<span class="go">&quot;Finished&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="creating-report-files">
+<h2>Creating report files<a class="headerlink" href="#creating-report-files" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Method: POST</p></li>
+<li><p>Location: /submit/jobs/JOBID/reports/REPORTTYPE (replace JOBID with
+the “id” value obtained from the response of the submission POST
+request and REPORTTYPE with a report type string.)</p></li>
+<li><p>Produces: string. “done” means normal return.</p></li>
+</ul>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;r = requests.post(&#39;https://run.opencravat.org/submit/jobs/&#39; + job_id + &#39;/reports/vcf&#39;)</span>
+<span class="go">&gt;&gt;&gt;r.json</span>
+<span class="go">&#39;done&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="checking-report-files-available-for-download">
+<h2>Checking report files available for download<a class="headerlink" href="#checking-report-files-available-for-download" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Method: GET</p></li>
+<li><p>Location: /submit/jobs/JOBID/reports</p></li>
+<li><p>Produces: a JSON list with the report types the files for which are
+available for download</p></li>
+</ul>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;r = requests.get(&#39;https://run.opencravat.org/submit/jobs/&#39; + job_id + &#39;/reports&#39;)</span>
+<span class="go">&gt;&gt;&gt;r.json()</span>
+<span class="go">[&#39;text&#39;, &#39;vcf&#39;]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="downloading-report-files">
+<h2>Downloading report files<a class="headerlink" href="#downloading-report-files" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Method: GET</p></li>
+<li><p>Location: /submit/jobs/JOBID/reports/REPORTTYPE (replace JOBID with
+the “id” value obtained from the response of the submission POST
+request and REPORTTYPE with a report type string.)</p></li>
+<li><p>Produces: HTTP(S) response with a report file. See “Content-Type” in
+its headers for the type of the file and “Content-Disposition” for
+the filename of the file.</p></li>
+</ul>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;r = requests.get(&#39;https://run.opencravat.org/submit/jobs/&#39; + job_id + &#39;/reports/vcf&#39;)</span>
+<span class="go">&gt;&gt;&gt;r.text</span>
+<span class="go">&#39;##fileformat=VCFv4.2\n##OpenCRAVATFileDate=20191119\n##INFO=&lt;ID=CRV,Number=A,Type=String,Description=&quot;OpenCRAVAT annotation. Format: base__note|base__coding|base__hugo|base__transcript|base__so|base__achange|base__all_mappings|base__numsample|base__samples|base__tags|clinvar__sig|clinvar__disease_refs|clinvar__disease_names|clinvar__rev_stat|clinvar__id Explanation: base__numsample=Number of samples which contain the variant.|base__samples=Samples which contain the variant.|base__tags=Variant tags from the input file.|clinvar__disease_refs=Disease reference numbers|clinvar__rev_stat=The level of review supporting the assertion of clinical significance&quot;&gt;\n#CHROM\tPOS\tID\tREF\tALT\tQUAL\tFILTER\tINFO\tFORMAT\ts3\n10\t8055656\t1\tA\tT\t.\t.\tCRV=&quot;chr10&quot;|8055656|&quot;A&quot;|&quot;T&quot;||&quot;Yes&quot;|&quot;GATA3&quot;|&quot;ENST00000379328.7&quot;|&quot;missense&quot;|&quot;M1L&quot;|ENST00000346208.3:GATA3:P23771:missense:M1L:A1T&amp;ENST00000379328.7:GATA3:(na):missense:M1L:A1T|1|&quot;s3&quot;|&quot;var001&quot;|||||\tGT\t1|1\n&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="getting-annotation-on-one-variant-without-submitting-a-job-using-opencravat-server-s-live-annotation">
+<h2>Getting annotation on one variant without submitting a job using OpenCRAVAT server’s live annotation<a class="headerlink" href="#getting-annotation-on-one-variant-without-submitting-a-job-using-opencravat-server-s-live-annotation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Method: GET</p></li>
+<li><p>Location: /submit/annotate</p></li>
+<li><p>Parameters</p>
+<ul>
+<li><p>chrom: chromosome</p></li>
+<li><p>pos: position (1-based)</p></li>
+<li><p>ref_base: reference base</p></li>
+<li><p>alt_base: alternate base</p></li>
+<li><p>annotators: comma-delimited string of annotation module names</p></li>
+</ul>
+</li>
+<li><p>Produces: a JSON object with annotation result, which is organized by
+annotation module names as the first level key and column names as
+the second level key.</p></li>
+</ul>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;r=requests.get(&#39;https://run.opencravat.org/submit/annotate?chrom=chr1&amp;pos=12777320&amp;ref_base=G&amp;alt_base=T&amp;annotators=clinvar,dbsnp,exac_gene,go,rvis&#39;)</span>
+<span class="go">&gt;&gt;&gt;r.json()</span>
+<span class="go">{&#39;clinvar&#39;: {&#39;sig&#39;: &#39;&#39;, &#39;disease_refs&#39;: &#39;&#39;, &#39;disease_names&#39;: &#39;&#39;, &#39;rev_stat&#39;: &#39;&#39;, &#39;id&#39;: &#39;&#39;}, &#39;dbsnp&#39;: {&#39;snp&#39;: &#39;rs112368379&#39;}, &#39;exac_gene&#39;: {&#39;exac_pli&#39;: 3.89692512946575e-06, &#39;exac_prec&#39;: 0.369464079984044, &#39;exac_pnull&#39;: 0.630532023090827, &#39;exac_nontcga_pli&#39;: 2.29346103558518e-06, &#39;exac_nontcga_prec&#39;: 0.28488011039975, &#39;exac_nontcga_pnull&#39;: 0.715117596139215, &#39;exac_nonpsych_pli&#39;: 2.04859216406268e-06, &#39;exac_nonpsych_prec&#39;: 0.250289965336068, &#39;exac_nonpsych_pnull&#39;: 0.749707986071768, &#39;exac_del_score&#39;: None, &#39;exac_dup_score&#39;: None, &#39;exac_cnv_score&#39;: None, &#39;exac_cnv_flag&#39;: None}, ..., &#39;crx&#39;: {&#39;uid&#39;: &#39;noid&#39;, &#39;chrom&#39;: &#39;chr1&#39;, &#39;pos&#39;: 12777320, &#39;ref_base&#39;: &#39;G&#39;, &#39;alt_base&#39;: &#39;T&#39;, &#39;note&#39;: &#39;&#39;, &#39;coding&#39;: &#39;Yes&#39;, &#39;hugo&#39;: &#39;PRAMEF12&#39;, &#39;transcript&#39;: &#39;ENST00000357726.4&#39;, &#39;so&#39;: &#39;synonymous&#39;, &#39;achange&#39;: &#39;A391A&#39;, &#39;all_mappings&#39;: &#39;{&quot;PRAMEF12&quot;:[[&quot;O95522&quot;,&quot;A391A&quot;,&quot;synonymous&quot;,&quot;ENST00000357726.4&quot;,&quot;G1173T&quot;]]}&#39;}}</span>
+<span class="go">&gt;&gt;r=requests.get(&#39;https://run.opencravat.org/submit/annotate?chrom=chr7&amp;pos=140753336&amp;ref_base=A&amp;alt_base=T&#39;)</span>
+<span class="go">&gt;&gt;r.json()</span>
+<span class="go">{&quot;segway_kidney&quot;: {&quot;fetal_kidney&quot;: &quot;Transcribed&quot;}, &quot;segway_lung&quot;: {&quot;fetal_lung&quot;: &quot;Transcribed&quot;}, &quot;segway_muscle&quot;: {&quot;fetal_muscle_trunk&quot;: &quot;Transcribed&quot;, &quot;skeletal_muscle_female&quot;: &quot;Transcribed&quot;, &quot;skeletal_muscle_male&quot;: &quot;Quiescent&quot;}, &quot;segway_ovary&quot;: {&quot;ovary&quot;: &quot;Quiescent&quot;}, &quot;abraom&quot;: null, &quot;biogrid&quot;: ..., &quot;thousandgenomes&quot;: null, &quot;thousandgenomes_ad_mixed_american&quot;: null, &quot;thousandgenomes_african&quot;: null, &quot;thousandgenomes_east_asian&quot;: null, &quot;thousandgenomes_european&quot;: null, &quot;thousandgenomes_south_asian&quot;: null, &quot;vest&quot;: null, &quot;crx&quot;: {&quot;uid&quot;: &quot;&quot;, &quot;chrom&quot;: &quot;chr7&quot;, &quot;pos&quot;: 140753336, &quot;ref_base&quot;: &quot;A&quot;, &quot;alt_base&quot;: &quot;T&quot;, &quot;note&quot;: &quot;&quot;, &quot;coding&quot;: &quot;Yes&quot;, &quot;hugo&quot;: &quot;BRAF&quot;, &quot;transcript&quot;: &quot;ENST00000288602.10&quot;, &quot;so&quot;: &quot;missense&quot;, &quot;achange&quot;: &quot;V600E&quot;, &quot;all_mappings&quot;: &quot;{\&quot;BRAF\&quot;:[[\&quot;P15056\&quot;,\&quot;V600E\&quot;,\&quot;missense\&quot;,\&quot;ENST00000288602.10\&quot;,\&quot;T1799A\&quot;]]}&quot;}}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="accessing-api-with-multi-user-opencravat">
+<h2>Accessing API with multi-user OpenCRAVAT<a class="headerlink" href="#accessing-api-with-multi-user-opencravat" title="Permalink to this headline">¶</a></h2>
+<p>The instruction above are based on OpenCRAVAT GUI run in the personal
+mode. If OpenCRAVAT GUI is run with –server option (multi-user mode), a
+session should be obtained and logged in first, as shown below. Then,
+replace <code class="docutils literal notranslate"><span class="pre">requests.get</span></code> and <code class="docutils literal notranslate"><span class="pre">requests.post</span></code> in the examples on this
+page with <code class="docutils literal notranslate"><span class="pre">session.get</span></code> and <code class="docutils literal notranslate"><span class="pre">session.post</span></code>.**</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;import requests</span>
+<span class="go">&gt;&gt;&gt;session = requests.Session()</span>
+<span class="go">&gt;&gt;&gt;session.get(&#39;https://run.opencravat.org/server/login&#39;, params={&#39;username&#39;: &#39;USERNAME&#39;, &#39;password&#39;: &#39;PASSWORD&#39;})</span>
+<span class="go">(Then, to log out from the session)</span>
+<span class="go">&gt;&gt;&gt;session.get(&#39;https://run.opencravat.org/server/logout&#39;)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Rick Kim, Kyle Moad, Kym Pagel, Madison Larsen, Michael Ryan, Rachel Karchin
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

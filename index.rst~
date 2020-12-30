@@ -22,6 +22,10 @@ OpenCRAVAT
   2.-Command-line-usage.rst
   3.-Viewing-Results.rst
   5.-GUI-usage.rst
+  Filter-Tutorial.rst
+  Uninstallation.rst
+  5.-GUI-usage.rst
+  Filter-Tutorial.rst
   Uninstallation.rst
   Update-Instructions.rst
 
@@ -29,24 +33,23 @@ OpenCRAVAT
   :hidden:
   :caption: Advanced
 
-  Filter-Tutorial.rst
   Case-Control.rst
   Cloud.rst
   API.rst
+  Reporter.rst
+  Release-Notes.rst
   Multiuser-support.rst
   OpenCRAVAT-Variant-Report.rst
-  Release-Notes.rst
+  File-Formats.rst
 
 .. toctree::
   :hidden:
   :caption: For contributors 
 
-  File-Formats.rst
   Annotator-Reference.rst
   Annotator-Tutorial.rst
-  Widget-Tutorial.rst
-  Reporter.rst
   Publish-an-Annotator.rst
+  Widget-Tutorial.rst
 
 `OpenCRAVAT <https://opencravat.org/>`__ is a python package that
 performs genomic variant interpretation including variant impact,

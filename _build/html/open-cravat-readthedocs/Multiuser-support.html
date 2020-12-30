@@ -1,0 +1,411 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Multiuser support &mdash; open-cravat  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> open-cravat
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Home.html">Intro to OpenCRAVAT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart-command-line.html">Command line quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1.-Installation-Instructions.html">Installation Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2.-Command-line-usage.html">Command line usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3.-Viewing-Results.html">Viewing results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5.-GUI-usage.html">GUI usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Uninstallation.html">Uninstallation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Update-Instructions.html">Update instructions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Filter-Tutorial.html">Filter tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Case-Control.html">Case-Control Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cloud.html">Cloud</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../API.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Multiuser-support.html">Multiuser support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OpenCRAVAT-Variant-Report.html">Variant Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Release-Notes.html">Release notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">For contributors</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../File-Formats.html">File Formats</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Annotator-Reference.html">Annotator reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Annotator-Tutorial.html">Annotator tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Widget-Tutorial.html">Widget tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Reporter.html">Reporter tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Publish-an-Annotator.html">Publish</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">open-cravat</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Multiuser support</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/open-cravat-readthedocs/Multiuser-support.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="multiuser-support">
+<h1>Multiuser support<a class="headerlink" href="#multiuser-support" title="Permalink to this headline">¶</a></h1>
+<p>OpenCRAVAT can be installed on a server to support multiple users each
+with their own login and workspace for analysis results.
+<a class="reference external" href="https://github.com/KarchinLab/open-cravat-multiuser">open-cravat-multiuser</a>
+is an add-on package to
+<a class="reference external" href="https://github.com/KarchinLab/open-cravat">OpenCRAVAT</a> and adds the
+support for multiple user accounts to OpenCRAVAT (from OpenCRAVAT
+1.6.0).</p>
+<div class="section" id="installation-and-requirements">
+<h2>Installation and requirements<a class="headerlink" href="#installation-and-requirements" title="Permalink to this headline">¶</a></h2>
+<p>Multiuser support is available through pip installation of the
+<code class="docutils literal notranslate"><span class="pre">open-cravat-multiuser</span></code> package after a normal installation of the
+<code class="docutils literal notranslate"><span class="pre">open-cravat</span></code> pip package.</p>
+<p>open-cravat-multiuser requires
+<a class="reference external" href="https://github.com/KarchinLab/open-cravat">OpenCRAVAT</a> &gt;= 1.6.0,
+aiohttp_session, and cryptography pip packages, which will be installed
+while open-cravat-multiuser is installed, if missing.</p>
+<p>Install open-cravat-multiuser package with the following command.</p>
+<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">open-cravat-multiuser</span></code></p>
+</div>
+<div class="section" id="server-configuration">
+<h2>Server Configuration<a class="headerlink" href="#server-configuration" title="Permalink to this headline">¶</a></h2>
+<p>The multiuser OpenCRAVAT should be configured to run on an appropriate
+port for the server on which it is installed. If port 80 is available,
+this will generally be the easiest to use. To set the port, first
+identify where the <code class="docutils literal notranslate"><span class="pre">cravat-system.yml</span></code> configuration file is located.
+Type:</p>
+<p><code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">config</span> <span class="pre">system</span></code></p>
+<p>The first line of output will display the directory of OpenCRAVAT
+configuration files. In this directory, edit the cravat-system.yml file
+and set the gui_port to the desired port. Example: <code class="docutils literal notranslate"><span class="pre">gui_port:</span> <span class="pre">80</span></code>.</p>
+<p>Note: you may need to make sure that the firewall on your server allows
+inbound http / https traffic on the specified port.</p>
+<p>OpenCRAVAT can support HTTPS. To setup HTTPS, see
+<a class="reference external" href="https://github.com/KarchinLab/open-cravat/wiki/5.-GUI-usage#https-support">here</a>.
+You can also setup https external to the OpenCRAVAT server in many ways.
+For example, some reverse proxies perform https to http functions.</p>
+</div>
+<div class="section" id="starting-multiuser-opencravat-server">
+<h2>Starting Multiuser OpenCRAVAT Server<a class="headerlink" href="#starting-multiuser-opencravat-server" title="Permalink to this headline">¶</a></h2>
+<p>The multiuser version of OpenCRAVAT is started with the normal
+<code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">gui</span></code> command with the <code class="docutils literal notranslate"><span class="pre">--multiuser</span></code> option. Since users will
+generally run this on a remote server, this flag will not open a local
+browser as <code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">gui</span></code> normally does. Start the server with the command:</p>
+<p><code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">gui</span> <span class="pre">--multiuser</span></code></p>
+</div>
+<div class="section" id="admin-login">
+<h2>Admin Login<a class="headerlink" href="#admin-login" title="Permalink to this headline">¶</a></h2>
+<p>The Multiuser OpenCRAVAT Server has a pre-configured administrator
+login. This login is capable of installing annotators on the server from
+the OpenCRAVAT store, changing server options, and reviewing general
+jobs statistics. Initially, the username and the password for the admin
+account are <code class="docutils literal notranslate"><span class="pre">admin</span></code> and <code class="docutils literal notranslate"><span class="pre">admin</span></code>, respectively. We strongly recommend
+changing the admin password after the initial login.</p>
+<div class="section" id="admin-tab">
+<h3>Admin tab<a class="headerlink" href="#admin-tab" title="Permalink to this headline">¶</a></h3>
+<p>Admin tab is only displayed for the admin user and shows job statistics
+for all jobs run on the system. Choose the date range of interest in
+<code class="docutils literal notranslate"><span class="pre">Date</span> <span class="pre">range</span></code> and click <code class="docutils literal notranslate"><span class="pre">Update</span></code>. Click <code class="docutils literal notranslate"><span class="pre">Export</span></code> to get the
+statistics as a tab-separated file.</p>
+<div class="figure align-default">
+<img alt="" src="../_images/multiuser_admin_21.png" />
+</div>
+</div>
+<div class="section" id="admin-jobs-tab">
+<h3>Admin - Jobs tab<a class="headerlink" href="#admin-jobs-tab" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">admin</span></code> account cannot submit jobs and the job list on the Jobs tab of
+the main page will show an additional column which will have the
+username of each job in the list.</p>
+<div class="figure align-default">
+<img alt="" src="../_images/multiuser_admin_11.png" />
+</div>
+</div>
+<div class="section" id="admin-system-setting">
+<h3>Admin System setting<a class="headerlink" href="#admin-system-setting" title="Permalink to this headline">¶</a></h3>
+<p>Settings icon (triple bar icon at the top right corner of the main page
+of OpenCRAVAT web interface) will show only when logged in as <code class="docutils literal notranslate"><span class="pre">admin</span></code>.
+Details of the system setting is
+<a class="reference external" href="https://github.com/KarchinLab/open-cravat/wiki/5.-GUI-usage#system-setting">here</a>.
+The important settings for an administrator to consider are the ‘Maximum
+number of concurrent jobs’ and ‘Maximum number of concurrent annotators
+per job’. These should be tuned to the machine where multiuser
+OpenCRAVAT is running. Concurrent annotators allow a single job to be
+processed more quickly and concurrent jobs allow multiple user jobs to
+be processed in parallel. If too many concurrent jobs and concurrent
+annotators are allowed to run, the CPUs may be overwhelmed and
+performance may degrade. It is also possible on this settings tab to
+change the location of annotators and user jobs to directories that are
+appropriate for the server.</p>
+</div>
+<div class="section" id="admin-store">
+<h3>Admin Store<a class="headerlink" href="#admin-store" title="Permalink to this headline">¶</a></h3>
+<p>In a multiuser server, only the admin will have permissions to install
+modules from the OpenCRAVAT store. Select the Store tab when logged in
+as admin to see the available modules and to install those that are
+appropriate for your group.</p>
+</div>
+</div>
+<div class="section" id="user-account-operations">
+<h2>User account operations<a class="headerlink" href="#user-account-operations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="connecting-and-creating-a-user-account">
+<h3>Connecting and Creating a user account<a class="headerlink" href="#connecting-and-creating-a-user-account" title="Permalink to this headline">¶</a></h3>
+<p>Users can connect to the multiuser OpenCRAVAT server just by entering
+its URL. If it was configured to run on port 80, a user can just enter
+the server name and connect to OpenCRAVAT. For example if multiuser
+OpenCRAVAT was installed on a server with a host name of ‘LabServer’ on
+port 80, the URL would be:</p>
+<p>‘<a class="reference external" href="http://LabServer/">http://LabServer/</a>’ or ‘<a class="reference external" href="https://LabServer">https://LabServer</a>’</p>
+<p>depending on whether https was configured. If it is running on a
+non-standard port, then the port number would need to be added to the
+URL. For example:</p>
+<p>‘<a class="reference external" href="http://LabServer:8060/">http://LabServer:8060/</a>’</p>
+<div class="figure align-default">
+<img alt="" src="../_images/multiuser_login1.png" />
+</div>
+<p>Click <code class="docutils literal notranslate"><span class="pre">Sign</span> <span class="pre">up</span></code> to create your user account.</p>
+<div class="figure align-default">
+<img alt="" src="../_images/multiuser_signup1.png" />
+</div>
+<p>Enter your email, password, and password again. <code class="docutils literal notranslate"><span class="pre">Question</span></code> and
+<code class="docutils literal notranslate"><span class="pre">Answer</span></code> are for retrieving your password. Enter your own password
+retrieval question and answer. Click <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">account</span></code>. If there is any
+error, the browser will notify. If your account has been successfully
+created, a success notification will show and you will be redirected to
+the main page of OpenCRAVAT web interface.</p>
+</div>
+<div class="section" id="login">
+<h3>Login<a class="headerlink" href="#login" title="Permalink to this headline">¶</a></h3>
+<p>On the login page, enter your email and password and type <code class="docutils literal notranslate"><span class="pre">Enter</span></code> or
+click <code class="docutils literal notranslate"><span class="pre">Login</span></code>. If login is successful, you will be redirected to the
+main page of OpenCRAVAT web interface.</p>
+<div class="figure align-default">
+<img alt="" src="../_images/multiuser_login1.png" />
+</div>
+</div>
+<div class="section" id="retrieving-password">
+<h3>Retrieving password<a class="headerlink" href="#retrieving-password" title="Permalink to this headline">¶</a></h3>
+<p>If you forgot your password, on the login page, click
+<code class="docutils literal notranslate"><span class="pre">Forgot</span> <span class="pre">password?</span></code>. Below page will show.</p>
+<div class="figure align-default">
+<img alt="" src="../_images/multiuser_forgotpassword_11.png" />
+</div>
+<p>Enter your email and click <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">password</span> <span class="pre">question</span></code>. You will be
+directed to the next page of password retrieval, which will show the
+password retrieval question you entered while creating your account.</p>
+<div class="figure align-default">
+<img alt="" src="../_images/multiuser_forgotpassword_21.png" />
+</div>
+<p>Type the password retrieval answer you entered while creating your
+account and click <code class="docutils literal notranslate"><span class="pre">Submit</span></code>. If the answer is right, a popup will show
+which states that your password has been reset to a temporary password
+shown on the popup.</p>
+<div class="figure align-default">
+<img alt="" src="../_images/multiuser_forgotpassword_31.png" />
+</div>
+<p>Click <code class="docutils literal notranslate"><span class="pre">Ok</span></code> on the popup and the browser will show the login page
+again. Enter your email and the temporary password to login. You will be
+redirected to the main page of OpenCRAVAT web interface.</p>
+</div>
+<div class="section" id="change-password">
+<h3>Change password<a class="headerlink" href="#change-password" title="Permalink to this headline">¶</a></h3>
+<p>At the top right corner of the main page of OpenCRAVAT web interface,
+your email, change password icon, and logout icon are shown.</p>
+<div class="figure align-default">
+<img alt="" src="../_images/multiuser_main_11.png" />
+</div>
+<p>Click the change password icon to change your password. Enter your
+current password in <code class="docutils literal notranslate"><span class="pre">Old</span> <span class="pre">password</span></code>, and a new password in both
+<code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">password</span></code> and <code class="docutils literal notranslate"><span class="pre">Retype</span> <span class="pre">new</span> <span class="pre">password</span></code>. Click <code class="docutils literal notranslate"><span class="pre">Submit</span></code> to finish
+the password change.</p>
+<div class="figure align-default">
+<img alt="" src="../_images/multiuser_main_21.png" />
+</div>
+</div>
+<div class="section" id="logout">
+<h3>Logout<a class="headerlink" href="#logout" title="Permalink to this headline">¶</a></h3>
+<p>Click the logout button to logout. You will be redirected to the login
+page.</p>
+<div class="figure align-default">
+<img alt="" src="../_images/multiuser_main_11.png" />
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Rick Kim, Kyle Moad, Kym Pagel, Madison Larsen, Michael Ryan, Rachel Karchin
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

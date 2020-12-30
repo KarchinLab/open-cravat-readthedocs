@@ -1,0 +1,617 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Annotator Tutorial &mdash; open-cravat  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> open-cravat
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Home.html">Intro to OpenCRAVAT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart-command-line.html">Command line quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1.-Installation-Instructions.html">Installation Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2.-Command-line-usage.html">Command line usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3.-Viewing-Results.html">Viewing results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5.-GUI-usage.html">GUI usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Uninstallation.html">Uninstallation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Update-Instructions.html">Update instructions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Filter-Tutorial.html">Filter tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Case-Control.html">Case-Control Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cloud.html">Cloud</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../API.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Multiuser-support.html">Multiuser support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OpenCRAVAT-Variant-Report.html">Variant Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Release-Notes.html">Release notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">For contributors</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../File-Formats.html">File Formats</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Annotator-Reference.html">Annotator reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Annotator-Tutorial.html">Annotator tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Widget-Tutorial.html">Widget tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Reporter.html">Reporter tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Publish-an-Annotator.html">Publish</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">open-cravat</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Annotator Tutorial</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/open-cravat-readthedocs/Annotator-Tutorial.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="annotator-tutorial">
+<h1>Annotator Tutorial<a class="headerlink" href="#annotator-tutorial" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="writing-an-annotator">
+<h2>Writing an Annotator<a class="headerlink" href="#writing-an-annotator" title="Permalink to this headline">¶</a></h2>
+<p>Method developers and researchers can make their results available by
+packaging them as an OpenCRAVAT annotator and then publishing them to
+the OpenCRAVAT Store. Annotators typically include a database of
+annotations for fast high-throughput analysis of large variant files.
+The preferred storage mechanism for annotator reference data is sqlite
+databases, but other formats can be used.</p>
+<p>This page provides a tutorial for writing an annotator from start to
+finish. For detailed documentation on each component of an annotator,
+try <a class="reference external" href="./Annotator-Reference">Annotator Reference</a></p>
+<p>The completed annotator from this tutorial can be seen at the
+<a class="reference external" href="https://github.com/KarchinLab/open-cravat-modules-karchinlab/tree/master/annotators/example">OpenCRAVAT Modules
+repository</a>,
+which also contains the code for most other annotators.</p>
+<div class="section" id="locating-the-modules-directory">
+<h3>Locating The Modules Directory<a class="headerlink" href="#locating-the-modules-directory" title="Permalink to this headline">¶</a></h3>
+<p>To begin writing a new annotator, first locate the path to the modules
+directory using the command <code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">config</span> <span class="pre">md</span></code>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ oc config md
+/PythonRoot/lib/site-packages/cravat/modules
+</pre></div>
+</div>
+<p>The modules directory contains all OpenCRAVAT modules, split into
+sub-directories by type. Annotator modules will be found in the
+sub-directory <code class="docutils literal notranslate"><span class="pre">annotators</span></code>. This is where a developer will create
+their own annotator.</p>
+<p>Developers can change the modules directory by passing the new directory
+as an argument to <code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">config</span> <span class="pre">md</span></code>. The command changes the directory
+that OpenCRAVAT searches for modules. The command does not move
+currently installed modules to the new directory, which must be done
+manually if desired.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ oc config md /my/custom/modules/location
+/my/custom/modules/location
+$ oc config md
+/my/custom/modules/location
+</pre></div>
+</div>
+</div>
+<div class="section" id="starting-from-the-template">
+<h3>Starting from the Template<a class="headerlink" href="#starting-from-the-template" title="Permalink to this headline">¶</a></h3>
+<p>In this tutorial, an annotator will be created to display
+<a class="reference external" href="https://sift.bii.a-star.edu.sg">SIFT</a> scores for BRCA1. For each
+variant, the annotator will return the SIFT score, a prediction of
+Pathogenic or Tolerated, and the number of sequences SIFT analyzed at
+the position.</p>
+<p>To start, use <code class="docutils literal notranslate"><span class="pre">oc</span></code> to create a new annotator.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ oc new annotator example
+annotator example created at /md/example
+</pre></div>
+</div>
+<p>This will create a few files at <code class="docutils literal notranslate"><span class="pre">/md/annotators/example</span></code></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>example/
+    |───example.md
+    |───example.yml
+    |───example.py
+    └───data/
+        └───example.sqlite
+</pre></div>
+</div>
+</div>
+<div class="section" id="getting-data">
+<h3>Getting data<a class="headerlink" href="#getting-data" title="Permalink to this headline">¶</a></h3>
+<p>Most of the work of creating an annotator is usually spent creating a
+database from the original data source. To save time, we’ve premade
+<a class="reference external" href="https://github.com/KarchinLab/open-cravat-modules-karchinlab/blob/master/annotators/example/data/example.sqlite?raw=true">example.sqlite</a>
+from the data at <a class="reference external" href="https://sift.bii.a-star.edu.sg/sift4g/public/Homo_sapiens/GRCh38.83.chr/">SIFT’s
+website</a>.
+Replace the existing example.sqlite with this one.</p>
+<p>The database consists of a single table, with one row per single
+nucleotide variant in BRCA1.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 23%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 17%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>chrom</p></th>
+<th class="head"><p>pos</p></th>
+<th class="head"><p>ref</p></th>
+<th class="head"><p>alt</p></th>
+<th class="head"><p>score</p></th>
+<th class="head"><p>nseq</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>chr17</p></td>
+<td><p>43045706</p></td>
+<td><p>A</p></td>
+<td><p>T</p></td>
+<td><p>0.001</p></td>
+<td><p>24</p></td>
+</tr>
+<tr class="row-odd"><td><p>chr17</p></td>
+<td><p>43045707</p></td>
+<td><p>T</p></td>
+<td><p>A</p></td>
+<td><p>0.012</p></td>
+<td><p>24</p></td>
+</tr>
+<tr class="row-even"><td><p>chr17</p></td>
+<td><p>43045707</p></td>
+<td><p>T</p></td>
+<td><p>C</p></td>
+<td><p>0.965</p></td>
+<td><p>24</p></td>
+</tr>
+<tr class="row-odd"><td><p>chr17</p></td>
+<td><p>43045707</p></td>
+<td><p>T</p></td>
+<td><p>G</p></td>
+<td><p>0.012</p></td>
+<td><p>24</p></td>
+</tr>
+</tbody>
+</table>
+<p>Next, we will edit <code class="docutils literal notranslate"><span class="pre">example.py</span></code> to query the database and return the
+data we need.</p>
+</div>
+<div class="section" id="querying-annotations">
+<h3>Querying annotations<a class="headerlink" href="#querying-annotations" title="Permalink to this headline">¶</a></h3>
+<p>In <code class="docutils literal notranslate"><span class="pre">example.py</span></code> there is a python class, <code class="docutils literal notranslate"><span class="pre">CravatAnnotator</span></code> with
+three methods: <code class="docutils literal notranslate"><span class="pre">setup</span></code>, <code class="docutils literal notranslate"><span class="pre">annotate</span></code>, and <code class="docutils literal notranslate"><span class="pre">cleanup</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cravat</span> <span class="kn">import</span> <span class="n">BaseAnnotator</span>
+
+<span class="k">class</span> <span class="nc">CravatAnnotator</span><span class="p">(</span><span class="n">BaseAnnotator</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">setup</span><span class="p">():</span>
+        <span class="c1"># ... setup code will go here ...</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span> <span class="nf">annotate</span><span class="p">(</span><span class="n">input_data</span><span class="p">,</span> <span class="n">secondary_data</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="c1"># ... annotate code will go here ...</span>
+        <span class="k">return</span> <span class="n">out</span>
+
+    <span class="k">def</span> <span class="nf">cleanup</span><span class="p">():</span>
+        <span class="c1"># ... cleanup code will go here ...</span>
+        <span class="k">pass</span>
+</pre></div>
+</div>
+<p>In this tutorial, we will only edit <code class="docutils literal notranslate"><span class="pre">annotate</span></code>. Setup and cleanup are
+called once each to open and close connections to data sources. But
+OpenCRAVAT will automatically connect to
+<code class="docutils literal notranslate"><span class="pre">example/data/example.sqlite</span></code>, and create a database connection
+<code class="docutils literal notranslate"><span class="pre">self.dbconn</span></code>, and a cursor <code class="docutils literal notranslate"><span class="pre">self.cursor</span></code>. Annotate is called once
+for each variant.</p>
+<p>More detailed descriptions of the uses of each of these methods can be
+found in the <a class="reference external" href="./Annotator-Reference#annotatorpy">annotator.py</a>
+detailed reference.</p>
+<p><code class="docutils literal notranslate"><span class="pre">annotate</span></code> will take three general steps for each variant 1) Accept
+input data from OpenCRAVAT describing the variant 2) Query the database
+for annotations 3) Format and return any annotations</p>
+<p>Variants are passed to <code class="docutils literal notranslate"><span class="pre">annotate</span></code> in the <code class="docutils literal notranslate"><span class="pre">input_data</span></code> dictionary.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;uid&#39;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="c1">#The internal id of this input line. Seldom used.</span>
+    <span class="s1">&#39;chrom&#39;</span> <span class="p">:</span> <span class="s1">&#39;chr10&#39;</span><span class="p">,</span> <span class="c1"># The chromosome name</span>
+    <span class="s1">&#39;pos&#39;</span> <span class="p">:</span> <span class="mi">87864486</span><span class="p">,</span> <span class="c1"># The genomic position of the first affected nucleotide</span>
+    <span class="s1">&#39;ref_base&#39;</span> <span class="p">:</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="c1"># The reference base(s)</span>
+    <span class="s1">&#39;alt_base&#39;</span> <span class="p">:</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="c1"># The alternate base(s)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>``pos`` is in the 1-based GRCh38 coordinate system.</strong> If the original
+input is in hg19, the position converted to hg38 before reaching this
+point.</p>
+<p>Add code to <code class="docutils literal notranslate"><span class="pre">annotate</span></code> to extract the variables needed</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">chrom</span> <span class="o">=</span> <span class="n">input_data</span><span class="p">[</span><span class="s1">&#39;chrom&#39;</span><span class="p">]</span>
+<span class="n">pos</span> <span class="o">=</span> <span class="n">input_data</span><span class="p">[</span><span class="s1">&#39;pos&#39;</span><span class="p">]</span>
+<span class="n">ref_base</span> <span class="o">=</span> <span class="n">input_data</span><span class="p">[</span><span class="s1">&#39;ref_base&#39;</span><span class="p">]</span>
+<span class="n">alt_base</span> <span class="o">=</span> <span class="n">input_data</span><span class="p">[</span><span class="s1">&#39;alt_base&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Next, create a query and select data from the database.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;select score, nseq from sift where chrom=&quot;</span><span class="si">{</span><span class="n">chrom</span><span class="si">}</span><span class="s1">&quot; and pos=</span><span class="si">{</span><span class="n">pos</span><span class="si">}</span><span class="s1"> and ref=&quot;</span><span class="si">{</span><span class="n">ref_base</span><span class="si">}</span><span class="s1">&quot; and alt=&quot;</span><span class="si">{</span><span class="n">alt_base</span><span class="si">}</span><span class="s1">&quot;;&#39;</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cursor</span><span class="o">.</span><span class="n">fetchone</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Finally, format and return the data. You must return data as a
+dictionary with a key for each output column. If there is no data for a
+variant, return <code class="docutils literal notranslate"><span class="pre">None</span></code>. In this case, one of our columns was not
+stored in the database to save space, we we must compute it.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="n">score</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">num_seq</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">score</span> <span class="o">&lt;=</span> <span class="mf">0.05</span><span class="p">:</span>
+        <span class="n">prediction</span> <span class="o">=</span> <span class="s1">&#39;Damaging&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">prediction</span> <span class="o">=</span> <span class="s1">&#39;Tolerated&#39;</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s1">&#39;score&#39;</span><span class="p">:</span> <span class="n">score</span><span class="p">,</span>
+        <span class="s1">&#39;seq_count&#39;</span><span class="p">:</span> <span class="n">num_seq</span><span class="p">,</span>
+        <span class="s1">&#39;prediction&#39;</span><span class="p">:</span> <span class="n">prediction</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">return</span> <span class="kc">None</span>
+</pre></div>
+</div>
+<p>At this point, <code class="docutils literal notranslate"><span class="pre">annotate</span></code> should look like this.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">annotate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_data</span><span class="p">,</span> <span class="n">secondary_data</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">chrom</span> <span class="o">=</span> <span class="n">input_data</span><span class="p">[</span><span class="s1">&#39;chrom&#39;</span><span class="p">]</span>
+    <span class="n">pos</span> <span class="o">=</span> <span class="n">input_data</span><span class="p">[</span><span class="s1">&#39;pos&#39;</span><span class="p">]</span>
+    <span class="n">ref_base</span> <span class="o">=</span> <span class="n">input_data</span><span class="p">[</span><span class="s1">&#39;ref_base&#39;</span><span class="p">]</span>
+    <span class="n">alt_base</span> <span class="o">=</span> <span class="n">input_data</span><span class="p">[</span><span class="s1">&#39;alt_base&#39;</span><span class="p">]</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;select score, nseq from sift where chrom=&quot;</span><span class="si">{</span><span class="n">chrom</span><span class="si">}</span><span class="s1">&quot; and pos=</span><span class="si">{</span><span class="n">pos</span><span class="si">}</span><span class="s1"> and ref=&quot;</span><span class="si">{</span><span class="n">ref_base</span><span class="si">}</span><span class="s1">&quot; and alt=&quot;</span><span class="si">{</span><span class="n">alt_base</span><span class="si">}</span><span class="s1">&quot;;&#39;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cursor</span><span class="o">.</span><span class="n">fetchone</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">score</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">num_seq</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">score</span> <span class="o">&lt;=</span> <span class="mf">0.05</span><span class="p">:</span>
+            <span class="n">prediction</span> <span class="o">=</span> <span class="s1">&#39;Damaging&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">prediction</span> <span class="o">=</span> <span class="s1">&#39;Tolerated&#39;</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s1">&#39;score&#39;</span><span class="p">:</span> <span class="n">score</span><span class="p">,</span>
+            <span class="s1">&#39;seq_count&#39;</span><span class="p">:</span> <span class="n">num_seq</span><span class="p">,</span>
+            <span class="s1">&#39;prediction&#39;</span><span class="p">:</span> <span class="n">prediction</span><span class="p">,</span>
+        <span class="p">}</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>
+</pre></div>
+</div>
+<p>Before we run the annotator, we need to tell OpenCRAVAT how to interpret
+and display the results. We do this in the config file <code class="docutils literal notranslate"><span class="pre">example.yml</span></code>.</p>
+</div>
+<div class="section" id="displaying-results">
+<h3>Displaying results<a class="headerlink" href="#displaying-results" title="Permalink to this headline">¶</a></h3>
+<p>The annotator config file tells OpenCRAVAT what columns to expect from
+the <code class="docutils literal notranslate"><span class="pre">annotate</span></code> method, and how to display them in the results. It also
+contains display hints and metadata for the annotator itself, and
+attribution to the original data source.</p>
+<p>The annotator uses <a class="reference external" href="https://learnxinyminutes.com/docs/yaml/">yaml</a>
+format, which is more readable representation of JSON, and python
+dictionaries.</p>
+<p>To start, make a few edits to the parts that describe the annotator
+itself. Be sure to edit the relevant lines in the yml, don’t add new
+lines.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">title</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Example (SIFT BRCA1)</span>
+<span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1.0.0</span>
+<span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Example annotator. BRCA1 scores from SIFT, a variant effect predictor.</span>
+</pre></div>
+</div>
+<p>Next, replace the <code class="docutils literal notranslate"><span class="pre">output_columns</span></code> section with this.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">output_columns</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">prediction</span>
+  <span class="nt">title</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Prediction</span>
+  <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">score</span>
+  <span class="nt">title</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Score</span>
+  <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">float</span>
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">seq_count</span>
+  <span class="nt">title</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Seqs at Position</span>
+  <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">int</span>
+</pre></div>
+</div>
+<p>Three keys are needed to describe each column - <code class="docutils literal notranslate"><span class="pre">name</span></code> is the internal
+identifier of the column, it must <em>exactly</em> match one of the keys in the
+dictionary returned from <code class="docutils literal notranslate"><span class="pre">annotate</span></code>. Column names should only include
+lowercase letters, numbers, and underscores. Names cannot have two
+underscores in a row, and cannot start with a number. - <code class="docutils literal notranslate"><span class="pre">title</span></code> is the
+display name of the column, it will be shown in place of the name in
+reports whenever possible. - <code class="docutils literal notranslate"><span class="pre">type</span></code> is the type of the column data.
+Choose from <code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, or <code class="docutils literal notranslate"><span class="pre">int</span></code>.</p>
+<p>Many more keys can be added to output columns to change their behavior
+in reports. Three are worth including in this annotator. Edit the yml
+again so that it shows:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">output_columns</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">prediction</span>
+  <span class="nt">title</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Prediction</span>
+  <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">string</span>
+  <span class="nt">desc</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Tolerated if Score &gt; 0.05. Damaging if Score &lt;= 0.05</span>
+  <span class="nt">width</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">70</span>
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">score</span>
+  <span class="nt">title</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Score</span>
+  <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">float</span>
+  <span class="nt">desc</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Ranges from 0 to 1</span>
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">seq_count</span>
+  <span class="nt">title</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Seqs at Position</span>
+  <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">int</span>
+  <span class="nt">desc</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Number of sequences scored by SIFT at this position</span>
+  <span class="nt">width</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">60</span>
+  <span class="nt">hidden</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">desc</span></code> key is a longer description of a column. It shows up when
+the mouse hovers over a column in the GUI. The <code class="docutils literal notranslate"><span class="pre">width</span></code> key controls
+the width of the column in the GUI. It is measured in CSS pixels.
+Finally, <code class="docutils literal notranslate"><span class="pre">hidden:</span> <span class="pre">true</span></code> will hide a column by default in the GUI. To
+conserve space, most annotators should only show 3 or fewer default
+columns.</p>
+<p>A full list of accepted and required config properties can be found at
+the <code class="docutils literal notranslate"><span class="pre">`annotator.yml</span></code> &lt;./Annotator-Reference#annotatoryml&gt;`__ reference
+documentation.</p>
+</div>
+<div class="section" id="running-the-annotator">
+<h3>Running the annotator<a class="headerlink" href="#running-the-annotator" title="Permalink to this headline">¶</a></h3>
+<p>At this point, the annotator should have everything it needs to run.
+<a class="reference external" href="https://raw.githubusercontent.com/KarchinLab/open-cravat-modules-karchinlab/master/annotators/example/test/input.vcf">This vcf
+file</a>
+contains a few pathogenic and tolerated BRCA1 variants, and one variant
+not on BRCA1. Run it with <code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">run</span> <span class="pre">input.vcf</span> <span class="pre">-a</span> <span class="pre">example</span></code> and check out
+the output with <code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">gui</span> <span class="pre">input.vcf.sqlite</span></code>. It should look something
+like</p>
+<div class="figure align-default">
+<img alt="" src="../_images/example-annotator-gui1.png" />
+</div>
+</div>
+<div class="section" id="the-sqlite-database">
+<h3>The sqlite database<a class="headerlink" href="#the-sqlite-database" title="Permalink to this headline">¶</a></h3>
+<p>After all annotatos are finished, OpenCRAVAT aggregates all annotations
+into a sqlite database. It can be helpful to know how to find your
+annotators output in the database.</p>
+<p>Variant level annotations are written to a table called <code class="docutils literal notranslate"><span class="pre">variant</span></code>. The
+column names are made by combining the <em>annotator name</em> and the <em>column
+name</em> with a double undersore. So, for our annotator, the database
+columns are called <code class="docutils literal notranslate"><span class="pre">example__score</span></code>, <code class="docutils literal notranslate"><span class="pre">example__prediction</span></code>, and
+<code class="docutils literal notranslate"><span class="pre">example__seq_count</span></code>.</p>
+<p>The config for each output column is written to the <code class="docutils literal notranslate"><span class="pre">variant_header</span></code>
+table, and the config data for the annotator is writted to the
+<code class="docutils literal notranslate"><span class="pre">variant_annotator</span></code> table.</p>
+<p><a class="reference external" href="https://sqlitebrowser.org/">DB Browser for SQLite</a> is an excellent
+cross-platform GUI for reading sqlite files.</p>
+</div>
+<div class="section" id="debugging">
+<h3>Debugging<a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="finding-errors">
+<h4>Finding Errors<a class="headerlink" href="#finding-errors" title="Permalink to this headline">¶</a></h4>
+<p>When oc runs, two logs files are created: <code class="docutils literal notranslate"><span class="pre">input.vcf.log</span></code> and
+<code class="docutils literal notranslate"><span class="pre">input.vcf.err</span></code>. Exceptions raised by <code class="docutils literal notranslate"><span class="pre">example.py</span></code> will show up in
+these two places. The traceback is put in .log, and the variant causing
+the exception is put in .err. If the same exception occurs again, .log
+is not written, but .err contains all variants that caused an exception.</p>
+</div>
+</div>
+<div class="section" id="raw-annotator-output">
+<h3>Raw annotator output<a class="headerlink" href="#raw-annotator-output" title="Permalink to this headline">¶</a></h3>
+<p>Remove any output files from a previous run, and run oc again with the
+<code class="docutils literal notranslate"><span class="pre">--temp-files</span></code> flag. This will keep temporary files around after the
+job finishes.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm input.vcf.*
+oc run input.vcf -a example --temp-files
+</pre></div>
+</div>
+<p>There should be a file called <code class="docutils literal notranslate"><span class="pre">input.vcf.crv.example.var</span></code>. This is the
+raw output of the example annotator. It includes some header lines with
+information from the module config, and tab separated data lines.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>#name=example
+#displayname=Example (SIFT BRCA1)
+#version=1.0.0
+#column={&quot;index&quot;: 0, &quot;name&quot;: &quot;uid&quot;, &quot;title&quot;: &quot;UID&quot;, &quot;type&quot;: &quot;int&quot;,...
+#column={&quot;index&quot;: 1, &quot;name&quot;: &quot;prediction&quot;, &quot;title&quot;: &quot;Prediction&quot;, ...
+#column={&quot;index&quot;: 2, &quot;name&quot;: &quot;score&quot;, &quot;title&quot;: &quot;Score&quot;, &quot;type&quot;: ...
+#column={&quot;index&quot;: 3, &quot;name&quot;: &quot;seq_count&quot;, &quot;title&quot;: &quot;Seqs at ...
+#no_aggregate=
+#UID    Prediction  Score   Seqs at Position
+2   Damaging    0.004   26
+3   Tolerated   1.0 18
+4   Damaging    0.0 18
+5   Damaging    0.0 18
+6   Tolerated   0.128   17
+</pre></div>
+</div>
+<div class="section" id="running-directly">
+<h4>Running directly<a class="headerlink" href="#running-directly" title="Permalink to this headline">¶</a></h4>
+<p>It’s possible to run an annotator without running all of OpenCRAVAT.
+Clean the working directory, then run oc but end at the mapper stage.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm input.vcf.*
+oc run input.vcf --endat mapper
+</pre></div>
+</div>
+<p>At this point, there is a file, <code class="docutils literal notranslate"><span class="pre">input.vcf.crv</span></code> that contains all of
+the variants in your input file. You can pass this file to the annotator
+to create <code class="docutils literal notranslate"><span class="pre">input.vcf.crv.example.var</span></code> directly.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3 md/annotators/example/example.py input.vcf.crv
+</pre></div>
+</div>
+<p>When run this way, the <code class="docutils literal notranslate"><span class="pre">.log</span></code> and <code class="docutils literal notranslate"><span class="pre">.err</span></code> files will be
+<code class="docutils literal notranslate"><span class="pre">input.vcf.crv.log</span></code> and <code class="docutils literal notranslate"><span class="pre">input.vcf.crv.err</span></code>.</p>
+<p>This method can be used to run annotators with debuggers in most IDEs
+like VSCode, Spyder, or Jupyter.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Rick Kim, Kyle Moad, Kym Pagel, Madison Larsen, Michael Ryan, Rachel Karchin
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
