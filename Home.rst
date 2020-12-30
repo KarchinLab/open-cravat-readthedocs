@@ -1,5 +1,6 @@
-OpenCRAVAT
-==========
+===================
+Intro to OpenCRAVAT
+===================
 
 `OpenCRAVAT <https://opencravat.org/>`__ is a python package that
 performs genomic variant interpretation including variant impact,

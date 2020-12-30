@@ -1,0 +1,221 @@
+.. role:: raw-latex(raw)
+   :format: latex
+..
+
+=========================
+Installation Instructions
+=========================
+
+You can bypass the installation steps below by using Windows or Mac OS
+Installer of OpenCRAVAT.
+
+**Windows users**: `Windows
+installer <http://karchinlab.org/opencravat/installers/open-cravat-2.2.1.exe>`__
+
+Windows Defender may indicate that it prevented an unknown application
+from running. If so, click the 'More' link on the message and then
+select 'Run Anyway'. An "OpenCRAVAT" icon will be created on the Desktop
+and the Start Menu. Double-click the OpenCRAVAT icon to launch the web
+interface.
+
+**Mac users**: `Mac installer <http://karchinlab.org/opencravat/installers/OpenCRAVAT.2.2.1.pkg>`__
+
+Right-click the downloaded file and select "Open". Your Mac may ask you
+to confirm stating that the file was not downloaded from the App Store.
+Click "Open" button. Just double-clicking the installer may not enable
+this "Open" option.
+
+Installing with pip
+-------------------
+
+To install Open-CRAVAT you need Python 3.6 or newer. If you do not have
+Python 3, install it using an installation file provided by
+`python.org <http://www.python.org>`__.
+
+Linux
+~~~~~
+
+On linux, OpenCRAVAT is installed with the
+`'open-cravat' <https://pypi.org/project/open-cravat/>`__ pip package.
+The steps for installation are different if you are installing for a
+single user, or all users system.
+
+For a single user, we recommend the following methods.
+
+1) Use a virtual environment such as
+   `venv <https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments>`__,
+   or
+   `conda <https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html>`__.
+
+2) Install to your home directory with
+   ``pip3 install --user open-cravat``
+
+To install for all users, run pip as root with
+``sudo pip3 install open-cravat``. Pip will place the ``oc`` executable
+at a location accessible to all users, probably ``/usr/local/bin``. All
+users will be able to use ``oc`` to run jobs. However, only root will be
+able to install modules, or launch the gui. Unfortunately, in many
+systems ``/usr/local/bin`` is not in root's path. This can be solved by
+linking ``oc`` to a directory in root's path, such as
+``sudo ln -s /usr/local/bin/oc /usr/bin/oc``.
+
+Mac
+~~~
+
+We recommend installing Python 3 using the installation file provided at
+`python.org <http://www.python.org>`__ instead of using any other manual
+way of installing Python 3. After installing Python 3, a new terminal
+should be opened and used in executing the below commands.
+
+Windows
+~~~~~~~
+
+To install the openCRAVAT python package, run the following command in a
+command line shell.
+
+``pip3 install open-cravat``
+
+If you use Windows and if your Python 3 is installed inside of a
+system-level folder such as "C::raw-latex:`\Program `Files", you may
+have a problem with running open-cravat without the admin privilege. In
+this case, we recommend installing Python 3 outside of system-level
+folders and then installing open-cravat.
+
+**PyYAML error:** If you experience an error such as
+``ERROR: Cannot uninstall 'PyYAML'. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.``,
+use a virtual environment or try
+``pip install --ignore-installed PyYAML``.
+
+**For Ubuntu:** pip3 provided by apt does not install executables
+properly. We recommend the following steps before proceeding.
+``sudo apt remove python-pip`` if pip3 has already been installed with
+apt. Then ``wget https://bootstrap.pypa.io/get-pip.py`` and
+``sudo python3 get-pip.py``. For system-wide use of OpenCRAVAT, the
+following suggestion works: Install OpenCRAVAT with ``sudo``
+(``sudo pip3 install open-cravat``), Use ``sudo`` for
+``oc module install/uninstall/update`` and ``oc gui``. Use without
+``sudo`` for ``oc run`` and ``oc gui job.sqlite`` commands.
+
+Install Base Components
+-----------------------
+
+OpenCRAVAT needs a set of base modules to function (converters, a
+mapper, an aggregator and reporters). The mapper has a full GRCh38 gene
+set database so will require 2GB of space to install.
+
+``oc module install-base``
+
+Running the web interface
+-------------------------
+
+Once the base install is complete, the OpenCRAVAT browser based GUI
+interface can be used to install annotators, submit, and view jobs. This
+can be done by following the instructions in the `GUI usage
+page <https://github.com/KarchinLab/open-cravat/wiki/5.-GUI-usage>`__.
+
+Alternatively, users who prefer a command line interface should proceed
+by reading the following sections.
+
+Install Annotators
+------------------
+
+OpenCRAVAT is a modular system that enables users to install and run
+just those variant analysis modules that are relevant to their study.
+The OpenCRAVAT Store includes a wide variety of variant interpretation
+modules developed by both CRAVAT team members and by other members of
+the variant interpretation community. For example the **grasp**
+annotator provides GWAS associations for variants and **vest** provides
+scores that predicts pathogenicity. Annotators for both coding and
+non-coding variants are available.
+
+To search the CRAVAT Store to see available annotators run:
+
+``oc module ls -a -t annotator``
+
+The result of this command is a list of available annotators that also
+indicates which annotators you have installed.
+
++-------------+-------------+------------------+-------------+---------------------+--------------+
+| Name        | Type        | Latest version   | Installed   | Installed version   | Up-to-date   |
++=============+=============+==================+=============+=====================+==============+
+| cgc         | anotator    | 1.0.0            | False       |                     |              |
++-------------+-------------+------------------+-------------+---------------------+--------------+
+| chasmplus   | anotator    | 1.0.0            | False       |                     |              |
++-------------+-------------+------------------+-------------+---------------------+--------------+
+| clinvar     | anotator    | 1.0.0            | False       |                     |              |
++-------------+-------------+------------------+-------------+---------------------+--------------+
+| cosmic      | anotator    | 1.0.0            | True        | 1.0.0               | True         |
++-------------+-------------+------------------+-------------+---------------------+--------------+
+| **. . .**   | **. . .**   | **. . .**        | **. . .**   | **. . .**           | **. . .**    |
++-------------+-------------+------------------+-------------+---------------------+--------------+
+
+To get a more detailed description for a module of interest, type:
+
+``oc module info <annotator name>``
+
+When you identify an annotator in the list above that you wish to use,
+install it with the command:
+
+``oc module install <annotator name>``
+
+For example: ``oc module install clinvar``
+
+Only those annotators that are useful for your study need to be
+installed. Many annotators include large reference data sets, which will
+take time to install and may require substantial disk space. A progress
+bar will indicate the portion of the data which has been downloaded as
+it runs.
+
+Updating Annotators
+-------------------
+
+Update all modules with ``oc module update``. To update specific modules
+use ``oc module update [module1] [module2]`` As mentioned above, the
+``oc module ls -a`` command will indicate if the version of a module
+installed locally is out of date.
+
+Moving Modules Directory
+------------------------
+
+The OpenCRAVAT pip package will normally be installed in your local
+Python site-packages directory. All of the additional annotators and
+other CRAVAT modules will be installed in the 'modules' directory of the
+OpenCRAVAT package. By default, this will be in the CRAVAT package in
+the site-packages directory. Occasionally the size of the module
+reference data is an issue on the drive where the Python site-packages
+are stored. If this is the case, you can relocate the CRAVAT modules
+directory to a different drive.
+
+Use ``oc config md`` to see where modules are currently stored. To
+change the modules directory, copy data from the old modules directory
+to the new one, then use ``oc config md [new directory]`` to point
+OpencRAVAT to the new directory.
+
+Installing Viewer Widgets
+-------------------------
+
+When OpenCRAVAT analysis is complete, one method of exploring the
+results is to use the graphical interactive results viewer **oc gui**.
+The oc gui program needs visualization widgets related to the annotators
+used in the CRAVAT analysis. In the future the viewer will be augmented
+to dynamically obtain all required viewer widgets. In the interim, if
+you plan to use the ``oc gui`` program to explore results, you need to
+install the appropriate viewer widgets. The base widgets for each
+annotator have a name that matches the annotator name with a 'wg'
+prefix. For example the cosmic annotator results are displayed with the
+wgcosmic viewer widget. To see available widgets:
+
+``oc module ls -a -t webviewerwidget``
+
+To install a widget:
+
+``oc module install widgetName``
+
+Multiuser GUI support
+---------------------
+
+OpenCRAVAT's web interface can have multiple user accounts by installing
+`open-cravat-multiuser <https://github.com/KarchinLab/open-cravat/wiki/Multiuser-support>`__
+package (from OpenCRAVAT 1.6.0). See `this
+page <https://github.com/KarchinLab/open-cravat/wiki/Multiuser-support>`__
+for the details of using multiple user accounts with OpenCRAVAT.

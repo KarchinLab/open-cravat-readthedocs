@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Cloud &mdash; open-cravat  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Case-Control Analysis" href="Case-Control.html" />
+    <link rel="prev" title="API" href="API.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> open-cravat
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Home.html">Intro to OpenCRAVAT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="API.html">API</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Cloud</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ami">AMI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#finding-the-ami">Finding the AMI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-the-ami">Using the AMI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#instance-sizing">Instance Sizing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#cloudformation">CloudFormation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Case-Control.html">Case-Control Analysis</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">open-cravat</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Cloud</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Cloud.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cloud">
+<h1>Cloud<a class="headerlink" href="#cloud" title="Permalink to this headline">¶</a></h1>
+<p>OpenCRAVAT is usable on Amazon Web Services in two ways. The first is an
+AMI that contains an up to date version of the package and almost all
+annotators. The second is a CloudFormation workflow which will use the
+AMI to annotate variants in S3 buckets.</p>
+<div class="section" id="ami">
+<h2>AMI<a class="headerlink" href="#ami" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="finding-the-ami">
+<h3>Finding the AMI<a class="headerlink" href="#finding-the-ami" title="Permalink to this headline">¶</a></h3>
+<p>The AMI is a public community image in the us-east-1 region called
+OpenCRAVAT-version (for example OpenCRAVAT-1.7.1). <a class="reference external" href="https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Images:visibility=public-images;search=OpenCRAVAT;sort=name">Here is a
+link</a>.</p>
+</div>
+<div class="section" id="using-the-ami">
+<h3>Using the AMI<a class="headerlink" href="#using-the-ami" title="Permalink to this headline">¶</a></h3>
+<p>The AMI runs CentOS 7 and consists of two 300 GB volumes, a root/job
+volume, and a data volume mounted at <code class="docutils literal notranslate"><span class="pre">/mnt/ssd</span></code>. Log in as the default
+user, <code class="docutils literal notranslate"><span class="pre">centos</span></code>. Modules are located at <code class="docutils literal notranslate"><span class="pre">/mnt/ssd/oc</span></code>, and config
+files are at <code class="docutils literal notranslate"><span class="pre">/usr/local/lib/python3.6/site-packages/cravat/conf</span></code>.</p>
+</div>
+<div class="section" id="instance-sizing">
+<h3>Instance Sizing<a class="headerlink" href="#instance-sizing" title="Permalink to this headline">¶</a></h3>
+<p>We recommend at least a 4 core, 4 GB machine. Expect to use
+approximately 300 MB of ram per 1 million variants. OpenCRAVAT will run
+faster with more cores, as certain parts of the annotation process are
+parallel. Best performance is achieved by either using an Provisioned
+IOPS SSD for the modules volume, or choosing an instance with an
+ephemeral ssd and moving the modules to it.</p>
+</div>
+</div>
+<div class="section" id="cloudformation">
+<h2>CloudFormation<a class="headerlink" href="#cloudformation" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/template?stackName=OpenCRAVAT&amp;templateURL=http://opencravat.s3.amazonaws.com/cf/oc-cf.yml">The OpenCRAVAT CloudFormation
+template</a>
+can be used to automatically annotate files in S3. When run, it will
+create an analysis instance from the AMI, pull an input file from S3,
+annotate it, and place the results in S3.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Case-Control.html" class="btn btn-neutral float-right" title="Case-Control Analysis" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="API.html" class="btn btn-neutral float-left" title="API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Rick Kim, Kyle Moad, Kym Pagel, Madison Larsen, Michael Ryan, Rachel Karchin
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

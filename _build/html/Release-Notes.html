@@ -1,0 +1,879 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Release notes &mdash; open-cravat  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Multiuser support" href="Multiuser-support.html" />
+    <link rel="prev" title="Reporters" href="Reporter.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> open-cravat
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Home.html">Intro to OpenCRAVAT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart-command-line.html">Command line quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1.-Installation-Instructions.html">Installation Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2.-Command-line-usage.html">Command line usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3.-Viewing-Results.html">Viewing results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5.-GUI-usage.html">GUI usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Filter-Tutorial.html">Filter tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Uninstallation.html">Uninstallation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5.-GUI-usage.html">GUI usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Filter-Tutorial.html">Filter tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Uninstallation.html">Uninstallation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Update-Instructions.html">Update instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Annotator-Reference.html">Annotator reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Annotator-Tutorial.html">Annotator Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Publish-an-Annotator.html">Publish an annotator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Widget-Tutorial.html">Widget tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Case-Control.html">Case-Control Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cloud.html">Cloud</a></li>
+<li class="toctree-l1"><a class="reference internal" href="API.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OC-manual-page.html">Manual Page</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Reporter.html">Reporters</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Release notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">2.2.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">2.1.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">2.1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">2.0.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">2.0.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">1.8.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">1.7.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">1.7.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">1.6.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">1.6.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">1.5.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">1.5.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id13">1.5.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id14">1.4.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id15">1.4.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id16">1.4.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id17">1.4.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id18">1.4.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id19">1.3.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id20">1.3.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id21">1.3.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id22">0.0.140</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Multiuser-support.html">Multiuser support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="OpenCRAVAT-Variant-Report.html">Variant Report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Command-line-manual.html">Command line manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="File-Formats.html">File Formats</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">open-cravat</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Release notes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Release-Notes.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="release-notes">
+<h1>Release notes<a class="headerlink" href="#release-notes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>2.2.0<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>December 10, 2020</p>
+<p>Core</p>
+<ul class="simple">
+<li><p>Improved format of <code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">module</span> <span class="pre">ls</span> <span class="pre">-a</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">module</span> <span class="pre">info</span></code> with a non-existing module name will gracefully end.</p></li>
+<li><p>Secondary input data will always be an empty list if it does not have any data.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">store</span> <span class="pre">publish</span></code> will ask for a password if missing.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pyvcf</span></code> has been included in the installation requirement of OpenCRAVAT.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">module</span> <span class="pre">install</span></code> with a version number (<code class="docutils literal notranslate"><span class="pre">-v</span></code> option) will skip installation if the same version of the requested module(s) already exists on the user’s system.</p></li>
+<li><p>Reporters are now not run by default unless <code class="docutils literal notranslate"><span class="pre">reporter=</span></code> option is defined in <code class="docutils literal notranslate"><span class="pre">cravat.yml</span></code>.</p></li>
+<li><p>Post-aggregators will be announced in the output of <code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">run</span></code> only if they are run.</p></li>
+<li><p>Fixed bugs related to doing <code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">run</span></code> with an OpenCRAVAT result sqlite file.</p></li>
+<li><p>An annotator can provide a list of supported chromosomes to the base annotator for more graceful handling of alternate chromosomes which the annotator does not cover.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">run</span> <span class="pre">--silent</span></code> will be more completely silent.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">run</span></code> with <code class="docutils literal notranslate"><span class="pre">--mp</span></code> option will enforce the correct number of processes for the gene mapper.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">run</span></code> and <code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">report</span></code> can receive <code class="docutils literal notranslate"><span class="pre">--concise-report</span></code> option to tell reporters to produce reports only with the default columns defined by annotators.</p></li>
+<li><p>Exact report file paths will be shown after <code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">report</span></code>.</p></li>
+<li><p>The versions of OpenCRAVAT, gene mapper, annotators, and reporters will be written to job log files with <code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">run</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">run</span></code> will stop if there is no valid input after the converter step.</p></li>
+<li><p>Minor bug fixes.</p></li>
+</ul>
+<p>GUI</p>
+<ul class="simple">
+<li><p>Case-control analysis option has been added.</p></li>
+<li><p>In the multi-user mode, temporary passwords will be randomly generated.</p></li>
+<li><p>If a job result cannot be viewed, a more graceful message will be shown.</p></li>
+<li><p>Minor bug fixes.</p></li>
+</ul>
+<p>Result Viewer</p>
+<ul class="simple">
+<li><p>Filters for a job can be exported into json files and then imported to another job’s result with buttons on the Interactive Result Viewer.</p></li>
+</ul>
+<p>Modules</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">casecontrol</span></code>, a case-control analysis module has been published.</p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>2.1.1<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>September 17, 2020</p>
+<p>Core</p>
+<ul class="simple">
+<li><p>OpenCRAVAT runs on Python 3.8 on Windows machines.</p></li>
+<li><p>Improved the stability of downloading input files over the internet through <code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">run</span> <span class="pre">http://...</span></code>.</p></li>
+<li><p>Better error message when a result database file does not exist.</p></li>
+<li><p>Fixed a bug on converting the genomic positions the orientation of which is different between assemblies.</p></li>
+<li><p>Fixed the number of unique input variants when multiple input files are given to <code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">run</span></code>.</p></li>
+<li><p>Module-specific options can be given to converter modules through <code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">run</span></code>.</p></li>
+</ul>
+<p>GUI</p>
+<ul class="simple">
+<li><p>Result SQLite files can be imported into the job table on GUI.</p></li>
+<li><p>Jobs can be deleted even when an interactive result viewer is open for the same job.</p></li>
+<li><p>Improved the UI of the report download section in the job table.</p></li>
+</ul>
+<p>Result Viewer</p>
+<ul class="simple">
+<li><p>Fixed in-table, range and dropdown filters on result tables.</p></li>
+</ul>
+<p>Modules</p>
+<ul class="simple">
+<li><p>Fixed the handling of variants without any sample in VCF-format input files.</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>2.1.0<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>August 18, 2020</p>
+<p>Core</p>
+<ul class="simple">
+<li><p>cravat.run_reporter in Python scripts can be run with keyword arguments.</p></li>
+<li><p>cravat.run and cravat.run_reporter can be run inside Jupyter Notebook.</p></li>
+<li><p>cravat.run and cravat.run_reporter will return the output by reporter modules as a dictionary.</p></li>
+<li><p>Filters can be applied through a command-line argument.</p></li>
+<li><p>Indices for all smart filter columns will be added in each run.</p></li>
+<li><p>Modules can be independently run and debugged.</p></li>
+<li><p>Improved the speed of the runs with large input files in UTF-8 encoding.</p></li>
+</ul>
+<p>GUI</p>
+<ul class="simple">
+<li><p>Fixed race condition between loading and filtering variants on large jobs</p></li>
+</ul>
+<p>Interactive Result Viewer</p>
+<ul class="simple">
+<li><p>Improved the speed of opening the result viewer.</p></li>
+<li><p>Improved the result table with scientific number notation and alignment of cell values.</p></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2>2.0.1<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>July 16, 2020</p>
+<p>Core</p>
+<ul class="simple">
+<li><p>System options can be given to <code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">run</span></code> with <code class="docutils literal notranslate"><span class="pre">--system-option</span></code> option.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">module</span> <span class="pre">install</span></code> now has <code class="docutils literal notranslate"><span class="pre">-f</span></code> option to force install even if the same version exists.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">module</span> <span class="pre">install-base</span></code> will re-install any existing base modules.</p></li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2>2.0.0<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>July 15, 2020</p>
+<p>Modules</p>
+<ul class="simple">
+<li><p>A new version of <code class="docutils literal notranslate"><span class="pre">hg38</span></code> mapper produces cDNA and protein sequence changes in HGVS format, annotates with non-coding transcripts, reports multiple sequence ontologies for each transcript, and uses MANE transcripts as primary transcript.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hgvs</span></code> module is now deprecated since <code class="docutils literal notranslate"><span class="pre">hg38</span></code> includes HGVS-format cDNA and protein changes.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vest</span></code> and <code class="docutils literal notranslate"><span class="pre">wglollipop</span></code> modules have been updated to work with the new version of <code class="docutils literal notranslate"><span class="pre">hg38</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vcfreporter</span></code> can handle VCF format input files without samples.</p></li>
+</ul>
+<p>Core</p>
+<ul class="simple">
+<li><p>Improved the speed of report generation.</p></li>
+<li><p>OpenCRAVAT jobs can be run within a Python shell in such a way as <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">cravat</span> <span class="pre">import</span> <span class="pre">Cravat;</span> <span class="pre">cv</span> <span class="pre">=</span> <span class="pre">Cravat(inputs=['example_input'],</span> <span class="pre">genome='hg19',</span> <span class="pre">annotators=['clinvar']);</span> <span class="pre">runner.run()</span></code>.</p></li>
+<li><p>Improved exception logging by converter modules.</p></li>
+<li><p>Re-running a job will starts with converter and regenerates intermediate files.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">module</span> <span class="pre">install</span></code> shows timestamp with each message.</p></li>
+<li><p>master converter fills in missing reference bases in input files.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">run</span></code> now rejects input files with space character in their paths.</p></li>
+<li><p>URLs starting with <code class="docutils literal notranslate"><span class="pre">http:</span></code> or <code class="docutils literal notranslate"><span class="pre">https:</span></code> can be used as input for <code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">run</span></code>.</p></li>
+<li><p>Module-specific options can be given to <code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">run</span></code> with <code class="docutils literal notranslate"><span class="pre">--module-option</span></code> option.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">run</span></code> can accept input from PIPE.</p></li>
+</ul>
+<p>GUI</p>
+<ul class="simple">
+<li><p>Improved the start-up speed of the GUI by locally caching the web store data.</p></li>
+<li><p>Settings menu has a button to update the web store cache.</p></li>
+<li><p>Job list shows job IDs and the number of unique input variants.</p></li>
+</ul>
+<p>-Job list provides a button for upgrading the job result database so that job results from older version of OpenCRAVAT can be opened.</p>
+<p>Result Viewer</p>
+<ul class="simple">
+<li><p>Long sample names are correctly shown on the filter tab.</p></li>
+<li><p>Improved the UI for selecting and excluding samples in the filter tab.</p></li>
+<li><p>Improved the speed of filtering with samples.</p></li>
+<li><p>Fixed “Export” feature of variant and gene tab tables.</p></li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h2>1.8.0<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>April 27, 2020</p>
+<p>Gene mapper</p>
+<ul class="simple">
+<li><p>New hg38 mapper speeds up gene model mapping by an order and can utilize multiple cores.</p></li>
+</ul>
+<p>cravat core</p>
+<ul class="simple">
+<li><p>Fixed pyyaml warning message.</p></li>
+<li><p>Entire <code class="docutils literal notranslate"><span class="pre">oc</span> <span class="pre">run</span></code> can be run within Python as <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">cravat;</span> <span class="pre">cravat.run()</span></code>.</p></li>
+</ul>
+<p>GUI</p>
+<ul class="simple">
+<li><p>Failure message from job submission is reported back to the browser.</p></li>
+<li><p>Input file size can be limited by settings.</p></li>
+</ul>
+<p>VCF support</p>
+<ul class="simple">
+<li><p>Annotations in VCF format input files are transferred into OpenCRAVAT result database.</p></li>
+<li><p>VCF format output has been improved for better readability.</p></li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h2>1.7.1<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>March 11, 2020</p>
+<p>cravat core</p>
+<ul class="simple">
+<li><p>Bugfix: when pip installed by root and run by a non-root user, don’t attempt to write to logs owned by root</p></li>
+</ul>
+<p>GUI</p>
+<ul class="simple">
+<li><p>Bugfix: variant reports work when running in https</p></li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h2>1.7.0<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p>February 5, 2020</p>
+<p>Featured</p>
+<ul class="simple">
+<li><p>Added the variant report page which can be linked with a URL for a single variant and which shows the OpenCRAVAT annotation on the given variant with graphics.</p></li>
+<li><p>New command line schema which combines all of the cravat command universe into the top command <code class="docutils literal notranslate"><span class="pre">oc</span></code> and sub-commands.</p></li>
+</ul>
+<p>cravat core</p>
+<ul class="simple">
+<li><p>cravat can process gzipped input files.</p></li>
+<li><p>cravat cleans up temporary files after a successful run by default.</p></li>
+<li><p>cravat can receive a cravat run result database file and add more annotation to the result database.</p></li>
+<li><p>Redundant bases in the reference and alternate bases are trimmed.</p></li>
+</ul>
+<p>GUI</p>
+<ul class="simple">
+<li><p>gzipped input files can be used for job submission.</p></li>
+<li><p>Input files from multiple folders can be chosen on the job submission page.</p></li>
+</ul>
+<p>Result viewer</p>
+<ul class="simple">
+<li><p>Fixed the export of the result table so that the chromosome column correctly shows.</p></li>
+</ul>
+<p>util</p>
+<ul class="simple">
+<li><p>Added a utility which can migrate a job result database into a user’s job list.</p></li>
+</ul>
+<p>multiuser</p>
+<ul class="simple">
+<li><p>Added the support for basic authentication.</p></li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h2>1.6.1<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>November 27, 2019</p>
+<p>open-cravat-server</p>
+<p>cravat core</p>
+<ul class="simple">
+<li><p>cravat runs with multiple cores even when secondary input is used.</p></li>
+<li><p>Default maximum number of concurrently running annotators is set to be the number of cores minus 1.</p></li>
+<li><p>Fixed various minor bugs.</p></li>
+</ul>
+<p>GUI</p>
+<ul class="simple">
+<li><p>Default maximum number of concurrently running jobs is set to be 3.</p></li>
+<li><p>Genome version should be selected at first.</p></li>
+<li><p>Generating job result reports and opening job result can happen simultaneously.</p></li>
+<li><p>Fixed various minor bugs.</p></li>
+</ul>
+</div>
+<div class="section" id="id10">
+<h2>1.6.0<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p>November 8, 2019</p>
+<p>open-cravat-server</p>
+<ul class="simple">
+<li><p>An add-on pip package <a class="reference external" href="https://github.com/KarchinLab/open-cravat-server">open-cravat-server</a> has been released for supporting multiple users in OpenCRAVAT web server.</p></li>
+</ul>
+<p>cravat core</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cravat-admin</span> <span class="pre">install/uninstall/update</span></code> has <code class="docutils literal notranslate"><span class="pre">-y</span></code> option to bypass confirmation.</p></li>
+<li><p>Modules can have a warning message regarding commercial usage.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cravat</span></code> terminates if absent module(s) are requested for a run.</p></li>
+<li><p>Improved memory usage of the input format converter step.</p></li>
+<li><p>Supports simpler secondary module definition without match and use columns.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">aggregator</span></code> uses an injection-safe way to execute sqlite3 commands.</p></li>
+<li><p>Genome assembly is now a mandatory option for running <code class="docutils literal notranslate"><span class="pre">cravat</span></code>, but a default value can be set in cravat.yml.</p></li>
+<li><p>Minor bug fixes</p></li>
+</ul>
+<p>GUI</p>
+<ul class="simple">
+<li><p>Added support for HTTPS connection.</p></li>
+<li><p>Number of concurrently running jobs can be set on OpenCRAVAT web interface.</p></li>
+<li><p>Number of concurrently running annotators per job can be set on OpenCRAVAT web interface.</p></li>
+<li><p>Aborted jobs show as “Aborted” on the job list.</p></li>
+<li><p>Shows a progress bar for the upload of input files while a job is submitted.</p></li>
+<li><p>OpenCRAVAT web interface functions without internet connection (Web store will be disabled. Job submission and the result viewer will be functional).</p></li>
+<li><p>GUI can be open with the root URL and port.</p></li>
+<li><p>Minor bug fixes</p></li>
+</ul>
+<p>Web API</p>
+<ul class="simple">
+<li><p>Added web API for job submission, checking the status of submitted jobs, generating report files for jobs, checking the presence of report files for jobs, and downloading generated report files.</p></li>
+</ul>
+<p>Result Viewer</p>
+<ul class="simple">
+<li><p>Result viewer URL does not show the internal path to result databases.</p></li>
+<li><p>Gene list of Smart Filter can have empty lines.</p></li>
+<li><p>Minor bug fixes</p></li>
+</ul>
+</div>
+<div class="section" id="id11">
+<h2>1.5.3<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<p>September 3, 2019</p>
+<p>cravat core</p>
+<ul class="simple">
+<li><p>In report generation for a job, the gene level annotators used for the job do not need to exist on the system.</p></li>
+</ul>
+<p>Result Viewer</p>
+<ul class="simple">
+<li><p>Fixed a bug where the result loading spinner does not disappear if the number of input variants is more than 100,000.</p></li>
+<li><p>Fixed the table header filter for “Coding” column.</p></li>
+</ul>
+</div>
+<div class="section" id="id12">
+<h2>1.5.2<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<p>August 29, 2019</p>
+<p>cravat core</p>
+<ul class="simple">
+<li><p>Added result database migration utility which upgrades the
+open-cravat result sqlite files to be readable by OpenCRAVAT 1.5.2.</p></li>
+<li><p>Presence or absence of a module is more correctly detected.</p></li>
+<li><p>When update of a module fails in the middle, the module is correctly
+detected as uninstalled.</p></li>
+<li><p>If modules directory is gone, <code class="docutils literal notranslate"><span class="pre">cravat</span></code> and <code class="docutils literal notranslate"><span class="pre">cravat-admin</span></code>
+notifies and interactively resolve the issue with user input.</p></li>
+</ul>
+<p>cravat GUI</p>
+<ul class="simple">
+<li><p>If modules directory is gone, <code class="docutils literal notranslate"><span class="pre">wcravat</span></code> notifies and handles
+gracefully so that a new modules directory can be entered or the
+missing one can be attached again.</p></li>
+<li><p>Clearing browser cache is not needed anymore to reflect new versions.</p></li>
+<li><p>More detailed job status in the job list is provided when converters,
+aggregators, and post-aggregators run.</p></li>
+<li><p>Minor UI improvements and bug fixes</p></li>
+</ul>
+<p>Web Store</p>
+<ul class="simple">
+<li><p>Clearing browser cache is not needed anymore to reflect new versions.</p></li>
+</ul>
+<p>Result Viewer</p>
+<ul class="simple">
+<li><p>Clearing browser cache is not needed anymore to reflect new versions.</p></li>
+<li><p>Minor UI improvements and bug fixes</p></li>
+</ul>
+<p>Modules</p>
+<ul class="simple">
+<li><p>VCF format reporter which preserves input files’ annotation
+information</p></li>
+<li><p>GWAS Catalog annotator</p></li>
+<li><p>Improved 23andme and ancestrydna converters so that they fill in
+reference bases.</p></li>
+<li><p>UI improvements of widgets</p></li>
+<li><p>Minor bug fixes</p></li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h2>1.5.1<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<p>August 14, 2019</p>
+<p>cravat core</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cravat-admin</span> <span class="pre">info</span></code> shows data source version for each module version, if available, as well as the current version.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cravat</span></code> options changed: <code class="docutils literal notranslate"><span class="pre">--startat</span></code> for setting the starting stage, <code class="docutils literal notranslate"><span class="pre">--endat</span></code> for setting the ending stage, <code class="docutils literal notranslate"><span class="pre">--repeat</span></code> for setting the stage(s) to repeat, and <code class="docutils literal notranslate"><span class="pre">--skip</span></code> for setting the stage(s) to skip.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cravat</span></code> can receive a job configuration file which can direct any argument which can be given with command-line.</p></li>
+<li><p>Revampled how column definitions are handled internally.</p></li>
+<li><p>Gene level annotation is added to variant level annotation.</p></li>
+<li><p>Gene level aggregation is done dynamically with filters.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cravat</span> <span class="pre">--version</span></code> and <code class="docutils literal notranslate"><span class="pre">cravat-admin</span> <span class="pre">--version</span></code> show the version of open-cravat.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cravat-admin</span> <span class="pre">ls</span></code> shows module titles.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cravat-admin</span> <span class="pre">info</span></code> shows the explanation on module output columns as well as release note.</p></li>
+</ul>
+<p>cravat GUI</p>
+<ul class="simple">
+<li><p>Revampled the interface.</p></li>
+<li><p>Annotation modules can be viewed and selected in groups and categories.</p></li>
+<li><p>Connection to the server will not be lost even if the GUI browser tab is left open for a long time.</p></li>
+<li><p>Fixed minor bugs.</p></li>
+</ul>
+<p>Web Store</p>
+<ul class="simple">
+<li><p>Revampled the interface.</p></li>
+<li><p>Module detail panel shows required modules.</p></li>
+<li><p>Fixed minor bugs.</p></li>
+</ul>
+<p>Result Viewer</p>
+<ul class="simple">
+<li><p>Revampled the interface.</p></li>
+<li><p>Added Sample Filter which can filter with inclusion and exclusion of samples.</p></li>
+<li><p>Added Gene Filter which can accept a list of HUGO symbols and filter the result with it.</p></li>
+<li><p>Added Smart Filter which can filter multiple columns with one selection.</p></li>
+<li><p>Added Query Builder with which complex custom filters can be built.</p></li>
+<li><p>Widget content can be exported to a png file.</p></li>
+<li><p>Widgets can hide themselves if there is no data for them.</p></li>
+<li><p>Module group names have tooltips which explains the modules.</p></li>
+<li><p>Added module group context menu.</p></li>
+<li><p>Module groups are alphabetically sorted.</p></li>
+<li><p>Table export button will export what is shown and with load and table filter information.</p></li>
+<li><p>A module can have a default set of columns to show, and the Result Viewer has small buttons in the header for each module for expanding, collaping, and bringing back to the default of the columns of the module.</p></li>
+<li><p>Fixed minor bugs.</p></li>
+</ul>
+<p>Modules</p>
+<ul class="simple">
+<li><p>Added VCF format reporter which can preserve the annotations in the input VCF format file.</p></li>
+</ul>
+</div>
+<div class="section" id="id14">
+<h2>1.4.5<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<p>July 16, 2019</p>
+<ul class="simple">
+<li><p>Fix for bug preventing submission of multiple input files.</p></li>
+</ul>
+</div>
+<div class="section" id="id15">
+<h2>1.4.4<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<p>June 17, 2019</p>
+<p>Installers</p>
+<ul class="simple">
+<li><p>The Mac installer is now a signed package installer.</p></li>
+</ul>
+<p>cravat core</p>
+<ul class="simple">
+<li><p>In Windows, Mac OS, and Linux, different default folders for modules, jobs, and configuration files are used to better suit their native folder architecture.</p></li>
+<li><p>Python requirement has been increased to</p></li>
+</ul>
+<p>Python 3.6 or higher.</p>
+<ul class="simple">
+<li><p>Log file has non-redundant exception messages for better readability.</p></li>
+<li><p>Record of annotation modules are correctly kept with multiple cravat runs on the same input.</p></li>
+<li><p>For a job with multiple input files, output file names start with the first input file name plus _and_x_files, where x is the number of input files minus 1.</p></li>
+</ul>
+<p>cravat GUI</p>
+<ul class="simple">
+<li><p>Job list is automatically updated when there are running jobs.</p></li>
+<li><p>Running jobs can be cancelled from the GUI.</p></li>
+<li><p>Warns if a job has more input lines than specified in Settings.</p></li>
+<li><p>GUI remembers genome assembly selection.</p></li>
+<li><p>Variout user interface improvements</p></li>
+<li><p>Fixed various bugs.</p></li>
+</ul>
+<p>Web Store</p>
+<ul class="simple">
+<li><p>Module installation can be cancelled from the GUI.</p></li>
+<li><p>Shows module group, a collection of the varieties of a module.</p></li>
+<li><p>Warns with total size of installation for collective installation or update.</p></li>
+<li><p>Module tile shows their module types if they are not annotation modules.</p></li>
+</ul>
+<p>Result Viewer</p>
+<ul class="simple">
+<li><p>hg19 and tagsampler results show next to Variant Annotation columns.</p></li>
+<li><p>Less-informative widgets are hidden by default.</p></li>
+</ul>
+<p>Modules</p>
+<ul class="simple">
+<li><p>Protein Diagram widget on gene tab shows all variants for a gene on a table, whose rows when hovered will highlight corresponding variants on the protein diagram.</p></li>
+<li><p>1000 Genomes module group and CHASMplus module group have been published.</p></li>
+<li><p>Comma-delimited format reporter and tab-delimited format reporter have been published.</p></li>
+</ul>
+</div>
+<div class="section" id="id16">
+<h2>1.4.3<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<p>April 30, 2019</p>
+<p>GUI</p>
+<ul class="simple">
+<li><p>Improved the launch speed.</p></li>
+<li><p>Detects the absence of the server and prevents further operation.</p></li>
+<li><p>Multiple open-cravat GUI browser tabs work properly with install/update.</p></li>
+</ul>
+<p>Web Store</p>
+<ul class="simple">
+<li><p>Prevents installation/update of modules if free disk space is not enough.</p></li>
+</ul>
+</div>
+<div class="section" id="id17">
+<h2>1.4.2<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<p>April 19, 2019</p>
+<p>Installers</p>
+<ul class="simple">
+<li><p>Releasing Windows and Mac installers. No more pip installation is needed if these installers are used.</p></li>
+</ul>
+<p>cravat core</p>
+<ul class="simple">
+<li><p>cravat can process multiple vcf-format input files at once.</p></li>
+<li><p>cravat better handles status and error logging.</p></li>
+<li><p>Annotation modules run in multiple execution of cravat with the same input are accummulatively logged in the job status file for the input.</p></li>
+</ul>
+<p>cravat GUI</p>
+<ul class="simple">
+<li><p>open-cravat command-line terminal can be launched from the GUI.</p></li>
+</ul>
+<p>Web Store</p>
+<ul class="simple">
+<li><p>Improved launch speed.</p></li>
+<li><p>Fixed alphabetical name sorting of modules.</p></li>
+</ul>
+<p>Result Viewer</p>
+<ul class="simple">
+<li><p>Simplified and improved the default settings of the basic load-filter.</p></li>
+<li><p>Added context menu to the column groups for each module on the result tables.</p></li>
+<li><p>Improved the layout and user experience of the table columns and widgets.</p></li>
+<li><p>Improved launching speed.</p></li>
+<li><p>hg19 coordinates, samples, and tags appear right next to Variant Annotation columns.</p></li>
+<li><p>Summary widgets without any result will hide themselves.</p></li>
+<li><p>Fixed wrong drag-and-drop of column headers</p></li>
+</ul>
+<p>Modules</p>
+<ul class="simple">
+<li><p>Improved the speed of REVEL module.</p></li>
+<li><p>Smarter detection of vcf input format (vcf-converter)</p></li>
+</ul>
+</div>
+<div class="section" id="id18">
+<h2>1.4.1<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+<p>March 21, 2019</p>
+<p>Result Viewer</p>
+<ul class="simple">
+<li><p>Revamped the Summary tab.</p></li>
+<li><p>Fixed the load filter for the cases where samples were searched with “not”.</p></li>
+<li><p>Added context-menu to the result table columns.</p></li>
+<li><p>Result table cell value area can be expanded to display large text strings.</p></li>
+<li><p>Columns of the result table can no longer be nested in another column group.</p></li>
+<li><p>Added new help dialog functionality for each widget (e.g. IGV widget).</p></li>
+<li><p>Fixed issues with browser zoom.</p></li>
+<li><p>Bug fixes</p></li>
+</ul>
+<p>CRAVAT web GUI</p>
+<ul class="simple">
+<li><p>Added functionality to navigate between different module dialogs in store using arrow keys.</p></li>
+<li><p>Decluttered the interface of the web store by completely hiding base components.</p></li>
+<li><p>Added separate input examples for hg18, hg19, and hg38.</p></li>
+<li><p>Module detail panel in web store describes the output columns of the shown module.</p></li>
+<li><p>Updated look and feel of the web submit and the web store.</p></li>
+<li><p>Bug fixes</p></li>
+</ul>
+<p>cravat</p>
+<ul class="simple">
+<li><p>Dependencies (between modules and between open-cravat and modules) are resolved before module installation and update.</p></li>
+<li><p>Decluttering of the log file for better readability.</p></li>
+<li><p>Each run creates an .err file which explicitly reports each variant with an error.</p></li>
+<li><p>Added the capability of cravat-admin to privately publish modules.</p></li>
+</ul>
+<p>Others</p>
+<ul class="simple">
+<li><p>Added web links to the ID columns of Clinvar, COSMIC, dbSNP, UniProt, and denovo-db.</p></li>
+<li><p>Improved the default column size and widget layout for several modules.</p></li>
+</ul>
+</div>
+<div class="section" id="id19">
+<h2>1.3.2<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
+<p>January 31, 2019</p>
+<p>Updates on Interactive Result Viewer (cravat-view):</p>
+<ul class="simple">
+<li><p>Data loading indicator</p></li>
+<li><p>Local filter select box</p></li>
+<li><p>Show-all and hide-all buttons for widgets</p></li>
+<li><p>Load filter of cravat-view now has two modes, simple and advanced, and it shows only the filter operators relevant to the type of the filtered data.</p></li>
+<li><p>Widgets can be hidden by default and its show/hide status can be saved and loaded.</p></li>
+</ul>
+<p>Updates on cravat web GUI (wcravat):</p>
+<ul class="simple">
+<li><p>Store now has a Front Page with Most Downloaded and Newest modules.</p></li>
+<li><p>Store shows annotator modules’ source data version for provenance.</p></li>
+<li><p>Store can sort modules by their name, size, and date of post.</p></li>
+</ul>
+<p>Updates on cravat:</p>
+<ul class="simple">
+<li><p>cravat detects input files’ encoding and reads them correctly and writes output files always in UTF-8.</p></li>
+</ul>
+<p>Others:</p>
+<ul class="simple">
+<li><p>Module updates have been concurrently released.</p></li>
+<li><p>Fixed various bugs.</p></li>
+</ul>
+</div>
+<div class="section" id="id20">
+<h2>1.3.1<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h2>
+<p>January 10, 2019</p>
+<p>Patch release for bugs:
+- Fixed bug that prevented excel spreadsheet download in the wcravat jobs page.
+- Handle summary widget issues so that results will still be presented (filters on some jobs locking up results).
+- wcravat server stops cleanly with cntrl-C.
+- Updated Mac and Linux install instructions.
+- Fixed favicon.ico error on Chrome.
+- cravat detects and reads input files according to their encoding and always writes in UTF-8 across platforms.</p>
+</div>
+<div class="section" id="id21">
+<h2>1.3.0<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h2>
+<p>January 5, 2019</p>
+<p>Improvements in wcravat, the web interface of open-cravat:</p>
+<ul class="simple">
+<li><p>Revamped its design for a more modern look and better user experience.</p></li>
+<li><p>Added job detail panel on the job list with various information on each job.</p></li>
+<li><p>Added a button on the job list to view a job’s log file.</p></li>
+<li><p>Added a settings menu icon so that changing system setting is more convenient and safer.</p></li>
+<li><p>Improved speed by eliminating synchronous web calls.</p></li>
+<li><p>Implemented the check and prevention of redundantly running wcravat.</p></li>
+<li><p>Fixed minor bugs.</p></li>
+</ul>
+<p>Improvements in cravat-view:</p>
+<ul class="simple">
+<li><p>Improved the user interface and the performance of the load and in-table filters.</p></li>
+<li><p>Improved the layout save and load feature so that table columns’ shown/hidden status is also saved and loaded.</p></li>
+<li><p>Improved the opening time for large jobs</p></li>
+<li><p>Improved the layout so that smaller screens display the result viewer well.</p></li>
+<li><p>Improved speed by eliminating synchronous web calls.</p></li>
+<li><p>Improved the readability of numbers in widgets by using 4 digits after the decimal point as the default.</p></li>
+<li><p>Added selection boxes for filtering module output columns with “category” property set.</p></li>
+<li><p>Fixed minor bugs.</p></li>
+</ul>
+<p>Improvements in cravat: - Improved the column header, size, and
+shown/hidden setting for each output column of all current annotator
+modules. - “Category” property option has been added to the definition
+of output columns of annotator modules. - One log file is produced for a
+whole cravat run instead of one log file for each module. - Job status
+and job information files are now one job status file. - Aggregator has
+been included in the core package. - Fixed a bug which prevented using
+secondary input source with multiprocessing. - Fixed minor bugs.</p>
+<p>Improvements in modules (get them with cravat-admin install or wcravat’s
+Store):</p>
+<ul class="simple">
+<li><p>Added Mutation Assessor annotation module (mutation_assessor).</p></li>
+<li><p>Added FATHMM annotation module (fathmm).</p></li>
+<li><p>Added PhyloP annotation module (phylop).</p></li>
+<li><p>Added phastcons annotation module (phastcons).</p></li>
+<li><p>Added RVIS annotation module (rvis).</p></li>
+<li><p>Added GHIS annotation module (ghis).</p></li>
+<li><p>Added ExAC gene annotation module (exac_gene).</p></li>
+<li><p>Added Essential genes annotation module (ess_gene).</p></li>
+<li><p>Added GTEx annotation module (gtex).</p></li>
+<li><p>Added UK10K Cohort annotation module (uk10k_cohort).</p></li>
+<li><p>Added Gerp++ annotation module (gerp).</p></li>
+<li><p>Added LoFtool annotation module (loftool).</p></li>
+<li><p>Improved ClinVar annotation module (clinvar).</p></li>
+<li><p>Added new sequence ontology codes and display names to hg38 mapper module (hg38).</p></li>
+<li><p>Added the functionality of handling empty reference bases to hg38 mapper module (hg38).</p></li>
+<li><p>Improved VEST widget module (wgvest).</p></li>
+<li><p>Fixed bugs in GRASP annotator module (grasp).</p></li>
+<li><p>Fixed Sequence Ontology Sample Summary widget module (wgsosamplesummary).</p></li>
+</ul>
+</div>
+<div class="section" id="id22">
+<h2>0.0.140<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
+<p>December 5, 2018</p>
+<ul class="simple">
+<li><p>Annotators run in parallel for faster analysis (# cores - 1 by default)</p></li>
+<li><p>‘New’ Icon when updates available for installed modules in CRAVAT Store</p></li>
+<li><p>Protein Change column (base information)</p></li>
+<li><p>Sequence Ontology - Codes translated to full terms (e.g. missense rather than MIS)</p></li>
+<li><p>Selected Row Highlighted</p></li>
+<li><p>New ‘QuickSave” button on top right saves current filter and layout for when results are next opened.</p></li>
+<li><p>Fix so applying filter does not remove loaded IGV tracks</p></li>
+<li><p>Filter panel fixes.</p></li>
+<li><p>Consolidated Error Log</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Multiuser-support.html" class="btn btn-neutral float-right" title="Multiuser support" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Reporter.html" class="btn btn-neutral float-left" title="Reporters" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Rick Kim, Kyle Moad, Kym Pagel, Madison Larsen, Michael Ryan, Rachel Karchin
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

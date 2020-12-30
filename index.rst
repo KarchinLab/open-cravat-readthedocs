@@ -3,15 +3,50 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+=======================================
 Welcome to open-cravat's documentation!
 =======================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
 
 OpenCRAVAT
 ==========
+
+.. toctree::
+  :hidden:
+  :caption: Getting started
+
+  Home.rst
+  quickstart.rst
+  quickstart-command-line.rst
+  1.-Installation-Instructions.rst
+  2.-Command-line-usage.rst
+  3.-Viewing-Results.rst
+  5.-GUI-usage.rst
+  Uninstallation.rst
+  Update-Instructions.rst
+
+.. toctree::
+  :hidden:
+  :caption: Advanced
+
+  Filter-Tutorial.rst
+  Case-Control.rst
+  Cloud.rst
+  API.rst
+  Multiuser-support.rst
+  OpenCRAVAT-Variant-Report.rst
+  Release-Notes.rst
+
+.. toctree::
+  :hidden:
+  :caption: For contributors 
+
+  File-Formats.rst
+  Annotator-Reference.rst
+  Annotator-Tutorial.rst
+  Widget-Tutorial.rst
+  Reporter.rst
+  Publish-an-Annotator.rst
 
 `OpenCRAVAT <https://opencravat.org/>`__ is a python package that
 performs genomic variant interpretation including variant impact,
@@ -27,6 +62,7 @@ at `Johns Hopkins University <https://www.jhu.edu/>`__ in collaboration
 with `In Silico Solutions <http://insilico.us.com>`__ with funding
 provided by the National Cancer Institute’s
 `ITCR <https://itcr.cancer.gov/>`__ program.
+
 
 Overview
 --------
