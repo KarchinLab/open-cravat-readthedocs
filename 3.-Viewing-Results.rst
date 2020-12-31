@@ -1,5 +1,5 @@
 ===============
-Viewing results
+Viewing Results
 ===============
 
 
@@ -62,9 +62,6 @@ Summary Tab
 The Summary tab shows overall information about the job, and can be used
 to create, save, and load filters.
 
-Summary Widgets
-~~~~~~~~~~~~~~~
-
 The Summary tab may also contain graphical summary widgets, which
 provide a high level overview of the job. Only the summary widgets
 installed are displayed. CRAVAT includes some widgets by default, and
@@ -73,8 +70,8 @@ annotators. Widgets on the Summary tab can be resized, hidden and
 rearranged similarly to the widgets in the variant tab, which is
 explained below.
 
-Filters
-=======
+Filter tab
+----------
 
 .. figure:: figures/viewer-filters.png
    :alt: filter dropdown
@@ -99,7 +96,7 @@ can be reloaded by clicking the load button, and entering the name of
 the saved filter. Multiple filter sets may be saved and loaded.
 
 Variant Tab
-===========
+-----------
 
 .. figure:: figures/viewer-variant-tab.png
    :alt: variant tab
@@ -118,9 +115,6 @@ missense, synonymous, unknown, intron, 5' UTR, 3' UTR, 2kb upstream, and
 2kb downstream. Splice variants are defined as variants within two base
 pairs of an exon-exon junction.
 
-Data table
-----------
-
 The data table shows all of the annotations available, grouped by
 annotator. Columns may be resized, and moved individually or as a group.
 Move columns/groups by clicking and dragging their header. Columns can
@@ -131,9 +125,6 @@ the top left of the page.
    :alt: viewer columns manipulation
 
    viewer columns manipulation
-
-Visualization Widgets
----------------------
 
 The visualization widgets section displays a visual summary of the
 current row in the data table. It is designed so that the user can
@@ -157,65 +148,33 @@ displayed, widget size, and widget order. Like filters, saved layouts
 are available across viewer sessions.
 
 Gene Tab
-========
+--------
 
 The Gene tab is identical to the variant tab, but displays gene level
 information.
 
-Sample Tab
-==========
-
-The Sample tab shows which sample(s) contained a variant. It is
-currently a work in progress.
-
-Mapping Tab
-===========
-
-The Mapping tab shows which input lines in the original file mapped to
-which variants, and which user-supplied tags were included with that
-line. It is currently a work in progress.
+Downloadable reports 
+====================
 
 Excel Report
-============
+------------
 
-By default, the excel report is called {input\_file\_name}.xlsx. The
+By default, the Excel output report is called {input\_file\_name}.xlsx. The
 name will be different if CRAVAT was run with the ``-n`` or ``-d``
-flags. It consists of multiple pages, explained below.
+flags. It consists of multiple pages:
 
-Info
-----
+- **Info** - A title sheet including information about the run
 
-A title sheet including information about the run
+- **Variant** - Variant level information. Each variant has a row, and columns are grouped together by annotator.
 
-Variant
--------
+- **Gene** - Gene level information. Formatted like the variant tab.
 
-Variant level information. Each variant has a row, and columns are
-grouped together by annotator.
+- **Sample** -  Variant ids and the samples they occur in.
 
-.. figure:: figures/reports-excel.png
-   :alt: excel report
-
-   excel report
-
-Gene
-----
-
-Gene level information. Formatted like the variant tab.
-
-Sample
-------
-
-Variant ids and the samples they occur in.
-
-Mapping
--------
-
-A Mapping or original input lines to the variant ids and user supplied
-tags they contain.
+- **Mapping** - A Mapping or original input lines to the variant ids and user supplied tags they contain.
 
 Text Report
-===========
+-----------
 
 The text report is a tab separated file consisting of multiple sections.
 The sections match those in the excel report. By default, the text
