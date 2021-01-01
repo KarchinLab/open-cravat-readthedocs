@@ -47,9 +47,7 @@ requested format of results.
 
 Available Modules
 -----------------
-
-As of 8/7/2020, openCRAVAT has the following annotators available, with
-more on the way.
+There are more than 150 different modules in the app store. These modules can be assigned one or more tags, that include allele frequency, cancer, cardiovascular, clinical relevance, converters, evolution, functional studies, genes, interactions, literature, non coding, reporters, variant effect prediction, variants, and visualization. These resources include: 
 
 -  *Gene-level annotators:* BioGRID, Cancer Gene Census, Cancer Gene
    Landscape, CIViC Gene, ClinGen Gene, COSMIC Gene, Essential Genes,
@@ -59,7 +57,7 @@ more on the way.
    VEST
 -  *Variant-level annotators:* ABraOM, Arrhythmia Channelopathy
    Variants, BRCA1 Multiplex Assay, CADD Exome, CardioBoost,
-   Cardiovascular Disease Knowledge Portal CHASMplus, CHASMplus
+   Cardiovascular Disease Knowledge Portal, Case-Control, CHASMplus, CHASMplus
    MSK-IMPACT, CIViC, ClinVar, ClinVar ACMG, COSMIC, CVDKP, DANN Coding,
    dbscSNV, dbSNP, denovo-DB, ENCODE TFBS, Ensembl Regulatory Build,
    ESP6500, FATHMM, FATHMM-MKL, FATHMM-XF Coding, FitCons, Flanking
