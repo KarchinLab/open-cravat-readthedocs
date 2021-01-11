@@ -73,11 +73,6 @@ explained below.
 Filter tab
 ----------
 
-.. figure:: figures/viewer-filters.png
-   :alt: filter dropdown
-
-   filter dropdown
-
 OpenCRAVAT filters can be applied to any annotation and affect the
 results displayed across the entire viewer. When the filter is changed,
 the data passed to every other tab, table, or widget is **only** the
