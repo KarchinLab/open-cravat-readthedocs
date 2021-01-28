@@ -308,20 +308,32 @@ Originally, an output field of an OpenCRAVAT annotator module was supposed to be
 
 To enable table-in-table output support for an output column, add `table: true` property to the definition of the column in the module's configuration yml file. There is another property, `table_headers`, but this one is optional. With these two new properties, "All annotations" (previously "All transcripts") column of VEST module is defined as below.
 
-- name: all
-  title: All annotations
-  type: string
-  table: true
-  table_headers:
-  - name: transcript
-    title: Transcript
-    type: string
-  - name: score
-    title: Score
-    type: float
-  - name: pval
-    title: p-value
-    type: float
+\- name: all
+
+title: All annotations
+
+type: string
+
+table: true
+
+table_headers:
+\- name: transcript
+
+title: Transcript
+
+type: string
+
+\- name: score
+
+title: Score
+
+type: float
+
+\- name: pval
+
+title: p-value
+
+type: float
   ...
 
 When an output column with table data is used by a reporter module, the reporter module will receive a JSON object instead of a string, as OpenCRAVAT does the conversion automatically. In the same way, widget modules will also receive JSON objects instead of strings for output columns with table data. (edited) 
