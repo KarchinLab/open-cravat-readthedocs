@@ -300,3 +300,31 @@ can do so with boolean expressions similar to those in pip install.
 Specifying a version is discouraged unless **absolutely needed**.
 OpenCRAVAT has very limited ability to resolve dependency issues between
 modules.
+
+Table-in-table output
+=====================
+
+Originally, an output field of an OpenCRAVAT annotator module was supposed to be one of string, integer, and float types. However, from OpenCRAVAT 2.2.1, an output field can contain a table of values. This way, table-in-table output is possible for annotation modules. This feature is useful for organizing complex data. For example, VEST4 annotation module's "All transcripts" column used to have such a string as "ENST00000612895.4(0.884:0.04118), *ENST00000614428.4(0.928:0.02102), ENST00000617649.4(0.866:0.05418)". This string contains the VEST score and p-value for three different transcripts for a variant. To get the score and p-value of a specific transcript, parsing the string and extracting the values was necessary. However, the new VEST annotation module which works with OpenCRAVAT 2.2.1 and later has the following data instead of the string: [[ENST00000612895.4, 0.884, 0.04118], [ENST00000614428.4, 0.928, 0.02102], [ENST00000617649.4, 0.866, 0.05418]], which shows the transcript-score-pvaule organization of data much more clearly. This type of data is still stored as string in result databases, but OpenCRAVAT automatically performs the conversion between string and JSON object as it communicates with annotator modules. Thus, in writing an annotation module, the return dictionary of an annotate method can have a dictionary as the value of an output field. No conversion to a JSON string is necessary.
+
+To enable table-in-table output support for an output column, add `table: true` property to the definition of the column in the module's configuration yml file. There is another property, `table_headers`, but this one is optional. With these two new properties, "All annotations" (previously "All transcripts") column of VEST module is defined as below.
+
+- name: all
+  title: All annotations
+  type: string
+  table: true
+  table_headers:
+  - name: transcript
+    title: Transcript
+    type: string
+  - name: score
+    title: Score
+    type: float
+  - name: pval
+    title: p-value
+    type: float
+  ...
+
+When an output column with table data is used by a reporter module, the reporter module will receive a JSON object instead of a string, as OpenCRAVAT does the conversion automatically. In the same way, widget modules will also receive JSON objects instead of strings for output columns with table data. (edited) 
+
+
+ 
