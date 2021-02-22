@@ -2,6 +2,41 @@
 Release notes
 =============
 
+2.2.2
+=====
+
+February 15, 2021
+
+Core
+
+- Filter performance has been improved by optimizing database queries.
+- Annotation module's output can have table-format column values.
+- Removed ``yarl`` dependency's version requirement.
+
+GUI
+- Module information dialog appears with mouse-over on a module name on the job submission page.
+- Annotation modules are grouped by tags for easier navigation among them on the job submission page.
+- Shows an ASCII banner with ``oc gui``.
+- Fixed a bug on the module groups on the Store tab.
+
+Modules
+- Published a bug fix version of hg38.
+- Published Aloft annotation module.
+- Improved summary tab widgets.
+- Updated ``clinvar_acmg`` annotation module.
+- Updated ``pharmgkb`` annotation module.
+- Updated the following annotation modules with table-format columns: ``cancer_hotspots``, ``cosmic``, ``cosmic_gene``, ``encode_tfbs``, ``interpro``, ``pharmgkb``, ``polyphen2``, and ``swissprot_ptm``.
+- Updated the Protein Diagram widget (``wglollipop``) for better mapping among UniProt, TCGA, and user variants through canonical transcripts.
+- Published PangaloDB annotation module.
+- Published a rank score widget which will combine and show all the rank scores produced in the job.
+
+Pipeline
+- OpenCRAVAT Snakemake wrapper has been published.
+
+Multi-user add-on
+- "Try as Guest" feature with open-cravat-multiuser: Users can test OpenCRAVAT multi-user version without first creating an account. 
+- Updated the login page design.
+
 2.2.0
 =====
 
