@@ -2,7 +2,7 @@
 Filter tutorial
 ===============
 
-This page explains how to create, edit, and save filters in OpenCRAVAT.
+This page explains how to create, edit, and filters in OpenCRAVAT.
 For large analysis jobs, enable summary plots and variant tables by
 applying filters that will reduce the viewer to fewer than 100,000
 variants. To follow along, open a completed job in the viewer by
@@ -238,3 +238,13 @@ The filter options for chromosome include:
 
 The **not** button in this line enables negation for this rule. Such as
 UID does NOT have data.
+
+Saving filter files
+===================
+
+In the graphical interface, each saved filter can be downloaded as a single json-formatted file. To save the filter, click the save button on the lower right. To download the saved filter, click the download button on the upper left-hand side of the screen, in the Saved Filters section.  
+
+Loading filter files
+===================
+To upload a json-formatted filter file, click the upload button on the lower right-hand side, next to the save button. The filter settings in the graphical interface will change to match those specified in the designated filter file. 
+
