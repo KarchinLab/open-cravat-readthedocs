@@ -2,8 +2,8 @@
 Cloud Usage
 ===========
 
-Microsoft Genomics 
-------------------
+Microsoft Azure 
+---------------
 
 We recommend selecting the F2s v2 virtual machine (VM) for small jobs, and F16s zV2 VM for heavier loads that include multiple samples with whole genome sequencing. 
 After the VM is started, ssh into the VM and then run a few commands to install all necessary components: 
