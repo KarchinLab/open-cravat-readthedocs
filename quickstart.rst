@@ -24,7 +24,7 @@ and the Start Menu. Continue this Quickstart from "Install base
 modules".
 
 **Mac OS users**: `Mac OS
-installer <http://karchinlab.org/opencravat/installers/OpenCRAVAT.2.2.3.pkg>`__
+installer <http://karchinlab.org/opencravat/installers/OpenCRAVAT.2.2.4.pkg>`__
 
 Right-click the downloaded file and select "Open". Your Mac may ask you
 to confirm stating that the file was not downloaded from the App Store.
