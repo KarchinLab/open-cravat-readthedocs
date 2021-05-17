@@ -18,7 +18,7 @@ select 'Run Anyway'. An "OpenCRAVAT" icon will be created on the Desktop
 and the Start Menu. Double-click the OpenCRAVAT icon to launch the web
 interface.
 
-**Mac users**: `Mac installer <http://karchinlab.org/opencravat/installers/OpenCRAVAT.2.2.3.pkg>`__
+**Mac users**: `Mac installer <http://karchinlab.org/opencravat/installers/OpenCRAVAT.2.2.4.pkg>`__
 
 Right-click the downloaded file and select "Open". Your Mac may ask you
 to confirm stating that the file was not downloaded from the App Store.
