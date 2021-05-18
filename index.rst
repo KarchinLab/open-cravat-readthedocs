@@ -35,6 +35,8 @@ OpenCRAVAT
   API.rst
   Multiuser-support.rst
   OpenCRAVAT-Variant-Report.rst
+  Filter-And-Merge-SQLite.rst
+  Package.rst
   Release-Notes.rst
 
 .. toctree::
