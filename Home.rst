@@ -55,17 +55,17 @@ There are more than 150 different modules in the app store. These modules can be
    LINSIGHT, MuPIT, gnomAD Gene, Gene Ontology, HGDP, IntAct, LoFtool,
    MuPIT, NCBI Gene, NDEx, P(rec), p(HI), PubMed, RVIS, TARGET, UniProt,
    VEST
--  *Variant-level annotators:* ABraOM, Arrhythmia Channelopathy
+-  *Variant-level annotators:* ABraOM, ALFA, ALoFT, Arrhythmia Channelopathy
    Variants, BRCA1 Multiplex Assay, CADD Exome, CardioBoost,
    Cardiovascular Disease Knowledge Portal, Case-Control, CHASMplus, CHASMplus
-   MSK-IMPACT, CIViC, ClinVar, ClinVar ACMG, COSMIC, CVDKP, DANN Coding,
-   dbscSNV, dbSNP, denovo-DB, ENCODE TFBS, Ensembl Regulatory Build,
+   MSK-IMPACT, CIViC, ClinPred, ClinVar, ClinVar ACMG, Constrained Coding Regions, COSMIC, CScape, CVDKP, DANN Coding,dbCID,
+   dbscSNV, dbSNP, denovo-DB, DIDA, ENCODE TFBS, Ensembl Regulatory Build,
    ESP6500, FATHMM, FATHMM-MKL, FATHMM-XF Coding, FitCons, Flanking
-   Sequence, GeneHancer, GERP++, Geuvadis eQTLs, GHIS, gnomAD, gnomAD
+   Sequence, FunSeq2, GeneHancer, GERP++, Geuvadis eQTLs, GHIS, gnomAD, gnomAD
    v3, GRASP, GWAS Catalog, Likelihood Ratio Test, LitVar, MaveDB,
-   MetaSVM, MetaLR, Mutation Assessor, Mutpanning, MutPred, ncRNA,
-   PharmGKB, Phast Cons, PhD-SNPg, PhyloP, PolyPhen2, Promoter IR,
-   Pseudogene, Repeat Sequences, REVEL, SCREEN, Segway, Sift, SiPhy,
+   MetaSVM, MetaLR, Mutation Assessor, MutationTaster, Mutpanning, MutPred, MutPred-Indel, ncRNA, PangaloDB,
+   PharmGKB, Phast Cons, PhD-SNPg, PhyloP, PolyPhen2, Promoter IR, Provean, 
+   Pseudogene, RegulomeDB, Repeat Sequences, REVEL, SCREEN, Segway, Sift, SiPhy, SpliceAI, 
    SwissProt PTMs, 1000 Genomes, 1000 Genomes-Ad Mixed American, 1000
    Genomes-African, 1000 Genomes-East Asian, 1000 Genomes-European, 1000
    Genomes-South Asian, Trinity CTAT, UK10k Cohorts, VEST, VISTA
