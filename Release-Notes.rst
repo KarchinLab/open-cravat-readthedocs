@@ -9,14 +9,14 @@ May 17, 2021
 
 Core
 
-- A new module type package has been added. See https://open-cravat.readthedocs.io/en/latest/Package.html for details.
-- Job result SQLite files can be filtered into a new SQLite file using oc util filtersqlite command. See https://open-cravat.readthedocs.io/en/latest/Filter-And-Merge-SQLite.html#filter-result-databases
-- Job result SQLite files can be merged into a new SQLite file using oc util mergesqlite command. See https://open-cravat.readthedocs.io/en/latest/Filter-And-Merge-SQLite.html#filter-result-databases
-- Information of a job result SQLite file can be shown with oc util showsqliteinfo command.
-- New filter syntax has been added. oc run and oc report can be used with filtersql, includesample, and excludesample options.
-- oc config system command shows the location of open-cravat installation.
-- A module can have PyPI package dependency defined in its yml config file. oc module install will check such PyPI package dependencies and stop if those are not met.
-- Fixed a bug in resuming oc run with temporary annotation result files.
+- A new module type ``package`` has been added. See `here<https://open-cravat.readthedocs.io/en/latest/Package.html>`_ for details.
+- Job result SQLite files can be filtered into a new SQLite file using ``oc util filtersqlite`` command. See `here<https://open-cravat.readthedocs.io/en/latest/Filter-And-Merge-SQLite.html#filter-result-databases>`_ for details.
+- Job result SQLite files can be merged into a new SQLite file using ``oc util mergesqlite`` command. See `here<https://open-cravat.readthedocs.io/en/latest/Filter-And-Merge-SQLite.html#filter-result-databases>`_ for details.
+- Information of a job result SQLite file can be shown with ``oc util showsqliteinfo`` command.
+- New filter syntax has been added. ``oc run`` and ``oc report`` can be used with ``filtersql``, ``includesample``, and ``excludesample`` options.
+- ``oc config system`` command shows the location of open-cravat installation.
+- A module can have PyPI package dependency defined in its yml config file. ``oc module install`` will check such PyPI package dependencies and stop if those are not met.
+- Fixed a bug in resuming ``oc run`` with temporary annotation result files.
 - Improved filter speed for filters employing both samples and variants.
 
 GUI
@@ -29,9 +29,9 @@ Result Viewer
 
 Modules
 
-- Published a revamped version of the variant report page as a web app module, variantreport.
-- rdatareporter module works better with R and table-format annotation result.
-- vcf-converter has been updated so that when all samples have only the reference allele, instead of an exception is logged, only .err file shows them.
+- Published a revamped version of the variant report page as a web app module, ``variantreport``.
+- ``rdatareporter`` module works better with R and table-format annotation result.
+- ``vcf-converter`` has been updated so that when all samples have only the reference allele, instead of an exception is logged, only ``.err`` file shows them.
 
 2.2.2
 =====
