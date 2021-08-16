@@ -2,6 +2,21 @@
 Release notes
 =============
 
+2.2.5
+=====
+
+June 10, 2021
+
+Core
+
+- `oc run` takes `oc.yml` as a default configuration file.
+
+- Fixed filtering with samples only.
+
+GUI
+
+- Advanced filter UI supports drag and drop.
+
 2.2.4
 =====
 
