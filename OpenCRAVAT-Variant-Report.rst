@@ -7,16 +7,16 @@ individual variant. Try these examples below, which will open an
 OpenCRAVAT Variant Report page from the OpenCRAVAT public server.
 
 `OpenCRAVAT Variant Page example
-1 <https://run.opencravat.org/result/nocache/variant.html?chrom=chr17&pos=39724004&ref_base=C&alt_base=G>`__
+1 <https://run.opencravat.org/webapps/variantreport/index.html?chrom=chr17&pos=39724004&ref_base=C&alt_base=G>`__
 
 `OpenCRAVAT Variant Page example
-2 <https://run.opencravat.org/result/nocache/variant.html?chrom=chr10&pos=87864470&ref_base=A&alt_base=T>`__
+2 <https://run.opencravat.org/webapps/variantreport/index.html?chrom=chr10&pos=87864470&ref_base=A&alt_base=T>`__
 
 `OpenCRAVAT Variant Page example
-3 <https://run.opencravat.org/result/nocache/variant.html?chrom=chr22&pos=19965038&ref_base=G&alt_base=A>`__
+3 <https://run.opencravat.org/webapps/variantreport/index.html?chrom=chr22&pos=19965038&ref_base=G&alt_base=A>`__
 
 `OpenCRAVAT Variant Page example
-4 <https://run.opencravat.org/result/nocache/variant.html?chrom=chr1&pos=1719358&ref_base=A&alt_base=G>`__
+4 <https://run.opencravat.org/webapps/variantreport/index.html?chrom=chr1&pos=1719358&ref_base=A&alt_base=G>`__
 
 To enable OpenCRAVAT Variant Report pages in your own installation of
 OpenCRAVAT, there are necessary annotation modules. Run the command
