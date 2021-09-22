@@ -89,3 +89,15 @@ function, as shown in the below example. Put this function at the top of
 the code.
 
 ``$.getScript('/result/widgetfile/wgndex/cytoscape.js', function () {});``
+
+Widgets will appear automatically on the tabs defined as top-level keys
+of ``widgetGenerators[widgetName]``.
+In the ClinVar widget code above, ``variant`` top-level key indicates that
+this widget has content for the variant tab of the interactive result viewer,
+and thus will appear in the widget area of the variant tab of the interactive
+result viewer. The same applies to ``gene`` and ``summary`` levels, also. Thus,
+to make a summary widget for example, the widget code should have 
+``summary`` top-level key under ``widgetGenerators[widgetName]`` object, 
+``function`` key under the `summary` key, and the actual function to make content
+as the value for the ``function`` key. With this in mind, the ClinVar widget code
+above will make more sense.
