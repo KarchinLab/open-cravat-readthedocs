@@ -101,3 +101,14 @@ to make a summary widget for example, the widget code should have
 ``function`` key under the `summary` key, and the actual function to make content
 as the value for the ``function`` key. With this in mind, the ClinVar widget code
 above will make more sense.
+
+To test your new widget, make a job result file. For example,
+
+.. code:: shell
+
+    oc new example-input .
+    oc run example_input -l hg38
+    oc gui example_input.sqlite
+
+Then, check the variant, gene, or summary tab depending on which level you implemented
+in your widget.
