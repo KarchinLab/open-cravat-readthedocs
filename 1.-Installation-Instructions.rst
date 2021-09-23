@@ -10,7 +10,7 @@ You can bypass the installation steps below by using Windows or Mac OS
 Installer of OpenCRAVAT.
 
 **Windows users**: `Windows
-installer <http://karchinlab.org/opencravat/installers/open-cravat-2.2.5.exe>`__
+installer <http://karchinlab.org/opencravat/installers/open-cravat-2.2.6.exe>`__
 
 Windows Defender may indicate that it prevented an unknown application
 from running. If so, click the 'More' link on the message and then
@@ -18,7 +18,7 @@ select 'Run Anyway'. An "OpenCRAVAT" icon will be created on the Desktop
 and the Start Menu. Double-click the OpenCRAVAT icon to launch the web
 interface.
 
-**Mac users**: `Mac installer <http://karchinlab.org/opencravat/installers/OpenCRAVAT.2.2.5.pkg>`__
+**Mac users**: `Mac installer <http://karchinlab.org/opencravat/installers/OpenCRAVAT.2.2.6.pkg>`__
 
 Right-click the downloaded file and select "Open". Your Mac may ask you
 to confirm stating that the file was not downloaded from the App Store.
