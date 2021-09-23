@@ -15,7 +15,7 @@ Installing with Windows or Mac OS Installer
 -------------------------------------------
 
 **Windows users**: `Windows
-installer <http://karchinlab.org/opencravat/installers/open-cravat-2.2.6.exe>`__
+installer <https://karchinlab.org/opencravat/installers/open-cravat-2.2.6.exe>`__
 
 Windows Defender may indicate that it prevented an unknown application
 from running. If so, click the 'More' link on the message and then
@@ -24,7 +24,7 @@ and the Start Menu. Continue this Quickstart from "Install base
 modules".
 
 **Mac OS users**: `Mac OS
-installer <http://karchinlab.org/opencravat/installers/OpenCRAVAT.2.2.6.pkg>`__
+installer <https://karchinlab.org/opencravat/installers/OpenCRAVAT.2.2.6.pkg>`__
 
 Right-click the downloaded file and select "Open". Your Mac may ask you
 to confirm stating that the file was not downloaded from the App Store.
