@@ -163,6 +163,17 @@ overwrite an existing report of the same type.
 The ``-t`` flag is required to select the reporter(s) to run. Find more
 reporters with ``oc module ls -a -t reporter``.
 
+Assign alternative "canonical" transcript
+-----------------------------------------
+
+In some cases, the MANE canonical transcript does not suit analysis needs. To assign alternative transcripts as canonical for the annotation job, use the ``—primary-transcript`` option. It works like this:
+
+::
+
+    oc run input -l hg19 --primary-transcript selected_transcripts.txt 
+
+The selected_transcripts.txt file should be tab-delimited with two columns: ``hugo`` and ``ENST``.
+
 Adding annotators
 -----------------
 
