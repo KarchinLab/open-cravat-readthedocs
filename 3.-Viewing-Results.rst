@@ -102,12 +102,7 @@ The Variant tab is one of the main data display tabs in CRAVAT. It is
 divided into two sections, a data table, and a collection of
 visualization widgets.
 
-For each variant, we select a representative transcript isoform, which
-represents the most severe mutation consequence, according to the order
-of: frameshift insertion, frameshift deletion, stop gain, splice site,
-stop loss, inframe insertion, inframe deletion, complex substitution,
-missense, synonymous, unknown, intron, 5' UTR, 3' UTR, 2kb upstream, and
-2kb downstream. Splice variants are defined as variants within two base
+For each variant, we select a representative transcript isoform using EMBL-EBI `MANE <https://www.ncbi.nlm.nih.gov/refseq/MANE/>`__. Splice variants are defined as variants within two base
 pairs of an exon-exon junction.
 
 The data table shows all of the annotations available, grouped by
