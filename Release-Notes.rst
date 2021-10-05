@@ -2,6 +2,39 @@
 Release notes
 =============
 
+2.2.7
+=====
+
+September 28, 2021
+
+Core
+
+- Removed legacy commands (cravat, wcravat, etc.).
+- Added ``--install-pypi-dependency`` option for ``oc module install``, which will try to install the PyPI packages defined in a module's yml file.
+- Added ``--md`` option for ``oc run``, ``oc module``, ``oc store``, and ``oc report``, to enable using a custom module root directory without changing the system configuration file of OpenCRAVAT.
+- Added ``-m`` option for specifying a mapper module to use.
+- Added ``-p`` option for specifying post-aggregator modules to use.
+- Fixed a bug which caused the mismatch between the order of samples and sample-specific values such as het/hom.
+- ``oc run`` now checks if valid module names are given.
+- Better log messages to reduce clutter.
+- ``oc run -f`` with a wrong filter will not hang the command.
+- Table-format data returned by post-aggregators will show in reports.
+- Fixed a filter problem which produced wrong and/or combinations.
+
+GUI
+
+- Updated Webstore UI.
+- ``oc gui`` starts more quickly.
+- Job submission page is enabled more quickly.
+- Web store page is enabled more quickly.
+- Central message box for all module installation/uninstallation messages
+- Aborted or error jobs can now be resubmitted with a ``Resubmit`` button on the job table.
+
+Modules
+
+- ``vcf-converter`` and `vcf-reporter` handle `NON-REF` in the GVCF format.
+- ``vcf-converter`` now uses VCF = AD/DP formula. Previously, it was AD/sum(AD).
+
 2.2.5
 =====
 
@@ -9,8 +42,7 @@ June 10, 2021
 
 Core
 
-- `oc run` takes `oc.yml` as a default configuration file.
-
+- ``oc run`` takes ``oc.yml`` as a default configuration file.
 - Fixed filtering with samples only.
 
 GUI
