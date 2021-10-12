@@ -82,3 +82,24 @@ module with:
 The option -d and -c are mutually exclusive and one of them is
 mandatory. If your module has data (under your\_module/data folder), -d
 option should be given. If no data, then -c option should be used.
+
+Un-publishing
+=============
+
+If you are the author of a module, you can un-publish the module you have published. 
+Send DELETE request to the following URL to delete a specific version of a module.
+The username and password for the author of the module should be sent as well.
+
+::
+
+   http://<store URL>/<module name>/<version>
+
+A python example is below.
+
+::
+
+   import requests
+   username = "user"
+   password = "password"
+   requests.delete("http://karchinlab.org/cravatstore/example_module/1.0.0", auth=(username, password))
+
