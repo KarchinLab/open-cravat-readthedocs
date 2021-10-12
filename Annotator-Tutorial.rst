@@ -149,11 +149,30 @@ Variants are passed to ``annotate`` in the ``input_data`` dictionary.
 .. code:: python
 
     {
-        'uid' : 1, #The internal id of this input line. Seldom used.
-        'chrom' : 'chr10', # The chromosome name
-        'pos' : 87864486, # The genomic position of the first affected nucleotide
-        'ref_base' : 'A', # The reference base(s)
-        'alt_base' : 'C', # The alternate base(s)
+        #The internal id of this input line. Seldom used.
+        'uid' : 1, 
+        # The chromosome name
+        'chrom' : 'chr10',
+        # The genomic position of the first affected nucleotide
+        'pos' : 87864486, 
+        # The reference base(s)
+        'ref_base' : 'A', 
+        # The alternate base(s)
+        'alt_base' : 'C',
+        # coding or non-coding variant
+        'coding': 'Yes', 
+        # HUGO symbol of the gene of the representative transcript (MANE by default)
+        'hugo': 'NOC2L', 
+        # representative mapped transcript
+        'transcript': 'ENST00000327044.7', 
+        # sequence ontology of the variant consequence on the representative transcript
+        'so': 'MIS', 
+        # cDNA change of the variant on the representative transcript
+        'cchange': 'c.2104G>A', 
+        # protein change of the variant on the representative transcript
+        'achange': 'p.Asp702Asn', 
+        # all genes and transcripts mapped to the variant
+        'all_mappings': '{"NOC2L": [["Q9Y3T9", "p.Asp702Asn", "MIS", "ENST00000327044.7", "c.2104G>A"]}' 
     }
 
 **``pos`` is in the 1-based GRCh38 coordinate system.** If the original
