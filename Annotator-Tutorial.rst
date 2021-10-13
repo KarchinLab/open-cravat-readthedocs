@@ -179,7 +179,10 @@ Variants are passed to ``annotate`` in the ``input_data`` dictionary.
 input is in hg19, the position converted to hg38 before reaching this
 point.
 
-Add code to ``annotate`` to extract the variables needed
+Also, ``coding``, ``hugo``, ``transcript``, ``so``, ``cchange``, ``achange``, and ``all_mappings`` are available
+only when ``input_format: crx`` exists in .yml file.
+
+Add code to ``annotate`` to extract the variables needed.
 
 .. code:: python
 
