@@ -17,9 +17,11 @@ CRAVAT github Projects
 
 1. open-cravat: This is the main project for running single user CRAVAT jobs.  For this project we work in branches and merge those branches to the master after testing and verification.
 
-2. open-cravat-aux: This project supports the annotator store.  Work is done and checked in on the Master branch
+2. open-cravat-aux: This project supports the annotator store.  Work is done and checked in on the Master  (private)
 
 3. open-cravat-multiuser:  This project is for the multiuser version of CRAVAT.  Work is done and checked in on the Master branch
+
+4. open-cravat-modules-karchinlab: This project contains the modules used by OpenCRAVAT
  
 Components required for job submission
 --------------------------------------
