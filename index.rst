@@ -43,6 +43,7 @@ OpenCRAVAT
   :hidden:
   :caption: For contributors 
 
+  Developer-onboarding.rst
   File-Formats.rst
   Annotator-Reference.rst
   Annotator-Tutorial.rst
