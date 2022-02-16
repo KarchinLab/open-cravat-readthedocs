@@ -14,7 +14,7 @@ We recommend that users pull the store modules from Genomic Data Lake when runni
 
 * `Download azcopy <https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10>`__
 * Determine the annotation and analysis modules that you’d like to download. View all available options with ``oc module ls -a`` 
-* `Download the import_modules.py script <https://github.com/KarchinLab/open-cravat-aux/blob/master/azure/import_modules.py>`__, and place it in the same directory as azcopy 
+* `Download the import_modules.py script <https://github.com/KarchinLab/open-cravat-readthedocs/blob/18616edaf1c3aec0174d2d9c53d3d0d59131c7ac/files/import_modules.py>`__, and place it in the same directory as azcopy 
 * To run the script, type ``python3 import_modules.py module1 module2`` 
 
 For more information, consult the genomicsnotesbooks guide to downloading specific databases and deploying a Data Science VM on Azure for OpenCRAVAT at https://github.com/microsoft/genomicsnotebook/blob/main/sample-notebooks/genomics-opencravat.ipynb
