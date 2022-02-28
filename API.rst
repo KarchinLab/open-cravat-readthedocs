@@ -160,7 +160,12 @@ page with ``session.get`` and ``session.post``.\*\*
 .. code:: python
 
     >>>import requests
+    >>>import base64
     >>>session = requests.Session()
-    >>>session.get('https://run.opencravat.org/server/login', params={'username': 'USERNAME', 'password': 'PASSWORD'})
+    >>>reply = session.get('https://run.opencravat.org/server/login', headers={'Authorization': 'Basic ' + base64.b64encode(b'USERNAME:PASSWORD').decode()})
+    >>>reply.json()
+    'success'
     (Then, to log out from the session)
-    >>>session.get('https://run.opencravat.org/server/logout')
+    >>>reply = session.get('https://run.opencravat.org/server/logout')
+    >>>reply.json()
+    'success'
