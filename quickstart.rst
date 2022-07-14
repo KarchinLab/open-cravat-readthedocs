@@ -9,7 +9,7 @@ Quickstart
 OpenCRAVAT consists of three components: python, the ``open-cravat``
 python package, and a base set of reference data. For advanced users,
 command line instructions are available in the `Command line
-quickstart <quickstart-command-line>`__.
+quickstart <quickstart-command-line.html>`__.
 
 Installing with Windows or Mac OS Installer
 -------------------------------------------
