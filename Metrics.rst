@@ -23,6 +23,17 @@ It includes information such as the number of processors, amount of memory, and
 type of operating system. This also includes a unique ID for each computer. The ID is anonymous
 and is persistent between jobs.
 
+How are metrics used
+____________________
+
+Metrics are reported back to a server controlled by Karchinlab. They are
+aggregated and the usage levels of the tool are reported to organizations that 
+fund OpenCRAVAT. No information about individual jobs or users is shared. The
+OpenCRAVAT development team also uses metrics to better understand how OpenCRAVAT
+is being used. For this purpose, we may look at individual jobs, but most work
+is done with aggregated data. We do not gather information that could identify a
+user, or expose genetic information in the job.
+
 Example
 _______
 
@@ -120,7 +131,7 @@ click "Save". You can opt back in by checking the box, then saving again.
 To opt-out from the command line, run the command
 
 ::
-	
+
 	oc config metrics No
 
 You can opt back in by changing "No" to "Yes"
