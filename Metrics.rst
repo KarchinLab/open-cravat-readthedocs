@@ -120,6 +120,7 @@ click "Save". You can opt back in by checking the box, then saving again.
 To opt-out from the command line, run the command
 
 ::
+	
 	oc config metrics No
 
 You can opt back in by changing "No" to "Yes"
