@@ -38,6 +38,7 @@ OpenCRAVAT
   Filter-And-Merge-SQLite.rst
   Package.rst
   Release-Notes.rst
+  Metrics.rst
 
 .. toctree::
   :hidden:
