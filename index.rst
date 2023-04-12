@@ -32,7 +32,7 @@ OpenCRAVAT
   Filter-Tutorial.rst
   Case-Control.rst
   Cloud.rst
-  AWS OpenData.rst
+  AWS-OpenData.rst
   API.rst
   Multiuser-support.rst
   OpenCRAVAT-Variant-Report.rst
