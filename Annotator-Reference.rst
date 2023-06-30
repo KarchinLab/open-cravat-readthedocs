@@ -19,7 +19,7 @@ In an actual annotator, the name 'annotator' would be substituted for
 the annotator's name. Also note that the annotator's data source (the
 directiory ``annotator/data``) will be filled with some configuration of
 data files. More info on the data source can be found at
-```data`` <#data>`__.
+`data <#data>`__.
 
 ``annotator.md``
 ================
@@ -40,64 +40,64 @@ keys a developer may use in their YAML file.
 Properties
 ----------
 
-+-----------------+-----------+-----------------------+------------------+
-| **Property**    | Required  | Required to Publish   | **Description**  |
-+=================+===========+=======================+==================+
-| ``title``       | X         | X                     | The name of the  |
-|                 |           |                       | module that will |
-|                 |           |                       | be displayed to  |
-|                 |           |                       | the user.        |
-+-----------------+-----------+-----------------------+------------------+
-| ``version``     | X         | X                     | The version      |
-|                 |           |                       | number of the    |
-|                 |           |                       | annotator. It is |
-|                 |           |                       | primarily used   |
-|                 |           |                       | when publishing  |
-|                 |           |                       | a module, but is |
-|                 |           |                       | required for all |
-|                 |           |                       | modules.         |
-+-----------------+-----------+-----------------------+------------------+
-| ``type``        | X         | X                     | The module type, |
-|                 |           |                       | in this case     |
-|                 |           |                       | 'annotator'.     |
-+-----------------+-----------+-----------------------+------------------+
-| ``level``       | X         | X                     | Either 'variant' |
-|                 |           |                       | or 'gene'.       |
-+-----------------+-----------+-----------------------+------------------+
-| ``input_format` |           |                       | The input file   |
-| `               |           |                       | type. Accepted   |
-|                 |           |                       | values are       |
-|                 |           |                       | ``.crv``,        |
-|                 |           |                       | ``.crx``, and    |
-|                 |           |                       | ``.crg``. When   |
-|                 |           |                       | omitted, the     |
-|                 |           |                       | default is       |
-|                 |           |                       | ``.crv``.        |
-+-----------------+-----------+-----------------------+------------------+
-| ``output_column | X         | X                     | A list of the    |
-| s``             |           |                       | output columns   |
-|                 |           |                       | from the         |
-|                 |           |                       | annotator. See   |
-|                 |           |                       | `Output          |
-|                 |           |                       | Columns <#output |
-|                 |           |                       | -columns>`__     |
-|                 |           |                       | sub-section for  |
-|                 |           |                       | more details.    |
-+-----------------+-----------+-----------------------+------------------+
-| ``description`` |           | X                     | A short          |
-|                 |           |                       | description of   |
-|                 |           |                       | the module's     |
-|                 |           |                       | purpose and use. |
-+-----------------+-----------+-----------------------+------------------+
-| ``developer``   |           | X                     | Information      |
-|                 |           |                       | about the        |
-|                 |           |                       | developer.       |
-|                 |           |                       | Subkeys: name,   |
-|                 |           |                       | email,           |
-|                 |           |                       | organization,    |
-|                 |           |                       | website,         |
-|                 |           |                       | citation.        |
-+-----------------+-----------+-----------------------+------------------+
++-------------------+-----------+-----------------------+------------------+
+| **Property**      | Required  | Required to Publish   | **Description**  |
++===================+===========+=======================+==================+
+| ``title``         | X         | X                     | The name of the  |
+|                   |           |                       | module that will |
+|                   |           |                       | be displayed to  |
+|                   |           |                       | the user.        |
++-------------------+-----------+-----------------------+------------------+
+| ``version``       | X         | X                     | The version      |
+|                   |           |                       | number of the    |
+|                   |           |                       | annotator. It is |
+|                   |           |                       | primarily used   |
+|                   |           |                       | when publishing  |
+|                   |           |                       | a module, but is |
+|                   |           |                       | required for all |
+|                   |           |                       | modules.         |
++-------------------+-----------+-----------------------+------------------+
+| ``type``          | X         | X                     | The module type, |
+|                   |           |                       | in this case     |
+|                   |           |                       | 'annotator'.     |
++-------------------+-----------+-----------------------+------------------+
+| ``level``         | X         | X                     | Either 'variant' |
+|                   |           |                       | or 'gene'.       |
++-------------------+-----------+-----------------------+------------------+
+| ``input_format``  |           |                       | The input file   |
+|                   |           |                       | type. Accepted   |
+|                   |           |                       | values are       |
+|                   |           |                       | ``.crv``,        |
+|                   |           |                       | ``.crx``, and    |
+|                   |           |                       | ``.crg``. When   |
+|                   |           |                       | omitted, the     |
+|                   |           |                       | default is       |
+|                   |           |                       | ``.crv``.        |
++-------------------+-----------+-----------------------+------------------+
+| ``output_columns``| X         | X                     | A list of the    |
+|                   |           |                       | output columns   |
+|                   |           |                       | from the         |
+|                   |           |                       | annotator. See   |
+|                   |           |                       | `Output          |
+|                   |           |                       | Columns <#output |
+|                   |           |                       | -columns>`__     |
+|                   |           |                       | sub-section for  |
+|                   |           |                       | more details.    |
++-------------------+-----------+-----------------------+------------------+
+| ``description``   |           | X                     | A short          |
+|                   |           |                       | description of   |
+|                   |           |                       | the module's     |
+|                   |           |                       | purpose and use. |
++-------------------+-----------+-----------------------+------------------+
+| ``developer``     |           | X                     | Information      |
+|                   |           |                       | about the        |
+|                   |           |                       | developer.       |
+|                   |           |                       | Subkeys: name,   |
+|                   |           |                       | email,           |
+|                   |           |                       | organization,    |
+|                   |           |                       | website,         |
+|                   |           |                       | citation.        |
++-------------------+-----------+-----------------------+------------------+
 
 Output Columns
 --------------
@@ -105,7 +105,7 @@ Output Columns
 The ``output_columns`` property is a YAML list that enumerates the
 expected keys of the dictionary returned by ``annotator.py``. The
 preparation of this dictionary is explained in greater detail in
-```annotator.py`` <#annotatorpy>`__. Each entry in the
+`annotator.py <#annotatorpy>`__. Each entry in the
 ``output_columns`` list requires three properties: ``name``, ``title``,
 and ``type`` described in the table below.
 
@@ -149,7 +149,7 @@ An ``annotator.py`` works by extending a provided base class,
 The ``setup`` method executes once before the main loop over the input
 file. It is normally used to open file-handlers or database connections.
 More information on accessing the data source can be found in
-```data`` <#data>`__.
+`data <#data>`__.
 
 ``annotate``
 ------------
@@ -164,54 +164,54 @@ be python dictionaries, whose format (including presence altogether for
 ``input_data``, and which keys will be present in relation to the value
 of ``input_format``.
 
-+----------------+------------+------------+------------+----------------+--------------+
-| **Key**        | **``.crv`` | **``.crx`` | **``.crg`` | **Description* | **Example**  |
-|                | **         | **         | **         | *              |              |
-+================+============+============+============+================+==============+
-| ``uid``        | X          | X          |            | An id.         | 1, 2         |
-+----------------+------------+------------+------------+----------------+--------------+
-| ``chrom``      | X          | X          |            | The            | 'chr1',      |
-|                |            |            |            | chromosome,    | 'chr23',     |
-|                |            |            |            | with prefix    | 'chrX'       |
-|                |            |            |            | 'chr'. 1-based |              |
-|                |            |            |            | indexing.      |              |
-+----------------+------------+------------+------------+----------------+--------------+
-| ``pos``        | X          | X          |            | An integer     | 112501307,   |
-|                |            |            |            | genomic        | 104770363    |
-|                |            |            |            | position.      |              |
-+----------------+------------+------------+------------+----------------+--------------+
-| ``ref_base``   | X          | X          |            | The reference  | 'A', 'GCC'   |
-|                |            |            |            | base.          |              |
-+----------------+------------+------------+------------+----------------+--------------+
-| ``alt_base``   | X          | X          |            | The alternate  | 'G', 'AT',   |
-|                |            |            |            | base.          | '-'          |
-+----------------+------------+------------+------------+----------------+--------------+
-| ``hugo``       |            | X          | X          | The gene name  | TP53         |
-+----------------+------------+------------+------------+----------------+--------------+
-| ``transcript`` |            | X          |            | The predicted  | ENST00000617 |
-|                |            |            |            | primary        | 185.4        |
-|                |            |            |            | transcript     |              |
-+----------------+------------+------------+------------+----------------+--------------+
-| ``so``         |            | X          | X          | Most severe    | MIS          |
-|                |            |            |            | sequence       |              |
-|                |            |            |            | ontology       |              |
-+----------------+------------+------------+------------+----------------+--------------+
-| ``all_mappings |            | X          |            | All affected   | `Examples    |
-| ``             |            |            |            | transcripts.   | here <#Input |
-|                |            |            |            | `Details       | -Formats#all |
-|                |            |            |            | here <#Input-F | -mappings>`_ |
-|                |            |            |            | ormats#all-map | _            |
-|                |            |            |            | pings>`__      |              |
-+----------------+------------+------------+------------+----------------+--------------+
-| ``num_variants |            |            | X          | Number of      | 5            |
-| ``             |            |            |            | variants on    |              |
-|                |            |            |            | this gene      |              |
-+----------------+------------+------------+------------+----------------+--------------+
-| ``all_so``     |            |            | X          | Sequence       | STL(1),MIS(3 |
-|                |            |            |            | ontologies and | )            |
-|                |            |            |            | counts for     |              |
-|                |            |            |            | this gene      |              |
-+----------------+------------+------------+------------+----------------+--------------+
++------------------+---------------+---------------+---------------+------------------+--------------+
+| **Key**          | **.crv**      | **.crx**      | **.crg**      | **Description**  | **Example**  |
+|                  |               |               |               |                  |              |
++==================+===============+===============+===============+==================+==============+
+| ``uid``          | X             | X             |               | An id.           | 1, 2         |
++------------------+---------------+---------------+---------------+------------------+--------------+
+| ``chrom``        | X             | X             |               | The              | 'chr1',      |
+|                  |               |               |               | chromosome,      | 'chr23',     |
+|                  |               |               |               | with prefix      | 'chrX'       |
+|                  |               |               |               | 'chr'. 1-based   |              |
+|                  |               |               |               | indexing.        |              |
++------------------+---------------+---------------+---------------+------------------+--------------+
+| ``pos``          | X             | X             |               | An integer       | 112501307,   |
+|                  |               |               |               | genomic          | 104770363    |
+|                  |               |               |               | position.        |              |
++------------------+---------------+---------------+---------------+------------------+--------------+
+| ``ref_base``     | X             | X             |               | The reference    | 'A', 'GCC'   |
+|                  |               |               |               | base.            |              |
++------------------+---------------+---------------+---------------+------------------+--------------+
+| ``alt_base``     | X             | X             |               | The alternate    | 'G', 'AT',   |
+|                  |               |               |               | base.            | '-'          |
++------------------+---------------+---------------+---------------+------------------+--------------+
+| ``hugo``         |               | X             | X             | The gene name    | TP53         |
++------------------+---------------+---------------+---------------+------------------+--------------+
+| ``transcript``   |               | X             |               | The predicted    | ENST00000617 |
+|                  |               |               |               | primary          | 185.4        |
+|                  |               |               |               | transcript       |              |
++------------------+---------------+---------------+---------------+------------------+--------------+
+| ``so``           |               | X             | X             | Most severe      | MIS          |
+|                  |               |               |               | sequence         |              |
+|                  |               |               |               | ontology         |              |
++------------------+---------------+---------------+---------------+------------------+--------------+
+| ``all_mappings`` |               | X             |               | All affected     | `Examples    |
+|                  |               |               |               | transcripts.     | here <File   |
+|                  |               |               |               | `Details         | -Formats.html|
+|                  |               |               |               | here <File-F     | #all-map     |
+|                  |               |               |               | ormats.html#all- | pings>`_     |
+|                  |               |               |               | mappings>`__     |              |
++------------------+---------------+---------------+---------------+------------------+--------------+
+| ``num_variants`` |               |               | X             | Number of        | 5            |
+|                  |               |               |               | variants on      |              |
+|                  |               |               |               | this gene        |              |
++------------------+---------------+---------------+---------------+------------------+--------------+
+| ``all_so``       |               |               | X             | Sequence         | STL(1),MIS(3 |
+|                  |               |               |               | ontologies and   | )            |
+|                  |               |               |               | counts for       |              |
+|                  |               |               |               | this gene        |              |
++------------------+---------------+---------------+---------------+------------------+--------------+
 
 OpenCRAVAT expects ``annotator.py`` to return a python dictionary. The
 keys present in this dictionary, and the data-types of their values are
@@ -232,7 +232,7 @@ This can be a flat-data file, a sqlite database, or a combination of
 multiples data files. To access the data, the developer will open a
 file-handler or database connection depending on the file type. This
 should be done in the instance method ``setup`` in
-```annotate.py`` <#annotatepy>`__. The developer should then store the
+`annotate.py <#annotatepy>`__. The developer should then store the
 opened data-accessor as a ``self`` instance property to be accessible
 during the ``annotate`` method.
 
@@ -304,36 +304,38 @@ modules.
 Table-in-table output
 =====================
 
-Originally, an output field of an OpenCRAVAT annotator module was supposed to be one of string, integer, and float types. However, from OpenCRAVAT 2.2.1, an output field can contain a table of values. This way, table-in-table output is possible for annotation modules. This feature is useful for organizing complex data. For example, VEST4 annotation module's "All transcripts" column used to have such a string as "ENST00000612895.4(0.884:0.04118), *ENST00000614428.4(0.928:0.02102), ENST00000617649.4(0.866:0.05418)". This string contains the VEST score and p-value for three different transcripts for a variant. To get the score and p-value of a specific transcript, parsing the string and extracting the values was necessary. However, the new VEST annotation module which works with OpenCRAVAT 2.2.1 and later has the following data instead of the string: [[ENST00000612895.4, 0.884, 0.04118], [ENST00000614428.4, 0.928, 0.02102], [ENST00000617649.4, 0.866, 0.05418]], which shows the transcript-score-pvaule organization of data much more clearly. This type of data is still stored as string in result databases, but OpenCRAVAT automatically performs the conversion between string and JSON object as it communicates with annotator modules. Thus, in writing an annotation module, the return dictionary of an annotate method can have a dictionary as the value of an output field. No conversion to a JSON string is necessary.
+Originally, an output field of an OpenCRAVAT annotator module was supposed to be one of string, integer, and float types. However, from OpenCRAVAT 2.2.1, an output field can contain a table of values. This way, table-in-table output is possible for annotation modules. This feature is useful for organizing complex data. For example, VEST4 annotation module's "All transcripts" column used to have such a string as "ENST00000612895.4(0.884:0.04118), \*ENST00000614428.4(0.928:0.02102), ENST00000617649.4(0.866:0.05418)". This string contains the VEST score and p-value for three different transcripts for a variant. To get the score and p-value of a specific transcript, parsing the string and extracting the values was necessary. However, the new VEST annotation module which works with OpenCRAVAT 2.2.1 and later has the following data instead of the string: [[ENST00000612895.4, 0.884, 0.04118], [ENST00000614428.4, 0.928, 0.02102], [ENST00000617649.4, 0.866, 0.05418]], which shows the transcript-score-pvaule organization of data much more clearly. This type of data is still stored as string in result databases, but OpenCRAVAT automatically performs the conversion between string and JSON object as it communicates with annotator modules. Thus, in writing an annotation module, the return dictionary of an annotate method can have a dictionary as the value of an output field. No conversion to a JSON string is necessary.
 
-To enable table-in-table output support for an output column, add `table: true` property to the definition of the column in the module's configuration yml file. There is another property, `table_headers`, but this one is optional. With these two new properties, "All annotations" (previously "All transcripts") column of VEST module is defined as below.
+To enable table-in-table output support for an output column, add ``table: true`` property to the definition of the column in the module's configuration yml file. There is another property, ``table_headers``, but this one is optional. With these two new properties, "All annotations" (previously "All transcripts") column of VEST module is defined as below.
 
-\- name: all
+* name: all
 
-title: All annotations
+* title: All annotations
 
-type: string
+* type: string
 
-table: true
+* table: true
 
-table_headers:
-\- name: transcript
+* table_headers:
 
-title: Transcript
+  * name: transcript
 
-type: string
+  * title: Transcript
 
-\- name: score
+  * type: string
 
-title: Score
+  * name: score
 
-type: float
+  * title: Score
 
-\- name: pval
+  * type: float
 
-title: p-value
+* name: pval
 
-type: float
+* title: p-value
+
+* type: float
+
   ...
 
 When an output column with table data is used by a reporter module, the reporter module will receive a JSON object instead of a string, as OpenCRAVAT does the conversion automatically. In the same way, widget modules will also receive JSON objects instead of strings for output columns with table data. (edited) 
