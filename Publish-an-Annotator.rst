@@ -23,10 +23,10 @@ To make a test:
 #. Make sure the output from your module is correct
 #. Pick some variants that represent the data in the module. Choose a few variants that get data, and a few that do not. Try to pick variants that represent a variety of different situations. For example, if your annotator supports both insertion and deletion variants, include one of each. Also include some variants that don’t get annotation from your module. More complicated modules should include more variants.
 #. Make a subdirectory in the module directory called “test”. In that directory, make an input file called “input” with the variants you want.
-#. Run the input file as shown `oc run input -t text -a modulename`
+#. Run the input file as shown ``oc run input -t text -a modulename``
 #. Rename “input.tsv” to “key”
 #. Remove all files other that “input” and “key”
-#. In a different directory than your module, run `oc util test -m modulename`. The test should pass. There will be a file created names something like “cravat_test_12345”. You can safely delete this.
+#. In a different directory than your module, run ``oc util test -m modulename``. The test should pass. There will be a file created names something like “cravat_test_12345”. You can safely delete this.
 #. When you make updates to your module, run the test again. If the test fails, investigate why. Sometimes the test fails because the key is out of date. Other times, the test fails because there is a mistake in the new version fo the module. If the key is out of date, update it before publishing the new version. Otherwise, fix the module so that the test passes.
 
 
