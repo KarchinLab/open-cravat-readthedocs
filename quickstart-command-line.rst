@@ -92,4 +92,4 @@ with the command
 ``oc gui example_input.sqlite``
 
 Instructions for using ``oc gui`` and the web viewer are
-`here <https://github.com/KarchinLab/open-cravat/wiki/5.-GUI-usage>`__.
+`here <5.-GUI-usage.rst>`__.
