@@ -27,7 +27,7 @@ CloudFormation
 ~~~~~~~~~~~~~~
 
 `The OpenCRAVAT CloudFormation
-template <https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/template?stackName=OpenCRAVAT&templateURL=http://opencravat.s3.amazonaws.com/cf/oc-cf.yml>`__
+template <https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/template?stackName=OpenCRAVAT&templateURL=https://oc-cloudform.s3.amazonaws.com/oc-cf-template.yml>`__
 can be used to automatically annotate files in S3. When run, it will
 create an analysis instance from the AMI, pull an input file from S3,
 annotate it, and place the results in S3.
