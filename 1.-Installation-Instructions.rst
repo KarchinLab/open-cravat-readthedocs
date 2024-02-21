@@ -31,6 +31,16 @@ To install Open-CRAVAT you need Python 3.6 or newer. If you do not have
 Python 3, install it using an installation file provided by
 `python.org <http://www.python.org>`__.
 
+
+Installing with Conda
+_____________________
+
+There is no official Open Cravat package within Conda. It is recommended 
+to install Open Cravat in your Anaconda or MiniConda environment as a 
+[Pip Package](https://docs.anaconda.com/free/working-with-conda/packages/install-packages/)
+using
+``pip install open-cravat``.
+
 Linux
 ~~~~~
 
