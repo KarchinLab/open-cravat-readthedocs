@@ -37,9 +37,11 @@ _____________________
 
 Open-Cravat is provided as a Conda package through 
 `BioConda <https://bioconda.github.io/recipes/open-cravat/README.html>`__. Ensure that
-`Conda is configured to use the BioConda channel, <https://bioconda.github.io/>__
+`Conda is configured to use the BioConda channel, <https://bioconda.github.io/>`__
 and install Open-Cravat as following:
+
 .. code-block:: bash
+
    # One-Time configuration to add the bioconda channel
    conda config --add channels defaults
    conda config --add channels bioconda
