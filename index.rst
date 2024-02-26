@@ -27,6 +27,12 @@ OpenCRAVAT
 
 .. toctree::
   :hidden:
+  :caption: Additional Tools
+
+  variant-report.rst
+
+.. toctree::
+  :hidden:
   :caption: Advanced
 
   Filter-Tutorial.rst
