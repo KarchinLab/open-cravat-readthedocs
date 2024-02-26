@@ -35,11 +35,20 @@ Python 3, install it using an installation file provided by
 Installing with Conda
 _____________________
 
-There is no official Open Cravat package within Conda. It is recommended 
-to install Open Cravat in your Anaconda or MiniConda environment as a 
-[Pip Package](https://docs.anaconda.com/free/working-with-conda/packages/install-packages/)
-using
-``pip install open-cravat``.
+Open-Cravat is provided as a Conda package through 
+`BioConda <https://bioconda.github.io/recipes/open-cravat/README.html>`__. Ensure that
+`Conda is configured to use the BioConda channel, <https://bioconda.github.io/>__
+and install Open-Cravat as following:
+.. code-block:: bash
+   # One-Time configuration to add the bioconda channel
+   conda config --add channels defaults
+   conda config --add channels bioconda
+   conda config --add channels conda-forge
+   conda config --set channel_priority strict
+   
+   # Install Open-Cravat
+   conda install open-cravat
+   oc version
 
 Linux
 ~~~~~
