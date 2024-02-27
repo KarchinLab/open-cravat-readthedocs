@@ -85,7 +85,7 @@ the base modules. This can be done either through OpenCRAVAT's web
 interface, or though the command line interface. This quickstart will
 continue with instructions using the web interface. Command line
 instructions are available in the `command line quickstart
-page <quickstart-command-line>`__.
+page <quickstart-command-line>`.
 
 The web interface is started by running a local web server, then
 connecting it using a browser. Both these actions can be taken by
@@ -147,7 +147,7 @@ status column will update to reflect the job status.
 When a job is finished, launch the web viewer in a new tab by clicking
 the **Open Result Viewer** button. This will open up the results viewer
 in a new tab. Instructions for using the results viewer are available
-`here <./3.-Results#interactive-viewer>`__
+:doc:`here <3.-Viewing-Results>`
 
 Stopping the web interface
 --------------------------

@@ -40,8 +40,8 @@ Updating OpenCRAVAT installed with a Windows installer
 Uninstall open-cravat using Programs and Features under Control Panel or
 using Apps and Features.
 
-Download the latest Windows installer at `Installation
-Instructions <./1.-Installation-Instructions>`__ and run the installer.
+Download the latest Windows installer at :doc:`Installation
+Instructions <./1.-Installation-Instructions>` and run the installer.
 
 Only open-cravat core programs will be updated while keeping modules,
 jobs, and configurations intact.
@@ -51,8 +51,8 @@ Updating OpenCRAVAT with a Mac installer
 
 Open Finder. Click "Applications" folder. Move OpenCRAVAT app to Trash.
 
-Download the latest Mac installer at `Installation
-Instructions <./1.-Installation-Instructions>`__ and open the installer.
+Download the latest Mac installer at :doc:`Installation
+Instructions <./1.-Installation-Instructions>` and open the installer.
 
 Only open-cravat core programs will be updated while keeping modules,
 jobs, and configurations intact.

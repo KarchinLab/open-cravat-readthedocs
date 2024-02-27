@@ -14,7 +14,7 @@ databases, but other formats can be used.
 
 This page provides a tutorial for writing an annotator from start to
 finish. For detailed documentation on each component of an annotator,
-try `Annotator Reference <./Annotator-Reference>`__
+try :doc:`Annotator Reference <./Annotator-Reference>`
 
 The completed annotator from this tutorial can be seen at the
 `OpenCRAVAT Modules
@@ -137,7 +137,7 @@ OpenCRAVAT will automatically connect to
 for each variant.
 
 More detailed descriptions of the uses of each of these methods can be
-found in the `annotator.py <./Annotator-Reference#annotatorpy>`__
+found in the :doc:`annotator.py <./Annotator-Reference>`
 detailed reference.
 
 ``annotate`` will take three general steps for each variant 1) Accept

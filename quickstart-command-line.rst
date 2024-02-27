@@ -92,4 +92,4 @@ with the command
 ``oc gui example_input.sqlite``
 
 Instructions for using ``oc gui`` and the web viewer are
-`here <5.-GUI-usage.rst>`__.
+:doc:`here <5.-GUI-usage>`.

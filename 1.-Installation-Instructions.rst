@@ -130,8 +130,8 @@ Running the web interface
 
 Once the base install is complete, the OpenCRAVAT browser based GUI
 interface can be used to install annotators, submit, and view jobs. This
-can be done by following the instructions in the `GUI usage
-page <https://github.com/KarchinLab/open-cravat/wiki/5.-GUI-usage>`__.
+can be done by following the instructions in the :doc:`GUI usage
+page <5.-GUI-usage>`.
 
 Alternatively, users who prefer a command line interface should proceed
 by reading the following sections.
@@ -236,6 +236,5 @@ Multiuser GUI support
 
 OpenCRAVAT's web interface can have multiple user accounts by installing
 `open-cravat-multiuser <https://github.com/KarchinLab/open-cravat/wiki/Multiuser-support>`__
-package (from OpenCRAVAT 1.6.0). See `this
-page <https://github.com/KarchinLab/open-cravat/wiki/Multiuser-support>`__
+package (from OpenCRAVAT 1.6.0). See :doc:`this page <Multiuser-support>`
 for the details of using multiple user accounts with OpenCRAVAT.

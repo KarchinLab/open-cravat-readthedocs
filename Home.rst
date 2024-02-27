@@ -92,7 +92,7 @@ Getting Started
 ---------------
 
 For a simple introduction to running OpenCRAVAT, please consult the
-`Quickstart guide <./quickstart>`__.
+:doc:`Quickstart guide <quickstart>`.
 
 How to cite
 -----------

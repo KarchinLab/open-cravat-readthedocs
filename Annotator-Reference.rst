@@ -105,7 +105,7 @@ Output Columns
 The ``output_columns`` property is a YAML list that enumerates the
 expected keys of the dictionary returned by ``annotator.py``. The
 preparation of this dictionary is explained in greater detail in
-`annotator.py <#annotatorpy>`__. Each entry in the
+:ref:`annotator.py <annotatorpy>`. Each entry in the
 ``output_columns`` list requires three properties: ``name``, ``title``,
 and ``type`` described in the table below.
 
@@ -133,6 +133,8 @@ and ``type`` described in the table below.
 |                 |           |                       | ``int``, or      |
 |                 |           |                       | ``float``.       |
 +-----------------+-----------+-----------------------+------------------+
+
+.. _annotatorpy:
 
 ``annotator.py``
 ================
@@ -232,7 +234,7 @@ This can be a flat-data file, a sqlite database, or a combination of
 multiples data files. To access the data, the developer will open a
 file-handler or database connection depending on the file type. This
 should be done in the instance method ``setup`` in
-`annotate.py <#annotatepy>`__. The developer should then store the
+:ref:`annotator.py <annotatorpy>`. The developer should then store the
 opened data-accessor as a ``self`` instance property to be accessible
 during the ``annotate`` method.
 
