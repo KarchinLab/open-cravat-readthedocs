@@ -17,7 +17,7 @@ In the markdown be sure to describe the data, why someone would want it, what th
 
 Test files
 ----------
-Each module has a test. Tests help you catch mistakes when modules are updated. If the output of a module changes after an update, the test will fail. Tests consist of two files, an input and a key. The input is a cravat formatted [link to cravat format] input file with variants to test against. The key is the output of the text reporter.
+Each module has a test. Tests help you catch mistakes when modules are updated. If the output of a module changes after an update, the test will fail. Tests consist of two files, an input and a key. The input is a :doc:`cravat formatted input file<File-Formats>` with variants to test against. The key is the output of the text reporter.
 To make a test:
 
 #. Make sure the output from your module is correct
