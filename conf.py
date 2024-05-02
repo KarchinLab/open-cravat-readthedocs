@@ -18,8 +18,8 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'open-cravat'
-copyright = '2020, RyangGuk Kim, Kyle Moad, Kym Pagel, Madison Larsen, Michael Ryan, Rachel Karchin'
-author = 'RyangGuk Kim, Kyle Moad, Kym Pagel, Madison Larsen, Michael Ryan, Rachel Karchin'
+copyright = '2024, Kyle Moad, Kyle Anderson, Madison Larsen, Jasmine Baker, Supra Gajjala, Rachel Karchin'
+author = 'Kyle Moad, Kyle Anderson, Madison Larsen, Jasmine Baker, Supra Gajjala, Rachel Karchin'
 
 
 # -- General configuration ---------------------------------------------------

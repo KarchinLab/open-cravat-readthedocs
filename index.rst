@@ -29,7 +29,7 @@ OpenCRAVAT
   :hidden:
   :caption: Additional Tools
 
-  variant-report.rst
+  OpenCRAVAT-Variant-Report.rst
 
 .. toctree::
   :hidden:
@@ -41,7 +41,6 @@ OpenCRAVAT
   AWS-OpenData.rst
   API.rst
   Multiuser-support.rst
-  OpenCRAVAT-Variant-Report.rst
   Filter-And-Merge-SQLite.rst
   Package.rst
   Release-Notes.rst
