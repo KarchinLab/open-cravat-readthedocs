@@ -29,6 +29,8 @@ author = 'Kyle Moad, Kyle Anderson, Madison Larsen, Jasmine Baker, Supra Gajjala
 # ones.
 extensions = [
     "sphinx_rtd_theme",
+    'sphinxcontrib.mermaid',
+    'sphinxcontrib.youtube'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
