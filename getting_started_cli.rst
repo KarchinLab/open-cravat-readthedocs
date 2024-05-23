@@ -23,7 +23,8 @@ The Basic Open-Cravat Workflow
 ------------------------------
 
 In the diagram below, we’ll see the basic Open-Cravat workflow on the
-command-line.
+command-line. You can click on the boxes in the diagram to jump to that
+section.
 
 .. mermaid::
 
