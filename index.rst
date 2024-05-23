@@ -16,8 +16,8 @@ OpenCRAVAT
   :caption: Getting started
 
   Home.rst
-  quickstart.rst
-  quickstart-command-line.rst
+  getting_started_web.rst
+  getting_started_cli.rst
   1.-Installation-Instructions.rst
   2.-Command-line-usage.rst
   3.-Viewing-Results.rst
