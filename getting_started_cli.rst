@@ -507,7 +507,9 @@ First, we’ll click over to the **Variant** tab:
 ClinVar annotations. Notice the **+** on the top right. We’ll click that
 to expand the ClinVar annotations:
 
-|image13| In the **Clinical Significance** column, we can see that we
+|image13| 
+
+In the **Clinical Significance** column, we can see that we
 can filter. Let’s select those variants that have **pathogenic**
 significance. Clicking into the search box underneath this column, we
 can select **pathogenic**:

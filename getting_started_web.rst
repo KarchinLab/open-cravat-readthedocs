@@ -127,7 +127,7 @@ Linux Users should refer to the Command Line Quickstart to install via
 ``pip``/``pip3``.
 
 Start OpenCRAVAT GUI
---------------------
+====================
 
 .. youtube:: cNDrAPhPffg
 
@@ -248,12 +248,6 @@ This format contains the following columns: ``chromosome``,
 
 Much more information about the supported file formats are here: `File
 Formats <https://open-cravat.readthedocs.io/en/latest/File-Formats.html>`__.
-
-.. note::
-
-      **For Local Users**
-
-      You can download the example to annotate `here <>`__.
 
 Now we have our input file, we can move on to `submitting our
 job <#submit-annotation-job>`__.
