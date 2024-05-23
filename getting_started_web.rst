@@ -167,7 +167,7 @@ A window should open in your web browser. If not, enter
 https://localhost:8080 to view the GUI.
 
 Now you can `browse and install the available
-annotators <#browse-annotators>`__
+annotators <#browse-annotators>`__.
 
 Browse Annotators (Web)
 =======================
@@ -197,19 +197,19 @@ To get more information, click on the CiViC box:
 
 |image7|
 
-.. note::
-      **For Local Users**
+Install Annotators (Local)
+==========================
 
-      If you have installed OpenCRAVAT locally, you will have the option
-      to install annotators on the store page. You can do this by
-      clicking “Install” for the annotator of interest. Please note that
-      some of the annotators use a lot of disk space, so keep that in
-      mind before installing locally.
+If you have installed OpenCRAVAT locally, you will have the option
+to install annotators on the store page. You can do this by
+clicking “Install” for the annotator of interest. Please note that
+some of the annotators use a lot of disk space, so keep that in
+mind before installing locally.
 
-      |image8|
+|image8|
 
-      You already have CiViC and ClinVar installed by default, so you
-      don’t need to install them locally.
+You already have CiViC and ClinVar installed by default, so you
+don’t need to install them locally.
 
 Now we know which annotators we want to use, let’s `review input file
 formats <#convert-to-input-file-format>`__.
@@ -364,8 +364,8 @@ To do this, we’ll first select a) ``ClinVar`` on the left, the b)
     Just note that the filter is not actually applied to the data
     until you hit the **Apply Filter** Button.
 
-Visualize Filtered Results
-==========================
+Visualize Results
+=================
 
 .. youtube:: MPW2MXBJG7w
 
