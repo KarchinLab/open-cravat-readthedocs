@@ -48,7 +48,7 @@ section.
 Preparing and Installing Open Cravat
 ------------------------------------
 
-.. youtube:: 24awSa0ry9M
+.. youtube:: TxY7-c01t28
 
 Make sure you know where your Python is installed using the ``which``
 command. In my example, I have python 3.11 installed via Homebrew, which
@@ -177,7 +177,7 @@ Now you’re ready to start installing annotators.
 Installing via Bioconda
 -----------------------
 
-.. youtube:: f0piW3eMqAc
+.. youtube:: 6eeWWDvPHOM
 
 If you prefer to install via ``conda``/``mamba``, here are directions
 for you. You will want to install ``mamba`` via ``miniforge``: download
@@ -215,7 +215,7 @@ Now you can use Open-Cravat as below and install annotators.
 Installing annotators
 ---------------------
 
-.. youtube:: N6cPmt1kNaU
+.. youtube:: 9NQIG6pW6lo
 
 The first thing we’ll need to install are some core bits of Open Cravat,
 called ``install-base``. We’ll do this with the command ``oc module``:
@@ -362,7 +362,7 @@ created:
 Annotating our example
 ----------------------
 
-.. youtube:: gSeeDM9GUgQ
+.. youtube:: FzvuDELhnd4
 
 Now we have our example, we can run Open Cravat. This will annotate our
 ``example_input`` file with all available annotators.
@@ -397,7 +397,7 @@ Now we have our example, we can run Open Cravat. This will annotate our
 Starting the Results Viewer
 ---------------------------
 
-.. youtube:: cNDrAPhPffg
+.. youtube:: uSOQjuawaOU
 
 We saw that one of the files generated was an ``.sqlite`` file. These
 are our results, which we can visualize using ``oc gui``, which will
@@ -433,7 +433,7 @@ https://localhost:8080 to view the file.
 Examining our Results File and Filtering
 ----------------------------------------
 
-.. youtube:: TYs3dGDFzQQ
+.. youtube:: Nqm3iDN0Vx8
 
 Now we take a look at our results in the web interface. Under the list
 of jobs, we can see our job. Let’s select ``Open Result Viewer`` under
@@ -488,7 +488,7 @@ To do this, we’ll first select a) ``ClinVar`` on the left, the b)
 Visualizing Our Filtered Results
 --------------------------------
 
-.. youtube:: q75mk2SxqTA
+.. youtube:: AFcOMdrW24s
 
 Now that we’ve filtered, let’s go back to the Summary Tab:
 
