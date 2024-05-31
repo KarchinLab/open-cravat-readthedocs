@@ -18,7 +18,7 @@ By the end of this tutorial, you should be able to:
 -  **Upload** and **annotate** variant files on the site
 -  **Filter** annotated results for visualization
 -  **Visualize** and **Summarize** Results in OpenCRAVAT
--  **Export** and **Share** annotation results with othersls
+-  **Export** and **Share** annotation results with others
 
 
 Understanding the Context for our Task
