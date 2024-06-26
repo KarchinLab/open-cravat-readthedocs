@@ -100,7 +100,7 @@ Windows
 -------
 
 `Windows
-installer <https://karchinlab.org/opencravat/installers/OpenCRAVAT-2.4.1.exe>`__
+installer (.exe) <https://github.com/KarchinLab/open-cravat/releases/latest>`__
 
 Windows Defender may indicate that it prevented an unknown application
 from running. If so, click the ‘More’ link on the message and then
@@ -113,7 +113,7 @@ MacOS
 .. youtube:: 6f5fB6fVdBs
 
 `Mac OS
-installer <https://karchinlab.org/opencravat/installers/OpenCRAVAT.2.2.9.pkg>`__
+installer (.pkg) <https://github.com/KarchinLab/open-cravat/releases/latest>`__
 
 Right-click the downloaded file and select “Open”. Your Mac may ask you
 to confirm stating that the file was not downloaded from the App Store.
