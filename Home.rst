@@ -12,8 +12,7 @@ selected and installed/run based on the needs of a given study. The
 modules are made available via the CRAVAT Store and are developed both
 by the CRAVAT team and the broader variant analysis community.
 OpenCRAVAT is a product of the `Karchin Lab <http://karchinlab.org/>`__
-at `Johns Hopkins University <https://www.jhu.edu/>`__ in collaboration
-with `In Silico Solutions <http://insilico.us.com>`__ with funding
+at `Johns Hopkins University <https://www.jhu.edu/>`__ with funding
 provided by the National Cancer Institute’s
 `ITCR <https://itcr.cancer.gov/>`__ program.
 
@@ -23,7 +22,7 @@ Overview
 OpenCRAVAT is a modular python package that is available in the pip
 `PyPI repository <https://pypi.org/project/open-cravat/>`__. It takes a
 file of genomic variants as input. The most common input format is a VCF
-file but other formats are supported including dbSNP identifiers, 23&Me
+file but other formats are supported including dbSNP identifiers, HGVS identifiers, and 23&Me
 and Ancestry.com file formats.
 
 The analysis performed by OpenCRAVAT depends upon user-selected
@@ -47,7 +46,7 @@ requested format of results.
 
 Available Modules
 -----------------
-There are more than 150 different modules in the app store. These modules can be assigned one or more tags, that include allele frequency, cancer, cardiovascular, clinical relevance, converters, evolution, functional studies, genes, interactions, literature, non coding, reporters, variant effect prediction, variants, and visualization. These resources include: 
+There are more than 300 different modules in the app store. These modules can be assigned one or more tags, that include allele frequency, cancer, cardiovascular, clinical relevance, converters, evolution, functional studies, genes, interactions, literature, non coding, reporters, variant effect prediction, variants, and visualization. These resources include: 
 
 -  *Gene-level annotators:* BioGRID, Cancer Gene Census, Cancer Gene
    Landscape, CIViC Gene, ClinGen Gene, COSMIC Gene, Essential Genes,
