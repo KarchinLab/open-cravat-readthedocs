@@ -22,14 +22,12 @@ Overview
 OpenCRAVAT is a modular python package that is available in the pip
 `PyPI repository <https://pypi.org/project/open-cravat/>`__. It takes a
 file of genomic variants as input. The most common input format is a VCF
-file but other formats are supported including dbSNP identifiers, HGVS identifiers, and 23&Me
-and Ancestry.com file formats.
+file but other formats are supported including dbSNP identifiers, HGVS identifiers, and 23&Me, and Ancestry.com file formats.
 
 The analysis performed by OpenCRAVAT depends upon user-selected
 annotation and visualization options, available for download from the
 free OpenCRAVAT Store. In addition to the interactive user interface,
-OpenCRAVAT provides several output formats including text reports, Excel
-spreadsheets, and a SQLite database of results used by cravat_view.
+OpenCRAVAT provides several output formats including VCF files, text reports, Excel spreadsheets, and a SQLite database of results used by cravat_view.
 
 OpenCRAVAT Processing
 ---------------------
