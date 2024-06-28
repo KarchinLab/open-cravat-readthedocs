@@ -18,7 +18,7 @@ By the end of this tutorial, you should be able to:
 -  **Upload** and **annotate** variant files on the site
 -  **Filter** annotated results for visualization
 -  **Visualize** and **Summarize** Results in OpenCRAVAT
--  **Export** and **Share** annotation results with othersls
+-  **Export** and **Share** annotation results with others
 
 
 Understanding the Context for our Task
@@ -99,8 +99,7 @@ You can install OpenCRAVAT via the installers below:
 Windows
 -------
 
-`Windows
-installer (.exe) <https://github.com/KarchinLab/open-cravat/releases/latest>`__
+`Windows installer <https://karchinlab.org/opencravat/installers/OpenCRAVAT-2.4.1.exe>`__
 
 Windows Defender may indicate that it prevented an unknown application
 from running. If so, click the ‘More’ link on the message and then
@@ -110,10 +109,10 @@ and the Start Menu.
 MacOS
 -----
 
-.. youtube:: 6f5fB6fVdBs
+.. youtube:: -Fuz-ky4Dls
 
 `Mac OS
-installer (.pkg) <https://github.com/KarchinLab/open-cravat/releases/latest>`__
+installer <https://karchinlab.org/opencravat/installers/OpenCRAVAT.2.2.9.pkg>`__
 
 Right-click the downloaded file and select “Open”. Your Mac may ask you
 to confirm stating that the file was not downloaded from the App Store.
@@ -129,7 +128,7 @@ Linux Users should refer to the Command Line Quickstart to install via
 Start OpenCRAVAT GUI
 ====================
 
-.. youtube:: cNDrAPhPffg
+.. youtube:: q2YNTPtH34Y
 
 Now that OpenCRAVAT is installed, we can run the GUI. In a command
 prompt (PowerShell or Terminal), you can start the OpenCRAVAT GUI by
@@ -172,7 +171,7 @@ annotators <#browse-annotators>`__.
 Browse Annotators (Web)
 =======================
 
-.. youtube:: B2jiQcIkX8c
+.. youtube:: JvmwQmW9Ux4
 
 If we click on the **STORE** tab in the top left of the interface, we’ll
 see the variety of annotators that are available to us.
@@ -255,7 +254,7 @@ job <#submit-annotation-job>`__.
 Submit Annotation Job
 =====================
 
-.. youtube:: xSOxEbsW--c
+.. youtube:: TCxZRST3cLY
 
 Before we move on, let’s take a look at the overall workflow for
 annotating in the GUI. We’ll start out by 1) submitting our input file,
@@ -305,7 +304,7 @@ them <#filter-results>`__.
 Filter Results
 ==============
 
-.. youtube:: TYs3dGDFzQQ
+.. youtube:: Nqm3iDN0Vx8
 
    We are interested in those variants that have ClinVar annotation. How
    do we find those?
@@ -361,7 +360,7 @@ To do this, we’ll first select a) ``ClinVar`` on the left, the b)
 Visualize Results
 =================
 
-.. youtube:: MPW2MXBJG7w
+.. youtube:: AFcOMdrW24s
 
 Now that we’ve filtered, let’s go back to the Summary Tab:
 

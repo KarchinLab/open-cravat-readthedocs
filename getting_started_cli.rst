@@ -20,7 +20,7 @@ Working through this document, you will learn to:
 -  **Visualize** and **Summarize** Results in Open-Cravat
 
 The Basic Open-Cravat Workflow
-------------------------------
+==============================
 
 In the diagram below, we’ll see the basic Open-Cravat workflow on the
 command-line. You can click on the boxes in the diagram to jump to that
@@ -46,9 +46,9 @@ section.
       click F "#visualizing-our-filtered-results"
 
 Preparing and Installing Open Cravat
-------------------------------------
 
-.. youtube:: 24awSa0ry9M
+.. youtube:: TxY7-c01t28
+
 
 Make sure you know where your Python is installed using the ``which``
 command. In my example, I have python 3.11 installed via Homebrew, which
@@ -77,7 +77,7 @@ it has a similar location to your ``python3``.
    /opt/homebrew/bin/pip3
 
 Using a Virtual Environment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 You should create a virtual environment so that your OpenCRAVAT
 installation is isolated from other installations. We’ll use ``venv``,
@@ -113,7 +113,7 @@ your virtual environment folder.. Note that our prompt also has an
    /Users/tedladeras/oc/bin/python3
 
 Installing OpenCRAVAT
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 Now we can install Open Cravat using ``pip``/``pip3``.
 
@@ -175,9 +175,9 @@ using
 Now you’re ready to start installing annotators.
 
 Installing via Bioconda
------------------------
+=======================
 
-.. youtube:: f0piW3eMqAc
+.. youtube:: 6eeWWDvPHOM
 
 If you prefer to install via ``conda``/``mamba``, here are directions
 for you. You will want to install ``mamba`` via ``miniforge``: download
@@ -213,9 +213,9 @@ be where you installed miniforge:
 Now you can use Open-Cravat as below and install annotators.
 
 Installing annotators
----------------------
+=====================
 
-.. youtube:: N6cPmt1kNaU
+.. youtube:: 9NQIG6pW6lo
 
 The first thing we’ll need to install are some core bits of Open Cravat,
 called ``install-base``. We’ll do this with the command ``oc module``:
@@ -316,7 +316,7 @@ Then the installation will proceed:
    [2024:01:31 14:25:17] Finished installation of wgclinvar:1.1.1
 
 Understanding the Input File Format
------------------------------------
+===================================
 
 We can generate an example file using ``oc new example-input``. Note the
 period at the end, which means that we will generate the file in the
@@ -360,9 +360,9 @@ created:
    chr4    1804372 +   A   T   s1
 
 Annotating our example
-----------------------
+======================
 
-.. youtube:: gSeeDM9GUgQ
+.. youtube:: FzvuDELhnd4
 
 Now we have our example, we can run Open Cravat. This will annotate our
 ``example_input`` file with all available annotators.
@@ -395,9 +395,9 @@ Now we have our example, we can run Open Cravat. This will annotate our
    Finished normally. Runtime: 4.539s
 
 Starting the Results Viewer
----------------------------
+===========================
 
-.. youtube:: cNDrAPhPffg
+.. youtube:: uSOQjuawaOU
 
 We saw that one of the files generated was an ``.sqlite`` file. These
 are our results, which we can visualize using ``oc gui``, which will
@@ -431,9 +431,9 @@ https://localhost:8080 to view the file.
 |image2|
 
 Examining our Results File and Filtering
-----------------------------------------
+========================================
 
-.. youtube:: TYs3dGDFzQQ
+.. youtube:: Nqm3iDN0Vx8
 
 Now we take a look at our results in the web interface. Under the list
 of jobs, we can see our job. Let’s select ``Open Result Viewer`` under
@@ -486,9 +486,9 @@ To do this, we’ll first select a) ``ClinVar`` on the left, the b)
       until you hit the **Apply Filter** Button.
 
 Visualizing Our Filtered Results
---------------------------------
+================================
 
-.. youtube:: q75mk2SxqTA
+.. youtube:: AFcOMdrW24s
 
 Now that we’ve filtered, let’s go back to the Summary Tab:
 
@@ -537,7 +537,7 @@ table will have filters applied to it as well.
       categories within the ``Clinical Significance`` column.
 
 Deactivating Your Environment
------------------------------
+=============================
 
 When you’re done using Open-Cravat and it’s installed by an environment,
 make sure to deactivate:
