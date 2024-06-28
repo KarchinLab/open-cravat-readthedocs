@@ -377,7 +377,7 @@ We can double check our ``.sqlite`` file has our information by using
 Mapping our annotator file
 ==========================
 
-.. youtube:: https://youtu.be/lc9BgajE2xw
+.. youtube:: lc9BgajE2xw
 
 Now that our data is loaded into our ``.sqlite`` file, we need to set up
 our mapping. If we look in ``sift.py``, we’ll see there are stubs for
@@ -594,13 +594,7 @@ Our final ``annotate()`` method looks like this:
 Displaying results
 ------------------
 
-.. raw:: html
-
-<iframe src="https://share.descript.com/embed/pvYMzLjDRmi" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-
-.. raw:: html
-
-   </iframe>
+.. youtube:: Wr7KxfXFxc0
 
 The annotator config file tells OpenCRAVAT what columns to expect from
 the ``annotate`` method, and how to display them in the results. It also
@@ -783,3 +777,4 @@ When run this way, the ``.log`` and ``.err`` files will be
 This method can be used to run annotators with debuggers in most IDEs
 like VSCode, Spyder, or Jupyter.
  
+.. |image4| image:: images/mapping.png
