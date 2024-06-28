@@ -46,9 +46,9 @@ section.
       click F "#visualizing-our-filtered-results"
 
 Preparing and Installing Open Cravat
-====================================
 
 .. youtube:: TxY7-c01t28
+
 
 Make sure you know where your Python is installed using the ``which``
 command. In my example, I have python 3.11 installed via Homebrew, which

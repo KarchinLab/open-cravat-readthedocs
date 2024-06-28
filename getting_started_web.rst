@@ -99,8 +99,7 @@ You can install OpenCRAVAT via the installers below:
 Windows
 -------
 
-`Windows
-installer <https://karchinlab.org/opencravat/installers/OpenCRAVAT-2.4.1.exe>`__
+`Windows installer <https://karchinlab.org/opencravat/installers/OpenCRAVAT-2.4.1.exe>`__
 
 Windows Defender may indicate that it prevented an unknown application
 from running. If so, click the ‘More’ link on the message and then
