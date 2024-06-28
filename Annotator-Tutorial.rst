@@ -782,3 +782,4 @@ When run this way, the ``.log`` and ``.err`` files will be
 
 This method can be used to run annotators with debuggers in most IDEs
 like VSCode, Spyder, or Jupyter.
+ 
