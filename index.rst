@@ -68,8 +68,8 @@ selected and installed/run based on the needs of a given study. The
 modules are made available via the CRAVAT Store and are developed both
 by the CRAVAT team and the broader variant analysis community.
 OpenCRAVAT is a product of the `Karchin Lab <http://karchinlab.org/>`__
-at `Johns Hopkins University <https://www.jhu.edu/>``__ with funding
-provided by the National Cancer Institute’s
+at `Johns Hopkins University <https://www.jhu.edu/>`__ with funding
+provided by the National Cancer Institute's
 `ITCR <https://itcr.cancer.gov/>`__ program.
 
 
