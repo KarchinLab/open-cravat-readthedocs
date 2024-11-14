@@ -30,6 +30,7 @@ OpenCRAVAT
   :caption: Additional Tools
 
   OpenCRAVAT-Variant-Report.rst
+  VCFAnno.rst
 
 .. toctree::
   :hidden:
