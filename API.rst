@@ -149,7 +149,7 @@ Example:
 Single variant annotation
 ====================================================================================================
 
-Get annotation on a single variant as a json object.
+Get annotation on a single variant as a json object. This endpoint does not require login.
 
 -  Method: GET
 -  Location: /submit/annotate
@@ -172,7 +172,7 @@ Example:
     r=requests.get('https://run.opencravat.org/submit/annotate?chrom=chr1&pos=12777320&ref_base=G&alt_base=T&annotators=clinvar,dbsnp,exac_gene,go,rvis')
     print(r.json())
     {'clinvar': {'sig': '', 'disease_refs': '', 'disease_names': '', 'rev_stat': '', 'id': ''}, 'dbsnp': {'snp': 'rs112368379'}, 'exac_gene': {'exac_pli': 3.89692512946575e-06, 'exac_prec': 0.369464079984044, 'exac_pnull': 0.630532023090827, 'exac_nontcga_pli': 2.29346103558518e-06, 'exac_nontcga_prec': 0.28488011039975, 'exac_nontcga_pnull': 0.715117596139215, 'exac_nonpsych_pli': 2.04859216406268e-06, 'exac_nonpsych_prec': 0.250289965336068, 'exac_nonpsych_pnull': 0.749707986071768, 'exac_del_score': None, 'exac_dup_score': None, 'exac_cnv_score': None, 'exac_cnv_flag': None}, ..., 'crx': {'uid': 'noid', 'chrom': 'chr1', 'pos': 12777320, 'ref_base': 'G', 'alt_base': 'T', 'note': '', 'coding': 'Yes', 'hugo': 'PRAMEF12', 'transcript': 'ENST00000357726.4', 'so': 'synonymous', 'achange': 'A391A', 'all_mappings': '{"PRAMEF12":[["O95522","A391A","synonymous","ENST00000357726.4","G1173T"]]}'}}
-    >>r=requests.get('https://run.opencravat.org/submit/annotate?chrom=chr7&pos=140753336&ref_base=A&alt_base=T')
-    >>r.json()
+    r=requests.get('https://run.opencravat.org/submit/annotate?chrom=chr7&pos=140753336&ref_base=A&alt_base=T')
+    print(r.json())
     {"segway_kidney": {"fetal_kidney": "Transcribed"}, "segway_lung": {"fetal_lung": "Transcribed"}, "segway_muscle": {"fetal_muscle_trunk": "Transcribed", "skeletal_muscle_female": "Transcribed", "skeletal_muscle_male": "Quiescent"}, "segway_ovary": {"ovary": "Quiescent"}, "abraom": null, "biogrid": ..., "thousandgenomes": null, "thousandgenomes_ad_mixed_american": null, "thousandgenomes_african": null, "thousandgenomes_east_asian": null, "thousandgenomes_european": null, "thousandgenomes_south_asian": null, "vest": null, "crx": {"uid": "", "chrom": "chr7", "pos": 140753336, "ref_base": "A", "alt_base": "T", "note": "", "coding": "Yes", "hugo": "BRAF", "transcript": "ENST00000288602.10", "so": "missense", "achange": "V600E", "all_mappings": "{\"BRAF\":[[\"P15056\",\"V600E\",\"missense\",\"ENST00000288602.10\",\"T1799A\"]]}"}}
 
