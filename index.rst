@@ -113,34 +113,39 @@ requested format of results.
 Available Modules
 -----------------
 
-As of 8/7/2020, openCRAVAT has the following annotators available, with
+As of 5/22/2025, OpenCRAVAT has the following annotators available, with
 more on the way.
 
 -  *Gene-level annotators:* BioGRID, Cancer Gene Census, Cancer Gene
-   Landscape, CIViC Gene, ClinGen Gene, COSMIC Gene, Essential Genes,
-   ExAC Gene and CNV, gnomAD, GTEx, HaploReg, HGVS Format, InterPro,
-   LINSIGHT, MuPIT, gnomAD Gene, Gene Ontology, HGDP, IntAct, LoFtool,
-   MuPIT, NCBI Gene, NDEx, P(rec), p(HI), PubMed, RVIS, TARGET, UniProt,
+   Landscape, Cancer Genome Interpreter, Constrained Coding Regions,
+   Clinical Genomic Database, CIViC Gene, ClinGen Gene, COSMIC Gene, 
+   Essential Genes, ExAC Gene and CNV, Gene Ontology, GHIS, gnomAD, 
+   GTEx, HaploReg, HGDP, Human Phenotype Ontology, IntAct, InterPro, 
+   LoFtool, LINSIGHT, MuPIT, Mutpanning, NCBI Gene, NDEx, P(rec), 
+   p(HI), PangaloDB, Promoter IR, PubMed, RVIS, TARGET, UniProt,
    VEST
--  *Variant-level annotators:* ABraOM, Arrhythmia Channelopathy
-   Variants, BRCA1 Multiplex Assay, CADD Exome, CardioBoost,
-   Cardiovascular Disease Knowledge Portal CHASMplus, CHASMplus
-   MSK-IMPACT, CIViC, ClinVar, ClinVar ACMG, COSMIC, CVDKP, DANN Coding,
-   dbscSNV, dbSNP, denovo-DB, ENCODE TFBS, Ensembl Regulatory Build,
-   ESP6500, FATHMM, FATHMM-MKL, FATHMM-XF Coding, FitCons, Flanking
-   Sequence, GeneHancer, GERP++, Geuvadis eQTLs, GHIS, gnomAD, gnomAD
-   v3, GRASP, GWAS Catalog, Likelihood Ratio Test, LitVar, MaveDB,
-   MetaSVM, MetaLR, Mutation Assessor, Mutpanning, MutPred, ncRNA,
-   PharmGKB, Phast Cons, PhD-SNPg, PhyloP, PolyPhen2, Promoter IR,
-   Pseudogene, Repeat Sequences, REVEL, SCREEN, Segway, Sift, SiPhy,
-   SwissProt PTMs, 1000 Genomes, 1000 Genomes-Ad Mixed American, 1000
-   Genomes-African, 1000 Genomes-East Asian, 1000 Genomes-European, 1000
-   Genomes-South Asian, Trinity CTAT, UK10k Cohorts, VEST, VISTA
-   Enhancer Browser
--  *Converters (input formats):* TSV, VCF, Ancestry.com, 23andMe,
-   FamilyTreeDNA
+-  *Variant-level annotators:* All of Us, ALoFT, AlphaMissense,
+   Arrhythmia Channelopathy Variants, BayesDel, BRCA1 Saturation
+   Genome Editing Scores, CADD, CADD Exome, Cancer Hotspots,
+   CardioBoost, CEDAR, CIViC, ClinGen Allele Registry, ClinPred,
+   ClinVar, ClinVar ACMG, ClinVar, COSMIC, CScape, CScape Coding,
+   Cardiovascular Disease Knowledge Portal, DANN, DANN Coding,
+   dbCID: Database of Cancer Driver InDels, dbscSNV, dbSNP, dbSNP Common,
+   Denovo-DB, DGIdb: The Drug Interaction Database, DITTO, ESM1b,
+   EVE, FATHMM, FATHMM MKL, FATHMM XF, FATHMM XF Coding, fitCons,
+   Flanking Sequence, FunSeq2, GERP++, Geuvadis eQTLs, gMVP, GRASP,
+   GTEx eQTLs, GWAS Catalog, HaploReg African, HaploReg American,
+   HaploReg Asian, HaploReg European, hg19 coordinates, LINSIGHT,
+   LitVar Full, Likelihood Ratio Test, MetaLR, MetaRNN, MetaSVM,
+   MISTIC (MISsense deleTeriousness predICtor), MITOMAP, MuPIT,
+   Mutation Assessor, MutationTaster, MutPred, MutPred-Indel,
+   NDEx Congenital Heart Disease, NDEx SIGNOR, OMIM, PharmGKB,
+   Phast Cons, PhD-SNPg, PhyloP, PolyPhen-2, PrimateAI, Regeneron,
+   REVEL, Segway, SIFT, SiPhy, SpliceAI, Uniprot Domain, VARITY_R, VEST4
+-  *Converters (input formats):* TSV, VCF, HGVS, dbSNP, ClinGen Allele Registry,
+   Ancestry.com, 23andMe, FamilyTreeDNA 
 -  *Reporters (output formats):* Text format, Excel, TSV, CSV, Annotated
-   VCF
+   VCF, Pandas, RData
 
 System Capabilities
 -------------------
