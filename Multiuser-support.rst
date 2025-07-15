@@ -8,7 +8,16 @@ with their own login and workspace for analysis results.
 is an add-on package to
 `OpenCRAVAT <https://github.com/KarchinLab/open-cravat>`__ and adds the
 support for multiple user accounts to OpenCRAVAT (from OpenCRAVAT
-1.6.0).
+1.6.0). 
+
+Note that the Multiuser package is only required for a shared
+GUI experience. If command-line access is needed on a shared server,
+OpenCRAVAT can be :doc:`installed via pip or conda <1.-Installation-Instructions>`
+either system wide or on a per-user basis. However, if it is installed 
+separately for each user, we recommend each user configure OpenCRAVAT 
+to use a shared module directory.
+
+``oc config md /shared/module/location``
 
 Installation and requirements
 =============================
