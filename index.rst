@@ -39,6 +39,7 @@ OpenCRAVAT
   Filter-Tutorial.rst
   Case-Control.rst
   Cloud.rst
+  hpc-usage.rst
   AWS-OpenData.rst
   API.rst
   Multiuser-support.rst
