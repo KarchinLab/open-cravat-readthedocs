@@ -777,4 +777,4 @@ When run this way, the ``.log`` and ``.err`` files will be
 This method can be used to run annotators with debuggers in most IDEs
 like VSCode, Spyder, or Jupyter.
  
-.. |image4| image:: images/mapping.png
+.. |image4| image:: images/mapping.jpg
