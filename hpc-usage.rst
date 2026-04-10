@@ -37,5 +37,3 @@ In general the process will involve these steps
 
     # Run your job
     oc run input.txt
-
-::

@@ -55,10 +55,6 @@ selected by holding down the Shift key and clicking on the first and
 last file in the group. When multiple files are selected, a list of
 selected files will appear below the file select button.
 
-When multiple files are run, OpenCRAVAT will merge filenames and sample
-ids to track the source(s) of each variant. :doc:`See
-here <Running-OpenCRAVAT>` for a description of this process.
-
 Managing Modules
 ================
 

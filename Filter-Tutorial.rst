@@ -1,4 +1,3 @@
-===============
 Filter tutorial
 ===============
 
@@ -26,47 +25,17 @@ Properties**.
 
 Along the bottom of the screen, there are four components:
 
-+---------+----------+
-| Compone | Purpose  |
-| nt      |          |
-+=========+==========+
-| X/Y     | Of the Y |
-| variant | variants |
-| s       | in this  |
-|         | job, X   |
-|         | of these |
-|         | variants |
-|         | meet the |
-|         | applied  |
-|         | filters  |
-+---------+----------+
-| Refresh | Find the |
-| button  | number   |
-|         | of       |
-|         | variants |
-|         | that     |
-|         | match    |
-|         | the      |
-|         | selected |
-|         | filters  |
-+---------+----------+
-| Apply   | Apply    |
-| Filter  | the      |
-| button  | selected |
-|         | filters  |
-|         | and      |
-|         | generate |
-|         | summary  |
-|         | plots    |
-+---------+----------+
-| Save    | Save     |
-| button  | these    |
-|         | filter   |
-|         | settings |
-|         | for      |
-|         | later    |
-|         | use      |
-+---------+----------+
++---------------------+--------------------------------------------------------------+
+| Component           | Purpose                                                      |
++=====================+==============================================================+
+| X/Y variants        | Of the Y variants in this job, X meet the applied filters    |
++---------------------+--------------------------------------------------------------+
+| Refresh button      | Find the number of variants that match the selected filters  |
++---------------------+--------------------------------------------------------------+
+| Apply Filter button | Apply the selected filters and generate summary plots        |
++---------------------+--------------------------------------------------------------+
+| Save button         | Save these filter settings for later use                     |
++---------------------+--------------------------------------------------------------+
 
 For large jobs it will be necessary to apply filters that reduce the
 number of variants below 100,000 variants.
@@ -180,61 +149,21 @@ the data is numerical or categorical.
 
 The filter options for chromosome include:
 
-+----------+----------+
-| Filter   | Descript |
-| type     | ion      |
-+==========+==========+
-| Has data | Variants |
-|          | that     |
-|          | have any |
-|          | annotati |
-|          | on       |
-|          | for the  |
-|          | selected |
-|          | annotato |
-|          | r        |
-+----------+----------+
-| Equals   | Variants |
-|          | whose    |
-|          | annotati |
-|          | on       |
-|          | exactly  |
-|          | matches  |
-|          | the      |
-|          | search   |
-|          | term     |
-+----------+----------+
-| Is empty | Variants |
-|          | that do  |
-|          | not have |
-|          | any      |
-|          | annotati |
-|          | on       |
-|          | for the  |
-|          | selected |
-|          | annotato |
-|          | r        |
-+----------+----------+
-| Contains | Variants |
-|          | whose    |
-|          | annotati |
-|          | on       |
-|          | contains |
-|          | the      |
-|          | search   |
-|          | term     |
-+----------+----------+
-| One of   | Variants |
-|          | with at  |
-|          | least    |
-|          | one of   |
-|          | the      |
-|          | selectio |
-|          | ns       |
-|          | from the |
-|          | dropdown |
-|          | menu     |
-+----------+----------+
++-------------+---------------------------------------------------------------+
+| Filter type | Description                                                   |
++=============+===============================================================+
+| Has data    | Variants that have any annotation for the selected annotator  |
++-------------+---------------------------------------------------------------+
+| Equals      | Variants whose annotation exactly matches the search term     |
++-------------+---------------------------------------------------------------+
+| Is empty    | Variants that do not have any annotation for the selected     |
+|             | annotator                                                     |
++-------------+---------------------------------------------------------------+
+| Contains    | Variants whose annotation contains the search term            |
++-------------+---------------------------------------------------------------+
+| One of      | Variants with at least one of the selections from the         |
+|             | dropdown menu                                                 |
++-------------+---------------------------------------------------------------+
 
 The **not** button in this line enables negation for this rule. Such as
 UID does NOT have data.
@@ -245,6 +174,5 @@ Saving filter files
 In the graphical interface, each saved filter can be downloaded as a single json-formatted file. To save the filter, click the save button on the lower right. To download the saved filter, click the download button on the upper left-hand side of the screen, in the Saved Filters section.  
 
 Loading filter files
-===================
+====================
 To upload a json-formatted filter file, click the upload button on the lower right-hand side, next to the save button. The filter settings in the graphical interface will change to match those specified in the designated filter file. 
-

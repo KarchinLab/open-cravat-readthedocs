@@ -1,4 +1,3 @@
-============
 File Formats
 ============
 
@@ -14,73 +13,44 @@ Sample. The table below describes each field:
 Columns
 ~~~~~~~
 
-+---------+--------------+----------+
-| Column  | Description  | Example  |
-+=========+==============+==========+
-| Chromos | The          | ``'chr22 |
-| ome     | chromosome,  | '``,     |
-|         | prefixed     | ``'chrX' |
-|         | with         | ``       |
-|         | ``'chr'``.   |          |
-+---------+--------------+----------+
-| Positio | The 1-based  | 11250130 |
-| n       | position of  | 7,       |
-|         | the first    | 1804372  |
-|         | affected     |          |
-|         | nucleotide.  |          |
-+---------+--------------+----------+
-| Strand  | The strand   | ``'+'``/ |
-|         | the variant  | ``'-'``  |
-|         | is on.       |          |
-|         | Either       |          |
-|         | ``'+'`` or   |          |
-|         | ``'-'``.     |          |
-+---------+--------------+----------+
-| Referen | The affected | ``'G'``, |
-| ce-Base | nucleotide(s | ``'AG'`` |
-|         | ),           | ,        |
-|         | or a ``'-'`` | ``'TTCC' |
-|         | for an       | ``,\ ``' |
-|         | insertion.   | -'``     |
-+---------+--------------+----------+
-| Alterna | The          | ``'A'``, |
-| te-Base | alternate    | ``'TTC'` |
-|         | nucleotide(s | `,       |
-|         | ),           | ``'-'``  |
-|         | or ``'-'``   |          |
-|         | for a        |          |
-|         | deletion.    |          |
-+---------+--------------+----------+
-| Sample  | The sample   | ``'s1'`` |
-|         | identifier.  | ,        |
-|         |              | ``'s25'` |
-|         |              | `        |
-+---------+--------------+----------+
-| Tag     | Optional:    | ``'var00 |
-|         | Arbitrary    | 1'``,    |
-|         | identifiers  | ``'TR93; |
-|         | or category  | cancer'` |
-|         | tags         | `        |
-|         | associated   |          |
-|         | with the     |          |
-|         | variant -    |          |
-|         | delimited by |          |
-|         | semi-colon.  |          |
-+---------+--------------+----------+
++----------------+---------------------------------------------+-----------------+
+| Column         | Description                                 | Example         |
++================+=============================================+=================+
+| Chromosome     | The chromosome, prefixed with ``chr``.      | ``chr22``,      |
+|                |                                             | ``chrX``        |
++----------------+---------------------------------------------+-----------------+
+| Position       | The 1-based position of the first affected  | 112501307,      |
+|                | nucleotide.                                 | 1804372         |
++----------------+---------------------------------------------+-----------------+
+| Strand         | The strand the variant is on. Either        | ``+`` / ``-``   |
+|                | ``+`` or ``-``.                             |                 |
++----------------+---------------------------------------------+-----------------+
+| Reference-Base | The affected nucleotide(s), or ``-`` for    | ``G``, ``AG``,  |
+|                | an insertion.                               | ``TTCC``, ``-`` |
++----------------+---------------------------------------------+-----------------+
+| Alternate-Base | The alternate nucleotide(s), or ``-``       | ``A``, ``TTC``, |
+|                | for a deletion.                             | ``-``           |
++----------------+---------------------------------------------+-----------------+
+| Sample         | The sample identifier.                      | ``s1``, ``s25`` |
++----------------+---------------------------------------------+-----------------+
+| Tag            | Optional: Arbitrary identifiers or          | ``var001``,     |
+|                | category tags.                              | ``TR93;cancer`` |
+|                |                                             |                 |
+|                | Delimited by semi-colon.                    |                 |
++----------------+---------------------------------------------+-----------------+
 
 Example
 ~~~~~~~
 
 The following is a basic example of a CRAVAT input file:
 
-.. code:: txt
+.. code:: text
 
     chr2    112501307   +   C   A   s1    var001
     chr14   104770363   +   T   A   s1    var002
     chrX    71127984    +   A   G   s2    var003
     chr14   91974629    +   T   G   s3    var004
     chr12   57094662    +   G   T   s4    var005
-    ...
 
 Internal Files
 --------------
