@@ -1,8 +1,3 @@
-.. role:: raw-latex(raw)
-   :format: latex
-..
-
-=======================
 Command line quickstart
 =======================
 
@@ -21,7 +16,7 @@ be ``pip3`` instead of ``pip``. ``sudo`` should be avoided in installing
 OpenCRAVAT.
 
 If you use Windows and your Python 3 is installed inside of a
-system-level folder such as "C::raw-latex:`\Program `Files", you may
+system-level folder such as ``C:\Program `Files``, you may
 have a problem with running OpenCRAVAT without admin privilege. In this
 case, we recommend installing Python 3 outside of system-level folders
 and then installing OpenCRAVAT.

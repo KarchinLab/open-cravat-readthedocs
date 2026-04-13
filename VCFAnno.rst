@@ -1,6 +1,5 @@
-==============
 Large VCF Annotation
-==============
+====================
 
 For large, many-sample VCF inputs, 
 

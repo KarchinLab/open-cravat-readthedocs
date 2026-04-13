@@ -13,7 +13,7 @@ The above command will run all installed annotators on the provided
 input file and produce Excel and sqlite output in same directory as the
 input file. The terminal output will look something like this:
 
-.. code:: txt
+.. code:: text
 
     Running converter...
         Converter (converter)           finished in 0.441s

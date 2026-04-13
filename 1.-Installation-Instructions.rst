@@ -96,7 +96,7 @@ command line shell.
 ``pip3 install open-cravat``
 
 If you use Windows and if your Python 3 is installed inside of a
-system-level folder such as "C::raw-latex:`\Program `Files", you may
+system-level folder such as ``C:\Program Files``, you may
 have a problem with running open-cravat without the admin privilege. In
 this case, we recommend installing Python 3 outside of system-level
 folders and then installing open-cravat.

@@ -2,8 +2,6 @@
 Widget tutorial
 ===============
 
-
-
 Writing a Web Result Viewer Widget
 ==================================
 
@@ -19,7 +17,7 @@ another name but keep the ``wg`` prefix.
 The .yml file is a module config file. See the below example
 (``wgclinvar.yml``).
 
-.. code:: yml
+.. code:: yaml
 
     title: ClinVar
     version: 1.0.0

@@ -1,6 +1,5 @@
-============
 Filter and Merge Result Databases
-============
+=================================
 
 Filter Result Databases
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -11,7 +10,7 @@ The variants and samples in these result databases can be filtered into new resu
 Syntax
 -------
 
-.. code:: text
+.. code:: bash
 
  oc util filtersqlite INPUT [INPUT]... -o OUTDIR -s SUFFIX -f FILTERPATH --filtersql FILTERSQL --includesample SAMPLE [SAMPLE]... --excludesample SAMPLE [SAMPLE]...
 
@@ -36,7 +35,7 @@ Syntax
 Example
 --------
 
-.. code:: text
+.. code:: bash
 
  oc util filtersqlite example.sqlite another_result.sqlite --filtersql '(v.base__so=="MIS" and v.clinvar__sig=="Pathogenic")' --excludesample badsample1 badsample2
 
@@ -44,7 +43,7 @@ Example
 in representative transcripts (MANE transcripts by default) and have ``Pathogenic`` ClinVar significance. 
 Samples ``badsample1`` and ``badsample2`` and variants from them will be excluded.
 
-.. code:: 
+.. code:: bash
 
  oc util filtersqlite result.sqlite -f filter.json --suffix new -o ~/filtered_results
 
@@ -58,7 +57,7 @@ OpenCRAVAT result database files which were produced with exactly the same set o
 Syntax
 ------
 
-.. code:: text
+.. code:: bash
 
  oc util mergesqlite INPUT [INPUT]... -o OUTPUT
 
@@ -71,7 +70,7 @@ Syntax
 Example
 -------
 
-.. code:: text
+.. code:: bash
 
  oc util mergesqlite result.sqlite another_result.sqlite -o merged.sqlite
 

@@ -1,4 +1,3 @@
-==================
 Running OpenCRAVAT
 ==================
 
@@ -39,7 +38,7 @@ base C Alternate base G).
 Example
 -------
 
-.. code:: txt
+::
 
     ##fileformat=VCFv4.1
     ##fileDate=20090805
@@ -87,67 +86,30 @@ columns: Chromosome, Position, Strand, Reference-Base, Alternate-Base,
 Columns
 -------
 
-+---------+--------------+----------+
-| Column  | Description  | Example  |
-+=========+==============+==========+
-| Chromos | The          | ``'chr22 |
-| ome     | chromosome,  | '``,     |
-|         | prefixed     | ``'chrX' |
-|         | with         | ``       |
-|         | ``'chr'``.   |          |
-+---------+--------------+----------+
-| Positio | The          | 11250130 |
-| n       | numerical    | 7,       |
-|         | position of  | 1804372  |
-|         | the          |          |
-|         | nucleotide   |          |
-|         | along the    |          |
-|         | chromosome   |          |
-|         | transcript.  |          |
-+---------+--------------+----------+
-| Strand  | The strand   | ``'+'``, |
-|         | the variant  | ``'-'``  |
-|         | is on.       |          |
-|         | Either       |          |
-|         | ``'+'`` or   |          |
-|         | ``'-'``.     |          |
-+---------+--------------+----------+
-| Referen | The          | ``'G'``, |
-| ce-Base | reference    | ``'AG'`` |
-|         | nucleotide,  | ,        |
-|         | or a ``'-'`` | ``'TTCC' |
-|         | for an       | ``,\ ``' |
-|         | insertion.   | -'``     |
-|         | Can be left  |          |
-|         | empty for    |          |
-|         | substitution |          |
-|         | if reference |          |
-|         | is unknown   |          |
-+---------+--------------+----------+
-| Alterna | The          | ``'A'``, |
-| te-Base | alternate    | ``'TTC'` |
-|         | nucleotide,  | `,       |
-|         | or ``'-'``   | ``'-'``  |
-|         | for a        |          |
-|         | deletion.    |          |
-+---------+--------------+----------+
-| Sample  | Optional:    | ``'s1'`` |
-|         | Sample       | ,        |
-|         | identifier   | ``'s25'` |
-|         | for cohort   | `        |
-|         | studies.     |          |
-+---------+--------------+----------+
-| Tags    | Optional:    | ``'var00 |
-|         | Arbitrary    | 1'``,    |
-|         | identifiers  | ``'TR93; |
-|         | or category  | cancer'` |
-|         | tags         | `        |
-|         | associated   |          |
-|         | with the     |          |
-|         | variant -    |          |
-|         | delimited by |          |
-|         | semi-colon.  |          |
-+---------+--------------+----------+
++----------------+--------------------------------------------------+---------------------+
+| Column         | Description                                      | Example             |
++================+==================================================+=====================+
+| Chromosome     | The chromosome, prefixed with ``chr``.           | ``chr22``, ``chrX`` |
++----------------+--------------------------------------------------+---------------------+
+| Position       | The numerical position of the nucleotide         | 112501307, 1804372  |
+|                | along the chromosome transcript.                 |                     |
++----------------+--------------------------------------------------+---------------------+
+| Strand         | The strand the variant is on. Either ``+``       | ``+``, ``-``        |
+|                | or ``-``.                                        |                     |
++----------------+--------------------------------------------------+---------------------+
+| Reference-Base | The reference nucleotide, or ``-`` for an        | ``G``, ``AG``,      |
+|                | insertion. Can be left empty for substitution    | ``TTCC``, ``-``     |
+|                | if reference is unknown.                         |                     |
++----------------+--------------------------------------------------+---------------------+
+| Alternate-Base | The alternate nucleotide, or ``-`` for a         | ``A``, ``TTC``,     |
+|                | deletion.                                        | ``-``               |
++----------------+--------------------------------------------------+---------------------+
+| Sample         | Optional: Sample identifier for cohort studies.  | ``s1``, ``s25``     |
++----------------+--------------------------------------------------+---------------------+
+| Tags           | Optional: Arbitrary identifiers or category      | ``var001``,         |
+|                | tags associated with the variant, delimited      | ``TR93;cancer``     |
+|                | by semi-colon.                                   |                     |
++----------------+--------------------------------------------------+---------------------+
 
 Note if you wish to include tags but not sample ids, an extra tab
 character is needed between the alternate base and tag.
@@ -163,7 +125,7 @@ Example
 
 The following is a basic example of a CRAVAT input file:
 
-.. code:: txt
+::
 
     chr2    112501307   +   C   A  var001
     chr14   104770363   +   T   A  s1 var002
