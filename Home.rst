@@ -27,7 +27,7 @@ file but other formats are supported including dbSNP identifiers, HGVS identifie
 The analysis performed by OpenCRAVAT depends upon user-selected
 annotation and visualization options, available for download from the
 free OpenCRAVAT Store. In addition to the interactive user interface,
-OpenCRAVAT provides several output formats including VCF files, text reports, Excel spreadsheets, and a SQLite database of results used by cravat_view.
+OpenCRAVAT provides several output formats including VCF files, Excel spreadsheets, and TSV files, as well as a SQLite database of results viewable with ``oc gui``. See :doc:`Reporters` for details on available output formats.
 
 OpenCRAVAT Processing
 ---------------------
@@ -69,8 +69,7 @@ There are more than 300 different modules in the app store. These modules can be
    Enhancer Browser
 -  *Converters (input formats):* TSV, VCF, Ancestry.com, 23andMe,
    FamilyTreeDNA
--  *Reporters (output formats):* Text format, Excel, TSV, CSV, Annotated
-   VCF
+-  *Reporters (output formats):* Excel, TSV, CSV, Annotated VCF
 
 System Capabilities
 -------------------
