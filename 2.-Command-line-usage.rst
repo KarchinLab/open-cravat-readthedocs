@@ -153,15 +153,13 @@ Working with completed jobs
 Creating a report
 -----------------
 
-Create a new report with the ``oc report`` command. The report will
-overwrite an existing report of the same type.
+Create a new report with the ``oc report`` command
 
 ::
 
     oc report job.sqlite -t tsv vcf
 
-The ``-t`` flag is required to select the reporter(s) to run. Find more
-reporters with ``oc module ls -a -t reporter``.
+See :doc:`Reporters` for the full list of options, available formats, and how to install additional reporters.
 
 Assign alternative "canonical" transcript
 -----------------------------------------
@@ -304,41 +302,7 @@ Optional arguments:
 report | Generate a report from a job
 ======================================
 
-oc report is used to generate output reports
-
-Positional argument: dbpath - Path to aggregator output
-
-Optional arguments: 
-
-+------------------------------------------+--------------------------------------------------------------------------+
-|Option                                    | Description                                                              |
-+==========================================+==========================================================================+
-| -h, --help                               | show this help message and exit                                          | 
-+------------------------------------------+--------------------------------------------------------------------------+
-| -t [FORMAT]                              | report types, {excel,csv,tsv,text,vcf}                                   | 
-+------------------------------------------+--------------------------------------------------------------------------+
-| -f FILTERPATH                            | Path to filter file                                                      | 
-+------------------------------------------+--------------------------------------------------------------------------+
-| -F FILTERNAME                            | Name of filter (stored in aggregator output)                             | 
-+------------------------------------------+--------------------------------------------------------------------------+
-| -s SAVEPATH                              | Path to save file                                                        | 
-+------------------------------------------+--------------------------------------------------------------------------+
-| -c CONFPATH                              | path to a conf file                                                      |
-+------------------------------------------+--------------------------------------------------------------------------+
-| --module-name MODULE\_NAME               | report module name                                                       | 
-+------------------------------------------+--------------------------------------------------------------------------+
-| --nogenelevelonvariantlevel              | Prevent gene level result from being added to variant level result       | 
-+------------------------------------------+--------------------------------------------------------------------------+
-| --confs CONFS                            | Configuration string                                                     | 
-+------------------------------------------+--------------------------------------------------------------------------+
-| --inputfiles INPUTFILES [INPUTFILES ...] | Original input file path                                                 |
-+------------------------------------------+--------------------------------------------------------------------------+
-| --module-option csvreporter.pages=sample |  Include additional report output files                                  |
-+------------------------------------------+--------------------------------------------------------------------------+
-| --separatesample                         | Write each variant-sample pair on a separate line                        | 
-+------------------------------------------+--------------------------------------------------------------------------+
-| -d OUTPUT\_DIR                           | directory for output files                                               |
-+------------------------------------------+--------------------------------------------------------------------------+
+See :doc:`Reporters` for full documentation on ``oc report``, available formats, and reporter options.
 
 gui | Start the GUI
 ====================
@@ -458,65 +422,3 @@ feedback | Send feedback to the developers
 
 ``oc feedback`` opens the GitHub issues tracker at
 https://github.com/KarchinLab/open-cravat/issues.
-
-1.7.0 Command Deprecation
-=========================
-
-OpenCRAVAT 1.7.0 introduced a single command tree, ``oc``, which
-centralizes functions that previously were spread across possible
-through multiple command line tools: ``cravat``, ``wcravat``,
-``cravat-admin``, ``cravat-report``, ``cravat-test``, and
-``cravat-util``. The table below maps old commands to the ``oc`` tree.
-Users are encouraged to shift to using ``oc``. Old root commands will be
-deprecated in a later version.
-
-+-----------------+----------------------+--------------------------+
-| Old Program     | Command              | New Command              |
-+=================+======================+==========================+
-| cravat          |                      | oc run                   |
-+-----------------+----------------------+--------------------------+
-| wcravat         |                      | oc gui                   |
-+-----------------+----------------------+--------------------------+
-| cravat-view     |                      | oc gui job.sqlite        |
-+-----------------+----------------------+--------------------------+
-| cravat-report   |                      | oc report                |
-+-----------------+----------------------+--------------------------+
-| cravat-admin    | md                   | oc config md             |
-+-----------------+----------------------+--------------------------+
-|                 | install-base         | oc module install-base   |
-+-----------------+----------------------+--------------------------+
-|                 | install              | oc module install        |
-+-----------------+----------------------+--------------------------+
-|                 | update               | oc module update         |
-+-----------------+----------------------+--------------------------+
-|                 | uninstall            | oc module uninstall      |
-+-----------------+----------------------+--------------------------+
-|                 | info                 | oc module info           |
-+-----------------+----------------------+--------------------------+
-|                 | publish              | oc store publish         |
-+-----------------+----------------------+--------------------------+
-|                 | create-account       | oc store new-account     |
-+-----------------+----------------------+--------------------------+
-|                 | reset-password       | oc store reset-pw        |
-+-----------------+----------------------+--------------------------+
-|                 | verify-email         | oc store verify-email    |
-+-----------------+----------------------+--------------------------+
-|                 | check-login          | oc store check-login     |
-+-----------------+----------------------+--------------------------+
-|                 | make-example-input   | oc new example-input     |
-+-----------------+----------------------+--------------------------+
-|                 | new-annotator        | oc new annotator         |
-+-----------------+----------------------+--------------------------+
-|                 | report-issue         | oc feedback              |
-+-----------------+----------------------+--------------------------+
-|                 | show-system-conf     | oc config system         |
-+-----------------+----------------------+--------------------------+
-|                 | show-cravat-conf     | oc config cravat         |
-+-----------------+----------------------+--------------------------+
-|                 | version              | oc version               |
-+-----------------+----------------------+--------------------------+
-| cravat-test     |                      | oc util test             |
-+-----------------+----------------------+--------------------------+
-| cravat-util     |                      | migrate-result           |
-+-----------------+----------------------+--------------------------+
-

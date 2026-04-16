@@ -22,6 +22,7 @@ OpenCRAVAT
   2.-Command-line-usage.rst
   3.-Viewing-Results.rst
   5.-GUI-usage.rst
+  Reporters.rst
   Uninstallation.rst
   Update-Instructions.rst
 
@@ -57,7 +58,7 @@ OpenCRAVAT
   Annotator-Reference.rst
   Annotator-Tutorial.rst
   Widget-Tutorial.rst
-  Reporter.rst
+  Custom-Reporter.rst
   Publish-an-Annotator.rst
 
 `OpenCRAVAT <https://opencravat.org/>`__ is a python package that
