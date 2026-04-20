@@ -30,7 +30,8 @@ author = 'Kyle Moad, Kyle Anderson, Jasmine Baker, Rachel Karchin'
 extensions = [
     "sphinx_rtd_theme",
     'sphinxcontrib.mermaid',
-    'sphinxcontrib.youtube'
+    'sphinxcontrib.youtube',
+	'sphinx_llms_txt',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
