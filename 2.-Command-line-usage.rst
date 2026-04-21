@@ -203,7 +203,7 @@ table in the interactive interface with the following command:
 
 ::
 
-    oc send-gui test.sqlite
+    oc util send-gui test.sqlite
 
 
 Command line manual 
